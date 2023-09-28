@@ -1,0 +1,162 @@
+/* Базовые настройки ------------ */
+
+// при открытии модалки убрать дергание сайт
+// html.pum-open.pum-open-overlay.pum-open-scrollable .pum-overlay.pum-active {
+//     -webkit-overflow-scrolling: touch;}
+// html { overflow-y: scroll !important; }
+
+// html.pum-open.pum-open-overlay.pum-open-scrollable body>[aria-hidden] {
+// padding-right: 0 !important;
+//     -webkit-overflow-scrolling: touch;}
+// html { overflow-y: scroll !important; }
+
+body {
+  margin: 0;
+  padding: 0;
+
+  background-color: var(--white-color);
+  color: var(--text-color);
+
+  font-family: Roboto, sans-serif;
+
+  @media  screen and (max-width: 767px) {
+    padding-top: 60px;
+  }
+
+  @media  screen and (min-width: 768px) {
+    // padding-top: 80px;
+  }
+
+}
+
+// * Запретить скролл под модальнім окном
+body.modal-open {
+  @media screen and (max-width: 767px) {
+    overflow: hidden;
+  }
+}
+
+
+/* скрыть заголовки и части текста */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+// section {
+//   outline: 2px solid red;
+// }
+
+/* Создание контейнера ----------- */
+
+.container {
+  // width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+
+// .flex-container {
+//   display: flex;
+//   justify-content: space-between;
+// }
+
+.center {
+  text-align: center;
+}
+
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  @media screen and (max-width: 1199px) {
+    padding-top: 116px;
+    padding-bottom: 116px;
+  }
+}
+
+.features,
+.team,
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+// .clients {
+//   width: 480px;
+// }
+
+.work {
+  padding-bottom: 94px;
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/* Личный нормализатор -------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  padding: 0;
+  /* padding: 0;
+  margin: 0; */
+  color: var(--title-color);
+}
+
+p {
+  margin-top: 0;
+  /* padding: 0;
+  margin: 0; */
+}
+
+/* чтоб можно было задать геометрию -------- */
+
+a {
+  display: block;
+  text-decoration: none;
+  font-style: normal;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* Зброс зазора */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  /* margin: 0px;
+  padding: 0px; */
+}

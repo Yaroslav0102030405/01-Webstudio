@@ -295,10 +295,7 @@
 
   @media screen and (min-width: 1200px) {
     display: flex;
-    
-    margin-left: 373px;
-    // justify-content: flex-end;
-    
+    margin-left: 348px;
   }
 }
 
@@ -331,12 +328,32 @@
   }
 }
 
-.contacts__svg {
+.contacts__svg-envelope {
+  display: inline-block;
+  align-items: center;
   margin-right: 10px;
   width: 15px;
   height: 20px;
-  // vertical-align: sub;
-  vertical-align: -35%;
+  // text-align: center;
+  // // vertical-align: sub;
+  // vertical-align: -35%;
+  vertical-align: -56%;
+}
+
+// .contacts__svg-envelope:hover {
+//   fill: #757575;
+// }
+
+.contacts__svg {
+  display: inline-block;
+  align-items: center;
+  margin-right: 10px;
+  width: 15px;
+  height: 20px;
+  // text-align: center;
+  // // vertical-align: sub;
+  // vertical-align: -35%;
+  vertical-align: middle;
 }
 
 .contacts__icon {

@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import './Team.scss';
 
 import ProductMobile from './../../images/team/product-mobile.jpg';
@@ -23,14 +24,41 @@ import { ReactComponent as Twitter } from './../../images/svg1/twitter 1.svg';
 import { ReactComponent as Facebook } from './../../images/svg1/facebook 1.svg';
 import { ReactComponent as Linkedin } from './../../images/svg1/linkedin 1.svg';
 
+const Animation = {
+  hidden: {
+    x: -100,
+    opacity: 0,
+  },
+  visible: custom => ({
+    x: 0,
+    opacity: 1,
+    transition: { delay: custom * 0.1 },
+  }),
+};
+
 const Team = () => {
   return (
     <>
-      <section className="team">
+      <motion.section
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ amount: 0.1, once: true }}
+        className="team"
+      >
         <div className="container">
-          <h2 className="team-title center element-animation">Our Team</h2>
+          <motion.h2
+            custom={19}
+            variants={Animation}
+            className="team-title center element-animation"
+          >
+            Our Team
+          </motion.h2>
           <ul className="team-list">
-            <li className="team-item element-animation">
+            <motion.li
+              custom={20}
+              variants={Animation}
+              className="team-item element-animation"
+            >
               <picture>
                 <source
                   srcset={ProductMobile}
@@ -93,9 +121,13 @@ const Team = () => {
                   </a>
                 </li>
               </ul>
-            </li>
+            </motion.li>
 
-            <li className="team-item element-animation">
+            <motion.li
+              custom={20}
+              variants={Animation}
+              className="team-item element-animation"
+            >
               <picture>
                 <source
                   srcset={FrontendMobile}
@@ -159,9 +191,13 @@ const Team = () => {
                   </a>
                 </li>
               </ul>
-            </li>
+            </motion.li>
 
-            <li className="team-item element-animation">
+            <motion.li
+              custom={21}
+              variants={Animation}
+              className="team-item element-animation"
+            >
               <picture>
                 <source
                   srcset={MarketingMobile}
@@ -223,9 +259,13 @@ const Team = () => {
                   </a>
                 </li>
               </ul>
-            </li>
+            </motion.li>
 
-            <li className="team-item element-animation">
+            <motion.li
+              custom={22}
+              variants={Animation}
+              className="team-item element-animation"
+            >
               <picture>
                 <source
                   srcset={DesignerMobile}
@@ -295,10 +335,10 @@ const Team = () => {
                   </a>
                 </li>
               </ul>
-            </li>
+            </motion.li>
           </ul>
         </div>
-      </section>
+      </motion.section>
     </>
   );
 };

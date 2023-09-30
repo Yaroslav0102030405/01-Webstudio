@@ -9,15 +9,15 @@ import { ReactComponent as Linkedin } from './../../images/svg1/linkedin 1.svg';
 const Footer = () => {
   return (
     <>
-      <footer class="footer">
-        <div class="container">
-          <div class="footer-wrap">
-            <div class="footer-contact">
-              <a class="logo element-animation" href="!#">
-                <span class="logo-web">Web</span>
-                <span class="logo-studio-footer">Studio</span>
+      <footer className="footer">
+        <div className="container">
+          <div className="footer-wrap">
+            <div className="footer-contact">
+              <a className="logo element-animation" href="!#">
+                <span className="logo-web">Web</span>
+                <span className="logo-studio-footer">Studio</span>
               </a>
-              <address class="address element-animation">
+              <address className="address element-animation">
                 <a
                   class="address-map"
                   href="https://goo.gl/maps/nESUi33Z9tEDnT8MA"
@@ -26,18 +26,18 @@ const Footer = () => {
                 >
                   Kiev, Lesia Ukrainka Ave, 26
                 </a>
-                <a class="address-link" href="mailto:info@example.com">
+                <a className="address-link" href="mailto:info@example.com">
                   info@example.com
                 </a>
-                <a class="address-link no-margin" href="tel:++380991111111">
+                <a className="address-link no-margin" href="tel:++380991111111">
                   +38 099 111 11 11
                 </a>
               </address>
             </div>
-            <div class="footer-icons">
-              <b class="footer-text element-animation">Social media</b>
-              <ul class="team-flex element-animation">
-                <li class="footer-list-icon">
+            <div className="footer-icons">
+              <b className="footer-text element-animation">Social media</b>
+              <ul className="team-flex element-animation">
+                <li className="footer-list-icon">
                   <a
                     href="!#"
                     aria-label=""

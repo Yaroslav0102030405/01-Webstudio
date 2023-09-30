@@ -28,9 +28,9 @@ const Clients = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ amount: 0.1 }}
-        class="clients"
+        className="clients"
       >
-        <div class="container">
+        <div className="container">
           <motion.h2
             custom={23}
             variants={ClientsAnimation}
@@ -40,32 +40,32 @@ const Clients = () => {
           </motion.h2>
           <ul class="clients-list element-animation">
             <motion.li custom={24} variants={ClientsAnimation} class="clients-item">
-              <a class="clients-logo" href="!#">
+              <a className="clients-logo" href="!#">
                 <Client1 />
               </a>
             </motion.li>
             <motion.li custom={25} variants={ClientsAnimation} class="clients-item">
-              <a class="clients-logo" href="!#">
+              <a className="clients-logo" href="!#">
                 <Client2 />
               </a>
             </motion.li>
             <motion.li custom={26} variants={ClientsAnimation} class="clients-item">
-              <a class="clients-logo" href="!#">
+              <a className="clients-logo" href="!#">
                 <Client3 />
               </a>
             </motion.li>
             <motion.li custom={27} variants={ClientsAnimation} class="clients-item">
-              <a class="clients-logo" href="!#">
+              <a className="clients-logo" href="!#">
                 <Client4 />
               </a>
             </motion.li>
             <motion.li custom={28} variants={ClientsAnimation} class="clients-item">
-              <a class="clients-logo" href="!#">
+              <a className="clients-logo" href="!#">
                 <Client5 />
               </a>
             </motion.li>
             <motion.li custom={29} variants={ClientsAnimation} class="clients-item">
-              <a class="clients-logo" href="!#">
+              <a className="clients-logo" href="!#">
                 <Client6 />
               </a>
             </motion.li>

@@ -17,19 +17,19 @@ const Animation = {
 const Hero = () => {
   return (
     <>
-      <div class="overlay">
+      <div className="overlay">
         <motion.section
           initial="hidden"
           whileInView="visible"
           viewport={{ amount: 0.2, once: true }}
-          class="hero center"
+          className="hero center"
         >
-          <div class="container hero-container">
+          <div className="container hero-container">
             <motion.h1
               custom={1}
               variants={Animation}
               
-              class="hero-title element-animation"
+              className="hero-title element-animation"
             >
               Effective Solutions <br />
               for Your Business
@@ -38,7 +38,7 @@ const Hero = () => {
              
               custom={2}
               variants={Animation}
-              class="btn"
+              className="btn"
               data-open-modal
               type="button"
             >

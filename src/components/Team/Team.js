@@ -72,15 +72,15 @@ const Team = () => {
                 <source srcset={ProductDesctop} media="(min-width: 1200px)" />
                 <img
                   loading="lazy"
-                  class="lazyload"
+                  className="lazyload"
                   data-src={ProductImg}
                   alt="продукт дизайнер"
                 />
               </picture>
-              <h3 class="team-subtitle">Igor Demyanenko</h3>
-              <p class="team-text">Product Designer</p>
-              <ul class="team-flex">
-                <li class="team-list-icon">
+              <h3 className="team-subtitle">Igor Demyanenko</h3>
+              <p className="team-text">Product Designer</p>
+              <ul className="team-flex">
+                <li className="team-list-icon">
                   <a
                     href="!#"
                     aria-label="!#"
@@ -160,7 +160,7 @@ const Team = () => {
                     <Instagram className="team-icon" />
                   </a>
                 </li>
-                <li class="team-list-icon">
+                <li className="team-list-icon">
                   <a
                     href="!#"
                     aria-label="!#"
@@ -180,7 +180,7 @@ const Team = () => {
                     <Facebook className="team-icon" />
                   </a>
                 </li>
-                <li class="team-list-icon">
+                <li className="team-list-icon">
                   <a
                     href="!#"
                     aria-label=""
@@ -209,7 +209,7 @@ const Team = () => {
 
                 <img
                   loading="lazy"
-                  class="lazyload"
+                  className="lazyload"
                   data-src={MarketingDesctop}
                   alt="маркетолог"
                 />
@@ -285,7 +285,7 @@ const Team = () => {
 
                 <img
                   loading="lazy"
-                  class="lazyload"
+                  className="lazyload"
                   data-src={DesignerDesctop}
                   alt="маркетолог"
                 />

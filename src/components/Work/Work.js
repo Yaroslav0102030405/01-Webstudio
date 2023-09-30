@@ -25,17 +25,17 @@ const Work = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ amount: 0.2, once: true }}
-        class="work"
+        className="work"
       >
         <div class="container">
           <motion.h2
             custom={15}
             variants={Animation}
-            class="work-title center element-animation"
+            className="work-title center element-animation"
           >
             What Are We Doing
           </motion.h2>
-          <ul class="work-list work-flex-container">
+          <ul className="work-list work-flex-container">
             <motion.li
               custom={16}
               variants={Animation}
@@ -45,7 +45,7 @@ const Work = () => {
                 {/* <source srcset={Img1} type="image/webp" /> */}
                 <img
                   loading="lazy"
-                  class=" lazyload work-image"
+                  className=" lazyload work-image"
                   srcset={Img}
                   //   data-src={Img1}
                   alt="разработка сайтов"
@@ -57,7 +57,7 @@ const Work = () => {
             <motion.li
               custom={17}
               variants={Animation}
-              class="work-item element-animation"
+              className="work-item element-animation"
             >
               <picture>
                 {/* <source
@@ -69,7 +69,7 @@ const Work = () => {
                 /> */}
                 <img
                   loading="lazy"
-                  class="work-image"
+                  className="work-image"
                   srcset={Img2}
                   //   src={Img2}
                   alt="разработка мобильных приложений"
@@ -81,7 +81,7 @@ const Work = () => {
             <motion.li
               custom={18}
               variants={Animation}
-              class="work-item element-animation"
+              className="work-item element-animation"
             >
               <picture>
                 {/* <source
@@ -93,7 +93,7 @@ const Work = () => {
                 /> */}
                 <img
                   loading="lazy"
-                  class=" lazyload work-image"
+                  className=" lazyload work-image"
                   srcset={Img3}
                   //   data-src="./images/work/work3/work3-img-370.jpg"
                   alt="созданием фирменного стиля"

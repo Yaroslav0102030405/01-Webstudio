@@ -14,7 +14,8 @@ const Animation = {
   }),
 };
 
-const Hero = () => {
+function Hero () {
+
   return (
     <>
       <div className="overlay">
@@ -28,22 +29,20 @@ const Hero = () => {
             <motion.h1
               custom={1}
               variants={Animation}
-              
               className="hero-title element-animation"
             >
               Effective Solutions <br />
               for Your Business
             </motion.h1>
-            <motion.button
-             
+           
+            {/* <motion.button
               custom={2}
               variants={Animation}
               className="btn"
-              data-open-modal
               type="button"
             >
               Order Service
-            </motion.button>
+            </motion.button> */}
           </div>
         </motion.section>
       </div>

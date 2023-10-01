@@ -21,7 +21,7 @@ const Features = () => {
         
         initial="hidden"
         whileInView="visible"
-        // viewport={{ amount: 0.2, once: true }}
+        viewport={{ amount: 0.2, once: true }}
         class="features"
       >
         <div className="container">

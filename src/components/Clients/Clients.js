@@ -27,7 +27,7 @@ const Clients = () => {
       <motion.section
         initial="hidden"
         whileInView="visible"
-        viewport={{ amount: 0.1 }}
+        viewport={{ amount: 0.1, once: true }}
         className="clients"
       >
         <div className="container">
@@ -39,32 +39,56 @@ const Clients = () => {
             Customers
           </motion.h2>
           <ul class="clients-list element-animation">
-            <motion.li custom={24} variants={ClientsAnimation} class="clients-item">
+            <motion.li
+              custom={24}
+              variants={ClientsAnimation}
+              class="clients-item"
+            >
               <a className="clients-logo" href="!#">
                 <Client1 />
               </a>
             </motion.li>
-            <motion.li custom={25} variants={ClientsAnimation} class="clients-item">
+            <motion.li
+              custom={25}
+              variants={ClientsAnimation}
+              class="clients-item"
+            >
               <a className="clients-logo" href="!#">
                 <Client2 />
               </a>
             </motion.li>
-            <motion.li custom={26} variants={ClientsAnimation} class="clients-item">
+            <motion.li
+              custom={26}
+              variants={ClientsAnimation}
+              class="clients-item"
+            >
               <a className="clients-logo" href="!#">
                 <Client3 />
               </a>
             </motion.li>
-            <motion.li custom={27} variants={ClientsAnimation} class="clients-item">
+            <motion.li
+              custom={27}
+              variants={ClientsAnimation}
+              class="clients-item"
+            >
               <a className="clients-logo" href="!#">
                 <Client4 />
               </a>
             </motion.li>
-            <motion.li custom={28} variants={ClientsAnimation} class="clients-item">
+            <motion.li
+              custom={28}
+              variants={ClientsAnimation}
+              class="clients-item"
+            >
               <a className="clients-logo" href="!#">
                 <Client5 />
               </a>
             </motion.li>
-            <motion.li custom={29} variants={ClientsAnimation} class="clients-item">
+            <motion.li
+              custom={29}
+              variants={ClientsAnimation}
+              class="clients-item"
+            >
               <a className="clients-logo" href="!#">
                 <Client6 />
               </a>

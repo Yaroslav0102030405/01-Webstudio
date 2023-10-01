@@ -1,15 +1,37 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './Header.scss';
 
 import { ReactComponent as Envelope } from './../../images/svg1/envelope (hover).svg';
 import { ReactComponent as Smartphone } from './../../images/svg1/smartphone.svg';
 
 const Header = () => {
+  // const [isOpen, setIsOpen] = useState(false);
+  // const [hideOrShow, setHideOrShow] = useState({});
+
+  // const handleMenu = () => {
+  //   setIsOpen((prev) => !prev);
+  //   if (isOpen) {
+  //     setHideOrShow(() => {
+  //       return {}
+  //     })
+  //   } else {
+  //     setHideOrShow(() => {
+  //       return {display: "flex"}
+  //     })
+  //   }
+  // }
   return (
     <>
       <header className="header">
         <div className="container">
           <div className="header__wrap">
+            {/* {isOpen ? (
+              <button onClick={handleMenu}>Clouse</button>
+            ) : (
+              <button  onClick={handleMenu}>
+                Open
+              </button>
+            )} */}
             <div className="mobile__wrap">
               <a className="logo" href="./index.html">
                 <span className="logo__web">Web</span>

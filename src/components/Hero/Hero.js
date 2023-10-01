@@ -59,7 +59,7 @@ class Hero extends Component {
               Order Service
             </motion.button>
             {showModal && (
-              <Modal>
+              <Modal onClose={this.toogleModal}>
                 <form className="form">
                   <button
                     className="btn__clouse hover form__icon"

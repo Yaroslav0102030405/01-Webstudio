@@ -228,7 +228,6 @@ textarea {
   padding: 12px 15px;
   margin-bottom: 20px;
   resize: none;
-
   width: 100%;
   cursor: pointer;
   width: 448px;
@@ -247,15 +246,6 @@ textarea {
   -moz-appearance: none;
   appearance: none;
   position: absolute;
-
-  /* position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden; */
 }
 
 .custom-checkbox {
@@ -280,11 +270,9 @@ textarea {
   display: inline-block;
   width: 16px;
   height: 15px;
-  /* border: 1px solid var(--accent-color); */
   background-image: url('./../../images/icon\ check.svg');
   background-repeat: no-repeat;
   background-size: contain;
-  /* background-size: cover; */
 }
 
 .real-checkbox:checked + .custom-checkbox::before {
@@ -293,12 +281,10 @@ textarea {
 
 .form-text,
 .form-link {
-  /* text-align: center; */
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-
   color: #757575;
 
   @media screen and (max-width: 1199px) {

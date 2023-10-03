@@ -38,20 +38,22 @@
   width: 100%;
   padding: 40px;
   background: $white-color;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+  box-shadow:
+    0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   max-width: 340px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  @media  screen and (min-width: 478px) and (max-width: 767px) {
+  @media screen and (min-width: 478px) and (max-width: 767px) {
     max-width: 450px;
     margin-top: 93px;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     max-width: 450px;
-    margin-top: 208px;
+    // margin-top: 208px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -60,26 +62,31 @@
   }
 }
 
-  .form__icon {
-    display: inline-block;
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    padding: 4px;
-    width: 30px;
-    height: 30px;
+.form__icon {
+  display: inline-block;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 4px;
+  // width: 30px;
+  // height: 30px;
+  //     width: 18px;
+  // height: 18px;
+  font-size: 60%;
 
-    color: $black-color;
+  color: $black-color;
 
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
-    cursor: pointer;
-  }
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+}
 
-    form-icon:hover,
-  form-icon:focus {
-    fill: $accent-color;
-  }
+.form__icon:hover,
+.form__icon:focus {
+  // fill: $accent-color;
+  color: $accent-color ;
+  
+}
 
 .form__title {
   text-align: center;
@@ -98,12 +105,17 @@
     letter-spacing: 0.6px;
   }
 }
+// input {
+//   margin-top: 0;
+// }
 
 .form__input {
-  padding-left: 15px;
-  margin-bottom: 30px;
-
+  display: block;
+  margin-bottom: 28px;
+  padding-left: 12px;
   width: 100%;
+  // font-size: 26px;
+  font-size: 16px;
   height: 40px;
   cursor: pointer;
 }
@@ -115,8 +127,11 @@ textarea:focus {
   border: 1px solid $accent-color;
 }
 
+// button, input, optgroup, select, textarea {
+//   font-size: 50%;
+// }
 
-textarea {
+.form textarea {
   padding: 12px 15px;
   margin-bottom: 20px;
   resize: none;
@@ -124,6 +139,11 @@ textarea {
   cursor: pointer;
   width: 448px;
   height: 120px;
+  font-size: 40%;
+
+  // @media screen and (max-width: 767px) {
+  //   font-size: 16px;
+  // }
 
   @media screen and (max-width: 1199px) {
     width: 100%;
@@ -203,5 +223,5 @@ label {
 }
 
 .form__link {
- text-decoration: underline;
+  text-decoration: underline;
 }

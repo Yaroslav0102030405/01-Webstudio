@@ -279,7 +279,7 @@
 
 .menu__contacts {
   @media screen and (min-width: 768px) {
-    display: flex;
+    // display: flex;
     // justify-content: flex-end;
   }
   // padding-top: 20px;
@@ -291,12 +291,16 @@
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    margin-left: 84px;
+ 
+    margin-left: 106px;
+    // margin-left: auto;
+  
   }
 
   @media screen and (min-width: 1200px) {
     display: flex;
-    margin-left: 348px;
+    align-items: center;
+    margin-left: 260px;
   }
 }
 

@@ -1,6 +1,7 @@
 @import './../../BaseScss/base.scss';
 @import './../../BaseScss/variables.scss';
 
+
 .header {
   @media screen and (max-width: 767px) {
     position: relative;
@@ -33,6 +34,7 @@
   @media screen and (max-width: 767px) {
     // чтоб сделать меню на всю ширину и длину вьюпотра
     position: fixed;
+    // transform: translateX(-100%);
      
     top: 0;
     right: 0;
@@ -47,9 +49,8 @@
     overflow: auto;
     //  overflow-y: hidden;
     pointer-events: auto;
-
-    // transform: translateX(0);
-
+    
+    
   }
 }
 
@@ -65,10 +66,10 @@
     border: none;
     background-color: rgba(0, 0, 0, 0);
     z-index: 70;
-    
   }
 }
 }
+
 
 .Dropdown__top {
   margin-top: 120px;
@@ -84,6 +85,11 @@
   letter-spacing: 0.36px;
 }
 
+.menu__item:hover {
+  color: $accent-color;
+  color: aqua;
+}
+
 
 .contacts__icon {
     @media screen and (max-width: 767px) {
@@ -95,20 +101,5 @@
   
     }
 }
-
-// .icon-close {
-//   @media screen  and (max-width: 767px) {
-//     transform: translateX(100%);
-//   }
-  
-  
-// }
-
-// .icon-menu {
-//   @media screen and (max-width: 767px) {
-//     transform: translateX(0);
-//   }
-
-// }
 
 

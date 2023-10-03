@@ -1,6 +1,10 @@
 import React from 'react';
+import { Routes, Route, Link } from 'react-router-dom';
 import './Header.scss';
 import Dropdown from '../Dropdown/Dropdown';
+
+import Home from '../Home/Home';
+import Portfolio from '../PagePortfolio/Portfolio';
 
 import { ReactComponent as Envelope } from './../../images/svg1/envelope (hover).svg';
 import { ReactComponent as Smartphone } from './../../images/svg1/smartphone.svg';
@@ -19,13 +23,11 @@ const Header = () => {
               </button>
             )} */}
             <div className="mobile__wrap">
-              <a className="logo" href="./index.html">
+              <Link className="logo" to="/">
                 <span className="logo__web">Web</span>
                 <span className="logo__studio">Studio</span>
-              </a>
+              </Link>
               <Dropdown />
-  
-
 
               <button
                 type="button"
@@ -38,17 +40,17 @@ const Header = () => {
               <nav className="header__nav">
                 <ul className="menu">
                   <li className="menu__item">
-                    <a className="menu__link current js__link" href="!#">
-                      Studio
-                    </a>
+                    <Link className="menu__link current js__link" to="/home">
+                      Home
+                    </Link>
                   </li>
                   <li className="menu__item">
-                    <a class="menu__link" href="./portfolio.html">
+                    <Link class="menu__link" to="/portfolio">
                       Portfolio
-                    </a>
+                    </Link>
                   </li>
                   <li className="menu__item">
-                    <a className="menu__link" href="!#">
+                    <a className="menu__link" href="/">
                       Contacts
                     </a>
                   </li>

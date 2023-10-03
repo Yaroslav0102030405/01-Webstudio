@@ -1,25 +1,11 @@
 import React from 'react';
 import './Header.scss';
+import Dropdown from '../Dropdown/Dropdown';
 
 import { ReactComponent as Envelope } from './../../images/svg1/envelope (hover).svg';
 import { ReactComponent as Smartphone } from './../../images/svg1/smartphone.svg';
 
 const Header = () => {
-  // const [isOpen, setIsOpen] = useState(false);
-  // const [hideOrShow, setHideOrShow] = useState({});
-
-  // const handleMenu = () => {
-  //   setIsOpen((prev) => !prev);
-  //   if (isOpen) {
-  //     setHideOrShow(() => {
-  //       return {}
-  //     })
-  //   } else {
-  //     setHideOrShow(() => {
-  //       return {display: "flex"}
-  //     })
-  //   }
-  // }
   return (
     <>
       <header className="header">
@@ -37,6 +23,9 @@ const Header = () => {
                 <span className="logo__web">Web</span>
                 <span className="logo__studio">Studio</span>
               </a>
+              <Dropdown />
+  
+
 
               <button
                 type="button"

@@ -61,8 +61,7 @@ const AllPortfolio = () => {
                   <source
                     srcSet={Mobile1}
                     type="image/jpeg"
-                                      media="(max-width: 767px)"
-                                      
+                    media="(max-width: 767px)"
                   />
                   <source
                     srcSet={Tablet1}

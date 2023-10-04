@@ -61,12 +61,12 @@ const Team = () => {
             >
               <picture>
                 <source
-                  srcset={ProductMobile}
+                  srcSet={ProductMobile}
                   media="(max-width: 767px)"
                   type="image/jpg"
                 />
                 <source
-                  srcset={ProductTablet}
+                  srcSet={ProductTablet}
                   media="(min-width: 768px) and (max-width: 1199px)"
                 />
                 <source srcset={ProductDesctop} media="(min-width: 1200px)" />
@@ -130,15 +130,15 @@ const Team = () => {
             >
               <picture>
                 <source
-                  srcset={FrontendMobile}
+                  srcSet={FrontendMobile}
                   media="(max-width: 767px)"
                   type="image/jpg"
                 />
                 <source
-                  srcset={FrontendTablet}
+                  srcSet={FrontendTablet}
                   media="(min-width: 768px) and (max-width: 1199px)"
                 />
-                <source srcset={FrontendDesctop} media="(min-width: 1200px)" />
+                <source srcSet={FrontendDesctop} media="(min-width: 1200px)" />
                 <img
                   loading="lazy"
                   class="lazyload"
@@ -200,12 +200,12 @@ const Team = () => {
             >
               <picture>
                 <source
-                  srcset={MarketingMobile}
+                  srcSet={MarketingMobile}
                   media="(max-width: 767px)"
                   type="image/jpg"
                 />
-                <source srcset={MarketingTablet} media="(min-width: 768px)" />
-                <source srcset={MarketingDesctop} media="(min-width: 1200px)" />
+                <source srcSet={MarketingTablet} media="(min-width: 768px)" />
+                <source srcSet={MarketingDesctop} media="(min-width: 1200px)" />
 
                 <img
                   loading="lazy"
@@ -268,17 +268,17 @@ const Team = () => {
             >
               <picture>
                 <source
-                  srcset={DesignerMobile}
+                  srcSet={DesignerMobile}
                   type="image/jpeg"
                   media="(max-width: 767px)"
                 />
                 <source
-                  srcset={DesignerTablet}
+                  srcSet={DesignerTablet}
                   type="image/jpeg"
                   media="(min-width: 768px)"
                 />
                 <source
-                  srcset={DesignerDesctop}
+                  srcSet={DesignerDesctop}
                   type="image/jpeg"
                   media="(min-width:1200px)"
                 />

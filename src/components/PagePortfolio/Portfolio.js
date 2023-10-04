@@ -2,13 +2,16 @@ import React from "react";
 import { Link } from 'react-router-dom';
 // import './../../components/Header/Header.scss';
 import Dropdown from "../Dropdown/Dropdown";
+import Footer from "../Footer/Footer";
 
 import { ReactComponent as Envelope } from './../../images/svg1/envelope (hover).svg';
 import { ReactComponent as Smartphone } from './../../images/svg1/smartphone.svg';
+import AllPortfolio from "./AllPortfolio/AllPortfolio";
+
 
 const Portfolio = () => {
     return (
-      <>
+        <>
         <header className="header">
           <div className="container">
             <div className="header__wrap">
@@ -77,7 +80,9 @@ const Portfolio = () => {
               </div>
             </div>
           </div>
-        </header>
+            </header>
+            <AllPortfolio />
+            <Footer />
       </>
     );
 }

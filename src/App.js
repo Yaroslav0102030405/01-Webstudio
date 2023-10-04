@@ -33,7 +33,10 @@ function App() {
 
       <Suspense fallback={<h1>Загрузка...</h1>}>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route
+            path="/"
+            element={<Home />}
+          />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>

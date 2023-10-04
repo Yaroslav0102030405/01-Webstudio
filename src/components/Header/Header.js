@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './Header.scss';
 import Dropdown from '../Dropdown/Dropdown';
 
@@ -40,9 +40,11 @@ const Header = () => {
               <nav className="header__nav">
                 <ul className="menu">
                   <li className="menu__item">
-                    <Link className="menu__link current js__link" to="/home">
-                      Home
-                    </Link>
+                    
+                      <Link className="menu__link current js__link" to="/">
+                        Home
+                      </Link>
+                   
                   </li>
                   <li className="menu__item">
                     <Link class="menu__link" to="/portfolio">

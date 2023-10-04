@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkwebstudio_01=self.webpackChunkwebstudio_01||[]).push([[987],{1841:function(n,u,e){e.r(u),e.d(u,{NotFoundPage:function(){return o}});e(2791);var t=e(184),o=function(){return(0,t.jsx)("h1",{children:"404 page not found"})}}}]);
+//# sourceMappingURL=NotFound-page.669a324b.chunk.js.map

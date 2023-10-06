@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Header.scss';
-import Dropdown from '../Dropdown/Dropdown';
+// import Dropdown from '../Dropdown/Dropdown';
 
-import Home from '../Home/Home';
-import Portfolio from '../PagePortfolio/Portfolio';
-import DarkMode from './../DarkMode/DarkMode'
+// import Home from '../Home/Home';
+// import Portfolio from '../PagePortfolio/Portfolio';
+import DarkMode from './../DarkMode/DarkMode';
 
-import { ReactComponent as Envelope } from './../../images/svg1/envelope (hover).svg';
+// import { ReactComponent as Envelope } from './../../images/svg1/envelope (hover).svg';
 import { ReactComponent as Smartphone } from './../../images/svg1/smartphone.svg';
 
 const Header = () => {
@@ -28,7 +28,7 @@ const Header = () => {
                 <span className="logo__web">Web</span>
                 <span className="logo__studio">Studio</span>
               </Link>
-              <Dropdown />
+              {/* <Dropdown /> */}
 
               <button
                 type="button"
@@ -41,11 +41,9 @@ const Header = () => {
               <nav className="header__nav">
                 <ul className="menu">
                   <li className="menu__item">
-                    
-                      <Link className="menu__link current js__link" to="/">
-                        Home
-                      </Link>
-                   
+                    <Link className="menu__link current js__link" to="/">
+                      Home
+                    </Link>
                   </li>
                   <li className="menu__item">
                     <Link class="menu__link" to="/portfolio">
@@ -65,8 +63,8 @@ const Header = () => {
                       href="mailto:info@example.com"
                     >
                       <DarkMode />
-                      <Envelope className="contacts__svg-envelope" />
-                      info@example.com
+                      {/* <Envelope className="contacts__svg-envelope" />
+                      info@example.com */}
                     </a>
                   </li>
 

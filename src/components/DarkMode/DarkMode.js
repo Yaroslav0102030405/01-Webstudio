@@ -6,11 +6,11 @@ import './DarkMode.css';
 
 const DarkMode = () => {
   const setDarkMode = () => {
-    document.querySelector('body').setAttribute('data-theme', 'dark');
+    document.documentElement.setAttribute('data-theme', 'dark');
   };
 
   const setLightMode = () => {
-    document.querySelector('body').setAttribute('data-theme', 'light');
+    document.documentElement.setAttribute('data-theme', 'light');
   };
 
   const toggleTheme = e => {
@@ -20,7 +20,12 @@ const DarkMode = () => {
 
   return (
     <div className="dark_mode">
-      <input className="dark_mode_input" type="checkbox" id="darkmode-toggle" onChange={toggleTheme} />
+      <input
+        className="dark_mode_input"
+        type="checkbox"
+        id="darkmode-toggle"
+        onChange={toggleTheme}
+      />
       <label className="dark_mode_label" for="darkmode-toggle">
         <Sun />
         <Moon />

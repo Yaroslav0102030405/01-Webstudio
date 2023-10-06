@@ -23,6 +23,10 @@
   background: #f5f4fa;
 }
 
+html[data-theme='dark'] .team {
+ background-color: $black-color;
+}
+
 .team-title {
   margin-bottom: 50px;
 

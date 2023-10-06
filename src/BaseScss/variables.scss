@@ -3,20 +3,36 @@ $title-color: #212121;
 $accent-color: #2196f3;
 $white-color: #ffffff;
 $black-color: #000000;
-$background-color: #2f303a;
+$footer: #2F303A;
+
+$background-color: white;
 
 $mobile: 480px;
 $tablet: 768px;
-$desktop:1200px;
+$desktop: 1200px;
 
-$fullstack: #2e5bb7;
-$frontend: #a16ef2;
-$project-manager: #deb43d;
-$design: #e556dd;
-$qa-manual: #48b65e;
-$python: #f48f33;
-$java: #f34b70;
-$smm: #27e3c9;
-$data-analytics: #e3c071;
-$it: #36e82d;
+[data-theme='light'] {
+  background-color: $white-color;
+  color: $black-color;
+}
 
+[data-theme='dark'] {
+  background-color: $black-color;
+  color: $white-color;
+}
+
+//   $background-color: #f6f6f6;
+//   $foreground-color: #003cff;
+//   $primary-text-color: #0a0a0a;
+//   $secondary-text-color: #ffffff;
+//   $toggle-bg: #f0eb9d;
+//   $toggle-fg: #ffd000;
+
+// [data-theme="dark"] {
+//   --background-color: #0a0a0a;
+//   --foreground-color: #567aff;
+//   --primary-text-color: #f6f6f6;
+//   --secondary-text-color: #0a0a0a;
+//   --toggle-bg: #283452;
+//   --toggle-fg: #00a6ff;
+// }

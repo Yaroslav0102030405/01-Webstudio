@@ -1,5 +1,7 @@
 /* Базовые настройки ------------ */
 
+@import './variables.scss';
+
 // при открытии модалки убрать дергание сайт
 // html.pum-open.pum-open-overlay.pum-open-scrollable .pum-overlay.pum-active {
 //     -webkit-overflow-scrolling: touch;}
@@ -10,22 +12,21 @@
 //     -webkit-overflow-scrolling: touch;}
 // html { overflow-y: scroll !important; }
 
-:root {
-  $body-background: white;
-  $body-color: black;
-}
 
-[data-theme='dark'] {
-  $body-background: #282c34;
-  $body-color: white;
-}
+//   $body-background: white;
+//   $body-color: black;
+
+// [data-theme="dark"] {
+//   $body-background: #282c34;
+//   $body-color: white;
+// }
 
 body {
   margin: 0;
   padding: 0;
 
-  // background-color: $body-background;
-  // color: $body-color;
+  // background-color: $black-color;
+  // color: $title-color;
 
   font-family: Roboto, sans-serif;
 

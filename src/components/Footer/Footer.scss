@@ -3,7 +3,11 @@
 
 .footer {
   text-align: center;
-  background-color: $background-color;
+  background-color: $footer;
+}
+
+html[data-theme='dark'] .footer {
+ background-color: $black-color;
 }
 
 .footer-text {
@@ -127,3 +131,4 @@
 .logo-web {
   color: $accent-color;
 }
+

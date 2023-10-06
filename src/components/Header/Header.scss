@@ -3,6 +3,11 @@
 // @import './../../Animal.scss';
 
 .header {
+  background-color: #2196f3;
+  // background-color: var(--body-background);
+  // color: var(--body_color);
+  // background-color: $body-background;
+  // color: $body-color;
   // position: fixed;
   position: relative;
   top: 0;

@@ -5,6 +5,7 @@ import Dropdown from '../Dropdown/Dropdown';
 
 import Home from '../Home/Home';
 import Portfolio from '../PagePortfolio/Portfolio';
+import DarkMode from './../DarkMode/DarkMode'
 
 import { ReactComponent as Envelope } from './../../images/svg1/envelope (hover).svg';
 import { ReactComponent as Smartphone } from './../../images/svg1/smartphone.svg';
@@ -63,6 +64,7 @@ const Header = () => {
                       className="contacts__link contacts__icon"
                       href="mailto:info@example.com"
                     >
+                      <DarkMode />
                       <Envelope className="contacts__svg-envelope" />
                       info@example.com
                     </a>

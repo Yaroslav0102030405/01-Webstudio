@@ -2,6 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import './Work.scss';
 
+import { useTranslation } from 'react-i18next';
+
 import Img from './../../images/work/work-img-340.jpg'
 import Img2 from './../../images/work/work2/work2-img.jpg'
 import Img3 from './../../images/work/work3/work3-img-370.jpg'
@@ -19,6 +21,7 @@ const Animation = {
 };
 
 const Work = () => {
+  const [t, i18n] = useTranslation('global');
   return (
     <>
       <motion.section
@@ -33,7 +36,8 @@ const Work = () => {
             variants={Animation}
             className="work-title center element-animation"
           >
-            What Are We Doing
+            {t('work.title')}
+            {/* What Are We Doing */}
           </motion.h2>
           <ul className="work-list work-flex-container">
             <motion.li

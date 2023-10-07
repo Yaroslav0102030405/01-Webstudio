@@ -1,12 +1,15 @@
 import React from 'react';
 import './Footer.scss';
 
+import { useTranslation } from 'react-i18next';
+
 import { ReactComponent as Instagram } from './../../images/svg1/instagram 2.svg';
 import { ReactComponent as Twitter } from './../../images/svg1/twitter 1.svg';
 import { ReactComponent as Facebook } from './../../images/svg1/facebook 1.svg';
 import { ReactComponent as Linkedin } from './../../images/svg1/linkedin 1.svg';
 
 const Footer = () => {
+   const [t, i18n] = useTranslation('global');
   return (
     <>
       <footer className="footer">
@@ -24,18 +27,24 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferer"
                 >
-                  Kiev, Lesia Ukrainka Ave, 26
+                  {t('footer.addres')}
+                  {/* Kiev, Lesia Ukrainka Ave, 26 */}
                 </a>
                 <a className="address-link" href="mailto:info@example.com">
-                  info@example.com
+                  {t('footer.email')}
+                  {/* info@example.com */}
                 </a>
                 <a className="address-link no-margin" href="tel:++380991111111">
-                  +38 099 111 11 11
+                  {t('footer.tel')}
+                  {/* +38 099 111 11 11 */}
                 </a>
               </address>
             </div>
             <div className="footer-icons">
-              <b className="footer-text element-animation">Social media</b>
+              <b className="footer-text element-animation">
+                {t('footer.social')}
+                {/* Social media */}
+              </b>
               <ul className="team-flex element-animation">
                 <li className="footer-list-icon">
                   <a

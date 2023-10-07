@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 // import './../../components/Header/Header.scss';
 import Dropdown from "../Dropdown/Dropdown";
 import Footer from "../Footer/Footer";
@@ -10,8 +11,9 @@ import AllPortfolio from "./AllPortfolio/AllPortfolio";
 
 
 const Portfolio = () => {
+  const [t, i18n] = useTranslation('global');
     return (
-        <>
+      <>
         <header className="header">
           <div className="container">
             <div className="header__wrap">
@@ -41,17 +43,20 @@ const Portfolio = () => {
                   <ul className="menu">
                     <li className="menu__item">
                       <Link className="menu__link js__link" to="/">
-                        Home
+                        {t('header.home')}
+                        {/* Home */}
                       </Link>
                     </li>
                     <li className="menu__item">
                       <Link class="menu__link current" to="/portfolio">
-                        Portfolio
+                        {t('header.portfolio')}
+                        {/* Portfolio */}
                       </Link>
                     </li>
                     <li className="menu__item">
                       <a className="menu__link" href="/">
-                        Contacts
+                        {t('header.contacts')}
+                        {/* Contacts */}
                       </a>
                     </li>
                   </ul>
@@ -80,9 +85,9 @@ const Portfolio = () => {
               </div>
             </div>
           </div>
-            </header>
-            <AllPortfolio />
-            <Footer />
+        </header>
+        <AllPortfolio />
+        <Footer />
       </>
     );
 }

@@ -9,9 +9,10 @@ import 'modern-normalize/modern-normalize.css';
 // import BaseScss from './base.scss';
 // import VariablesScss from './variables.scss';
 
-import en from './components/Trans/en.json'
-import uk from './components/Trans/uk.json'
-import ru from './components/Trans/ru.json'
+import global__en from './components/Translation/en/global.json'
+import global__uk from './components/Translation/uk/global.json'
+import global__ru from './components/Translation/ru/global.json'
+
 import i18next from 'i18next';
 import { I18nextProvider } from 'react-i18next';
 
@@ -20,13 +21,13 @@ import { I18nextProvider } from 'react-i18next';
    lng: 'en',
    resources: {
      en: {
-       global: en,
+       global: global__en,
      },
      uk: {
-       global: uk,
+       global: global__uk,
      },
      ru: {
-       global: ru,
+       global: global__ru,
      },
    },
  });

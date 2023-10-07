@@ -4,6 +4,10 @@ import './Hero.scss';
 import Modal from '../Modal/Modal';
 import './../../components/Modal/Modal.scss';
 
+// import { useTranslation } from 'react-i18next';
+
+
+
 const Animation = {
   hidden: {
     x: -100,
@@ -21,6 +25,7 @@ class Hero extends Component {
    state = {
     showModal: false,
   };
+ 
 
   toogleModal = () => {
     this.setState(({ showModal }) => ({
@@ -28,7 +33,10 @@ class Hero extends Component {
     }));
   };
 
+
   render() {
+    // const [t, i18n] = useTranslation('global');
+
     const { showModal } = this.state;
 
     return (
@@ -40,11 +48,8 @@ class Hero extends Component {
           className="hero center"
         >
           <div className="container hero-container">
-            <motion.h1
-              custom={1}
-              variants={Animation}
-              className="hero__title"
-            >
+            <motion.h1 custom={1} variants={Animation} className="hero__title">
+              {/* {t('hero.title')} */}
               Effective Solutions <br />
               for Your Business
             </motion.h1>
@@ -69,8 +74,7 @@ class Hero extends Component {
                     x
                   </button>
                   <h1 className="form__title">
-                    Leave your details,
-                    we will call you back
+                    Leave your details, we will call you back
                   </h1>
                   <input
                     className="form__input"

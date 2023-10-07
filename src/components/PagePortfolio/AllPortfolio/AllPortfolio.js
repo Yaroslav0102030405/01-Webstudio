@@ -1,6 +1,8 @@
 import React from 'react';
 import './AllPortfolio.scss';
 
+import { useTranslation } from 'react-i18next';
+
 import Desctop1 from './Portfolio-img/Desctop/Desctop1.jpg';
 import Desctop2 from './Portfolio-img/Desctop/Desctop2.jpg';
 import Desctop3 from './Portfolio-img/Desctop/Desctop3.jpg';
@@ -32,25 +34,26 @@ import Mobile8 from './Portfolio-img/Mobile/Mobile8.jpg';
 import Mobile9 from './Portfolio-img/Mobile/Mobile9.jpg';
 
 const AllPortfolio = () => {
+  const [t, i18n] = useTranslation('global');
     return (
       <>
         <section className="allportfolio">
           <div className="container">
             <ul className="allportfolio__list">
               <li className="allportfolio__item">
-                <button type="button">All</button>
+                <button type="button">{t('portfolio.btn-1')}</button>
               </li>
               <li className="allportfolio__item">
-                <button type="button">Websites</button>
+                <button type="button">{t('portfolio.btn-2')}</button>
               </li>
               <li className="allportfolio__item">
-                <button type="button">Applications</button>
+                <button type="button">{t('portfolio.btn-3')}</button>
               </li>
               <li className="allportfolio__item">
-                <button type="button"> Design</button>
+                <button type="button">{t('portfolio.btn-4')}</button>
               </li>
               <li className="allportfolio__item">
-                <button type="button">Marketing</button>
+                <button type="button">{t('portfolio.btn-5')}</button>
               </li>
             </ul>
 
@@ -81,8 +84,8 @@ const AllPortfolio = () => {
                       // width="368"
                     ></img>
                   </picture>
-                  <h2>Technoquack</h2>
-                  <p>Website</p>
+                  <h2>{t('portfolio.name-1')}</h2>
+                  <p>{t('portfolio.desc-1')}</p>
                 </a>
               </li>
               <li className="allportfolio__link">
@@ -112,8 +115,8 @@ const AllPortfolio = () => {
                     ></img>
                   </picture>
 
-                  <h2>New Orlean vs Golden Star</h2>
-                  <p>Desing</p>
+                  <h2>{t('portfolio.name-2')}</h2>
+                  <p>{t('portfolio.desc-2')}</p>
                 </a>
               </li>
               <li className="allportfolio__link">
@@ -143,8 +146,8 @@ const AllPortfolio = () => {
                     ></img>
                   </picture>
 
-                  <h2>Restaurant Seafood</h2>
-                  <p>Application</p>
+                  <h2>{t('portfolio.name-3')}</h2>
+                  <p>{t('portfolio.desc-3')}</p>
                 </a>
               </li>
               <li className="allportfolio__link">
@@ -174,8 +177,8 @@ const AllPortfolio = () => {
                     ></img>
                   </picture>
 
-                  <h2>Project Prime</h2>
-                  <p>Marketing</p>
+                  <h2>{t('portfolio.name-4')}</h2>
+                  <p>{t('portfolio.desc-4')}</p>
                 </a>
               </li>
               <li className="allportfolio__link">
@@ -204,8 +207,8 @@ const AllPortfolio = () => {
                       // width="368"
                     ></img>
                   </picture>
-                  <h2>Project Boxes</h2>
-                  <p>Application</p>
+                  <h2>{t('portfolio.name-5')}</h2>
+                  <p>{t('portfolio.desc-5')}</p>
                 </a>
               </li>
               <li className="allportfolio__link">
@@ -235,8 +238,8 @@ const AllPortfolio = () => {
                     ></img>
                   </picture>
 
-                  <h2>Inspiration has no Borders</h2>
-                  <p>Website</p>
+                  <h2>{t('portfolio.name-6')}</h2>
+                  <p>{t('portfolio.desc-6')}</p>
                 </a>
               </li>
               <li className="allportfolio__link">
@@ -266,8 +269,8 @@ const AllPortfolio = () => {
                     ></img>
                   </picture>
 
-                  <h2>Project LAB</h2>
-                  <p>Marketing</p>
+                  <h2>{t('portfolio.name-7')}</h2>
+                  <p>{t('portfolio.desc-7')}</p>
                 </a>
               </li>
               <li className="allportfolio__link">
@@ -297,8 +300,8 @@ const AllPortfolio = () => {
                     ></img>
                   </picture>
 
-                  <h2>Edition Limited Edition</h2>
-                  <p>Desing</p>
+                  <h2>{t('portfolio.name-8')}</h2>
+                  <p>{t('portfolio.desc-8')}</p>
                 </a>
               </li>
               <li className="allportfolio__link">
@@ -328,8 +331,8 @@ const AllPortfolio = () => {
                     ></img>
                   </picture>
 
-                  <h2>Growing Business</h2>
-                  <p>Application</p>
+                  <h2>{t('portfolio.name-9')}</h2>
+                  <p>{t('portfolio.desc-9')}</p>
                 </a>
               </li>
             </ul>

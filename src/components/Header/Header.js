@@ -2,19 +2,14 @@
 import { Link } from 'react-router-dom';
 import './Header.scss';
 import Dropdown from '../Dropdown/Dropdown';
-
 // import Home from '../Home/Home';
 // import Portfolio from '../PagePortfolio/Portfolio';
 import DarkMode from './../DarkMode/DarkMode';
-
 // import { ReactComponent as Envelope } from './../../images/svg1/envelope (hover).svg';
 // import { ReactComponent as Smartphone } from './../../images/svg1/smartphone.svg';
-
-
 // import { useTranslation } from 'react-i18next';
 // import useLocalStorage from '../localstorage/use-localstorage';
 // import i18next from 'i18next';
-
 
 import { useTranslation } from 'react-i18next';
 // import useLocalStorage from '../localstorage/use-localstorage';
@@ -64,12 +59,14 @@ const Header = () => {
                     </li>
                     <li className="menu__item">
                       <Link class="menu__link" to="/portfolio">
-                        Portfolio
+                        {t('header.portfolio')}
+                        {/* Portfolio */}
                       </Link>
                     </li>
                     <li className="menu__item">
                       <a className="menu__link" href="/">
-                        Contacts
+                        {t('header.contacts')}
+                        {/* Contacts */}
                       </a>
                     </li>
                   </ul>
@@ -100,7 +97,7 @@ const Header = () => {
                           RU
                         </button>
 
-                        {/* <Switch /> */}
+                   
                         {/* <select>
                         <option
                           onClick={Switch.handleLanguageChange}

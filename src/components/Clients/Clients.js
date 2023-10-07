@@ -2,6 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import './Clients.scss';
 
+import { useTranslation } from 'react-i18next';
+
 import { ReactComponent as Client1 } from './../../images/svg1/client-1.svg';
 import { ReactComponent as Client2 } from './../../images/svg1/client-2.svg';
 import { ReactComponent as Client3 } from './../../images/svg1/client-3.svg';
@@ -22,6 +24,7 @@ const ClientsAnimation = {
 };
 
 const Clients = () => {
+  const [t, i18n] = useTranslation('global');
   return (
     <>
       <motion.section
@@ -36,7 +39,8 @@ const Clients = () => {
             variants={ClientsAnimation}
             class="clients-title element-animation"
           >
-            Customers
+            {t('clients.title')}
+            {/* Customers */}
           </motion.h2>
           <ul class="clients-list element-animation">
             <motion.li

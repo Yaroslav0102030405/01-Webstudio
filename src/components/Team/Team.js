@@ -2,6 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import './Team.scss';
 
+import { useTranslation } from 'react-i18next';
+
 import ProductMobile from './../../images/team/product-mobile.jpg';
 import ProductTablet from './../../images/team/product-tablet.jpg';
 import ProductDesctop from './../../images/team/product-desctop.jpg';
@@ -37,6 +39,7 @@ const Animation = {
 };
 
 const Team = () => {
+  const [t, i18n] = useTranslation('global');
   return (
     <>
       <motion.section
@@ -51,7 +54,8 @@ const Team = () => {
             variants={Animation}
             className="team-title center element-animation"
           >
-            Our Team
+            {t('team.title')}
+            {/* Our Team */}
           </motion.h2>
           <ul className="team-list">
             <motion.li
@@ -77,8 +81,14 @@ const Team = () => {
                   alt="продукт дизайнер"
                 />
               </picture>
-              <h3 className="team-subtitle">Igor Demyanenko</h3>
-              <p className="team-text">Product Designer</p>
+              <h3 className="team-subtitle">
+                {t('team.subtitle-1')}
+                {/* Igor Demyanenko */}
+              </h3>
+              <p className="team-text">
+                {t('team.desc-1')}
+                {/* Product Designer */}
+              </p>
               <ul className="team-flex">
                 <li className="team-list-icon">
                   <a
@@ -147,8 +157,14 @@ const Team = () => {
                 />
               </picture>
 
-              <h3 className="team-subtitle">Olga Repina</h3>
-              <p className="team-text">Frontend Developer</p>
+              <h3 className="team-subtitle">
+                {t('team.subtitle-2')}
+                {/* Olga Repina */}
+              </h3>
+              <p className="team-text">
+                {t('team.desc-2')}
+                {/* Frontend Developer */}
+              </p>
               <ul className="team-flex">
                 <li class="team-list-icon">
                   <a
@@ -215,8 +231,14 @@ const Team = () => {
                 />
               </picture>
 
-              <h3 className="team-subtitle">Nikolai Tarasov</h3>
-              <p className="team-text">Marketing</p>
+              <h3 className="team-subtitle">
+                {t('team.subtitle-3')}
+                {/* Nikolai Tarasov */}
+              </h3>
+              <p className="team-text">
+                {t('team.desc-3')}
+                {/* Marketing */}
+              </p>
               <ul className="team-flex">
                 <li className="team-list-icon">
                   <a
@@ -291,8 +313,14 @@ const Team = () => {
                 />
               </picture>
 
-              <h3 className="team-subtitle">Mikhail Ermakov</h3>
-              <p className="team-text">UI Designer</p>
+              <h3 className="team-subtitle">
+                {t('team.subtitle-4')}
+                {/* Mikhail Ermakov */}
+              </h3>
+              <p className="team-text">
+                {t('team.desc-4')}
+                {/* UI Designer */}
+              </p>
               <ul className="team-flex">
                 <li className="team-list-icon">
                   <a

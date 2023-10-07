@@ -1,22 +1,31 @@
-import React from 'react';
+import {useEffect, useState} from 'react';
 import { ReactComponent as Sun } from './Sun.svg';
 import { ReactComponent as Moon } from './Moon.svg';
 import './DarkMode.css';
 // import { doc } from "prettier";
 
 const DarkMode = () => {
-  const setDarkMode = () => {
-    document.documentElement.setAttribute('data-theme', 'dark');
+  const [theme, setTheme] = useState('light-theme');
+  const toggleTheme = () => {
+    theme === 'dark-theme' ? setTheme('light-theme') : setTheme('dark-theme');
   };
 
-  const setLightMode = () => {
-    document.documentElement.setAttribute('data-theme', 'light');
-  };
+  useEffect(() => {
+    document.body.className = theme;
+  }, [theme]);
 
-  const toggleTheme = e => {
-    if (e.target.checked) setDarkMode();
-    else setLightMode();
-  };
+  // const setDarkMode = () => {
+  //   document.body.className = "dark-theme";
+  // };
+
+  // const setLightMode = () => {
+  //   document.body.className = "light-theme" ;
+  // };
+
+  // const toggleTheme = e => {
+  //   if (e.target.checked) setDarkMode();
+  //   else setLightMode();
+  // };
 
   return (
     <div className="dark_mode">

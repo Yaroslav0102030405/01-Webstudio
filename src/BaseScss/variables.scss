@@ -3,23 +3,31 @@ $title-color: #212121;
 $accent-color: #2196f3;
 $white-color: #ffffff;
 $black-color: #000000;
-$footer: #2F303A;
-
-$background-color: white;
+$footer: #2f303a;
 
 $mobile: 480px;
 $tablet: 768px;
 $desktop: 1200px;
 
-[data-theme='light'] {
+.light-theme {
   background-color: $white-color;
   color: $black-color;
 }
 
-[data-theme='dark'] {
+.dark-theme {
   background-color: $black-color;
   color: $white-color;
 }
+
+// [data-theme='light'] {
+//   background-color: $white-color;
+//   color: $black-color;
+// }
+
+// [data-theme='dark'] {
+//   background-color: $black-color;
+//   color: $white-color;
+// }
 
 //   $background-color: #f6f6f6;
 //   $foreground-color: #003cff;

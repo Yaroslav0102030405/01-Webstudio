@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Header.scss';
-// import Dropdown from '../Dropdown/Dropdown';
+import Dropdown from '../Dropdown/Dropdown';
 
 // import Home from '../Home/Home';
 // import Portfolio from '../PagePortfolio/Portfolio';
@@ -28,7 +28,7 @@ const Header = () => {
                 <span className="logo__web">Web</span>
                 <span className="logo__studio">Studio</span>
               </Link>
-              {/* <Dropdown /> */}
+              <Dropdown />
 
               <button
                 type="button"

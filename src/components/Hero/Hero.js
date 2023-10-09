@@ -1,10 +1,11 @@
-import React, { Component } from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import './Hero.scss';
 import Modal from '../Modal/Modal';
 import './../../components/Modal/Modal.scss';
 
-// import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
+  
 
 
 
@@ -21,23 +22,25 @@ const Animation = {
 };
 
 
-class Hero extends Component {
-   state = {
-    showModal: false,
-  };
+const Hero = () => {
+  const [t, i18n] = useTranslation('global');
+  const [showModal, setState] = useState(false);
+  //  state = {
+  //   showModal: false,
+  // };
  
 
-  toogleModal = () => {
-    this.setState(({ showModal }) => ({
-      showModal: !showModal,
-    }));
-  };
+ 
 
+  const toogleModal = () => {
+    setState(( !showModal ))
+  }
 
-  render() {
+  // render() {
+  
     // const [t, i18n] = useTranslation('global');
 
-    const { showModal } = this.state;
+    // const { showModal } = this.state;
 
     return (
       <div className="overlay">
@@ -49,9 +52,9 @@ class Hero extends Component {
         >
           <div className="container hero-container">
             <motion.h1 custom={1} variants={Animation} className="hero__title">
-              {/* {t('hero.title')} */}
-              Effective Solutions <br />
-              for Your Business
+              {t('hero.title')}
+              {/* Effective Solutions <br />
+              for Your Business */}
             </motion.h1>
 
             <motion.button
@@ -59,22 +62,24 @@ class Hero extends Component {
               variants={Animation}
               className="btn"
               type="button"
-              onClick={this.toogleModal}
+              onClick={toogleModal}
             >
-              Order Service
+              {t('hero.btn')}
+              {/* Order Service */}
             </motion.button>
             {showModal && (
-              <Modal onClose={this.toogleModal}>
+              <Modal onClose={toogleModal}>
                 <form className="form">
                   <button
                     className="btn__clouse hover form__icon"
                     type="button"
-                    onClick={this.toogleModal}
+                    onClick={toogleModal}
                   >
                     x
                   </button>
                   <h1 className="form__title">
-                    Leave your details, we will call you back
+                    {t('form.title')}
+                    {/* Leave your details, we will call you back */}
                   </h1>
                   <input
                     className="form__input"
@@ -82,7 +87,7 @@ class Hero extends Component {
                     name="name"
                     id="name"
                     autocomplete="name"
-                    placeholder="Name"
+                    placeholder={t('form.name')}
                     required
                   ></input>
                   <input
@@ -91,7 +96,7 @@ class Hero extends Component {
                     name="tel"
                     id="tel"
                     autocomplete="tel"
-                    placeholder="Phone"
+                    placeholder={t('form.phone')}
                     required
                   ></input>
                   <input
@@ -100,14 +105,14 @@ class Hero extends Component {
                     name="mail"
                     id="mail"
                     autocomplete="email"
-                    placeholder="Email"
+                    placeholder={t('form.email')}
                     required
                   ></input>
                   <textarea
                     name="comment"
                     id="comment"
                     rows="10"
-                    placeholder="Comment"
+                    placeholder={t('form.comment')}
                   ></textarea>
 
                   <label>
@@ -121,14 +126,15 @@ class Hero extends Component {
                     ></input>
                     <span className="custom__checkbox"></span>
                     <span className="form__text">
-                      I accept the terms and conditions of the
+                      {t('form.checkbox')}
+                      {/* I accept the terms and conditions of the */}
                     </span>
                     <a className="form__link" href="!#">
-                      <span>Privacy Policy</span>
+                      <span>{t('form.span')}</span>
                     </a>
                   </label>
                   <button className="btn" type="submit">
-                    Submit
+                    {t('form.btn')}
                   </button>
                 </form>
               </Modal>
@@ -138,6 +144,6 @@ class Hero extends Component {
       </div>
     );
   }
-};
+// };
 
 export default Hero;

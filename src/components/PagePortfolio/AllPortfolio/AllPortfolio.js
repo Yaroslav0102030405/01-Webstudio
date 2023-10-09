@@ -59,7 +59,7 @@ const AllPortfolio = () => {
 
             <ul className="allportfolio__item2">
               <li className="allportfolio__link">
-                <a href="!#">
+                <a href="#">
                   <picture>
                     <source
                       srcSet={Mobile1}
@@ -89,7 +89,7 @@ const AllPortfolio = () => {
                 </a>
               </li>
               <li className="allportfolio__link">
-                <a href="!#">
+                <a href="#">
                   <picture>
                     <source
                       srcSet={Mobile2}
@@ -120,7 +120,7 @@ const AllPortfolio = () => {
                 </a>
               </li>
               <li className="allportfolio__link">
-                <a href="!#">
+                <a href="#">
                   <picture>
                     <source
                       srcSet={Mobile3}
@@ -151,7 +151,7 @@ const AllPortfolio = () => {
                 </a>
               </li>
               <li className="allportfolio__link">
-                <a href="!#">
+                <a href="#">
                   <picture>
                     <source
                       srcSet={Mobile4}
@@ -182,7 +182,7 @@ const AllPortfolio = () => {
                 </a>
               </li>
               <li className="allportfolio__link">
-                <a href="!#">
+                <a href="#">
                   <picture>
                     <source
                       srcSet={Mobile5}
@@ -212,7 +212,7 @@ const AllPortfolio = () => {
                 </a>
               </li>
               <li className="allportfolio__link">
-                <a href="!#">
+                <a href="#">
                   <picture>
                     <source
                       srcSet={Mobile6}
@@ -274,7 +274,7 @@ const AllPortfolio = () => {
                 </a>
               </li>
               <li className="allportfolio__link">
-                <a href="!#">
+                <a href="#">
                   <picture>
                     <source
                       srcSet={Mobile8}
@@ -305,7 +305,7 @@ const AllPortfolio = () => {
                 </a>
               </li>
               <li className="allportfolio__link">
-                <a href="!#">
+                <a href="#">
                   <picture>
                     <source
                       srcSet={Mobile9}

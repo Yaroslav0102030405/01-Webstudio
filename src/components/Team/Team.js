@@ -28,11 +28,11 @@ import { ReactComponent as Linkedin } from './../../images/svg1/linkedin 1.svg';
 
 const Animation = {
   hidden: {
-    x: -100,
+    // x: -100,
     opacity: 0,
   },
   visible: custom => ({
-    x: 0,
+    // x: 0,
     opacity: 1,
     transition: { delay: custom * 0.1 },
   }),
@@ -92,8 +92,8 @@ const Team = () => {
               <ul className="team-flex">
                 <li className="team-list-icon">
                   <a
-                    href="!#"
-                    aria-label="!#"
+                    href="#"
+                    aria-label="Instagram"
                     target="_blank"
                     rel="noreferrer noopener"
                   >
@@ -102,8 +102,8 @@ const Team = () => {
                 </li>
                 <li className="team-list-icon">
                   <a
-                    href="!#"
-                    aria-label="!#"
+                    href="#"
+                    aria-label="Twitter"
                     target="_blank"
                     rel="noreferrer noopener"
                   >
@@ -112,8 +112,8 @@ const Team = () => {
                 </li>
                 <li className="team-list-icon">
                   <a
-                    href="!#"
-                    aria-label="!#"
+                    href="#"
+                    aria-label="Facebook"
                     target="_blank"
                     rel="noreferrer noopener"
                   >
@@ -122,8 +122,8 @@ const Team = () => {
                 </li>
                 <li className="team-list-icon">
                   <a
-                    href="!#"
-                    aria-label="!#"
+                    href="#"
+                    aria-label="Linkedin"
                     target="_blank"
                     rel="noreferrer noopener"
                   >
@@ -168,8 +168,8 @@ const Team = () => {
               <ul className="team-flex">
                 <li class="team-list-icon">
                   <a
-                    href="!#"
-                    aria-label="!#"
+                    href="#"
+                    aria-label="Instagram"
                     target="_blank"
                     rel="noreferrer noopener"
                   >
@@ -178,8 +178,8 @@ const Team = () => {
                 </li>
                 <li className="team-list-icon">
                   <a
-                    href="!#"
-                    aria-label="!#"
+                    href="#"
+                    aria-label="Twitter"
                     target="_blank"
                     rel="noreferrer noopener"
                   >
@@ -188,8 +188,8 @@ const Team = () => {
                 </li>
                 <li className="team-list-icon">
                   <a
-                    href="!#"
-                    aria-label="!#"
+                    href="#"
+                    aria-label="Facebook"
                     target="_blank"
                     rel="noreferrer noopener"
                   >
@@ -198,8 +198,8 @@ const Team = () => {
                 </li>
                 <li className="team-list-icon">
                   <a
-                    href="!#"
-                    aria-label=""
+                    href="#"
+                    aria-label="Linkedin"
                     target="_blank"
                     rel="noreferrer noopener"
                   >
@@ -242,8 +242,8 @@ const Team = () => {
               <ul className="team-flex">
                 <li className="team-list-icon">
                   <a
-                    href="!#"
-                    aria-label=""
+                    href="#"
+                    aria-label="Instagram"
                     target="_blank"
                     rel="noreferrer noopener"
                   >
@@ -252,8 +252,8 @@ const Team = () => {
                 </li>
                 <li className="team-list-icon">
                   <a
-                    href="!#"
-                    aria-label=""
+                    href="#"
+                    aria-label="Twitter"
                     target="_blank"
                     rel="noreferrer noopener"
                   >
@@ -262,8 +262,8 @@ const Team = () => {
                 </li>
                 <li className="team-list-icon">
                   <a
-                    href="!#"
-                    aria-label=""
+                    href="#"
+                    aria-label="Facebook"
                     target="_blank"
                     rel="noreferrer noopener"
                   >
@@ -272,8 +272,8 @@ const Team = () => {
                 </li>
                 <li className="team-list-icon">
                   <a
-                    href="!#"
-                    aria-label=""
+                    href="#"
+                    aria-label="Linkedin"
                     target="_blank"
                     rel="noreferrer noopener"
                   >
@@ -324,8 +324,8 @@ const Team = () => {
               <ul className="team-flex">
                 <li className="team-list-icon">
                   <a
-                    href="!#"
-                    aria-label=""
+                    href="#"
+                    aria-label="Instagram"
                     target="_blank"
                     rel="noreferrer noopener"
                   >
@@ -334,8 +334,8 @@ const Team = () => {
                 </li>
                 <li className="team-list-icon">
                   <a
-                    href="!#"
-                    aria-label=""
+                    href="#"
+                    aria-label="Twitter"
                     target="_blank"
                     rel="noreferrer noopener"
                   >
@@ -344,8 +344,8 @@ const Team = () => {
                 </li>
                 <li className="team-list-icon">
                   <a
-                    href="!#"
-                    aria-label=""
+                    href="#"
+                    aria-label="Facebook"
                     target="_blank"
                     rel="noreferrer noopener"
                   >
@@ -354,8 +354,8 @@ const Team = () => {
                 </li>
                 <li className="team-list-icon">
                   <a
-                    href="!#"
-                    aria-label=""
+                    href="#"
+                    aria-label="Linkedin"
                     target="_blank"
                     rel="noreferrer noopener"
                   >

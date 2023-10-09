@@ -16,7 +16,7 @@ const Animation = {
   visible: custom => ({
     // x: 0,
     opacity: 1,
-    transition: { delay: custom * 0.2 },
+    transition: { delay: custom * 0.1 },
   }),
 };
 
@@ -30,7 +30,7 @@ const Work = () => {
         viewport={{ amount: 0.2, once: true }}
         className="work"
       >
-        <div class="container">
+        <div className="container">
           <motion.h2
             custom={15}
             variants={Animation}
@@ -43,7 +43,7 @@ const Work = () => {
             <motion.li
               custom={16}
               variants={Animation}
-              class="work-item element-animation"
+              className="work-item element-animation"
             >
               <picture>
                 {/* <source srcset={Img1} type="image/webp" /> */}

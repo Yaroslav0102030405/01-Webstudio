@@ -48,7 +48,7 @@ const Footer = () => {
               <ul className="team-flex element-animation">
                 <li className="footer-list-icon">
                   <a
-                    href="!#"
+                    href="#"
                     aria-label=""
                     target="_blank"
                     rel="noreferrer noopener"
@@ -58,7 +58,7 @@ const Footer = () => {
                 </li>
                 <li class="footer-list-icon">
                   <a
-                    href="!#"
+                    href="#"
                     aria-label=""
                     target="_blank"
                     rel="noreferrer noopener"
@@ -68,7 +68,7 @@ const Footer = () => {
                 </li>
                 <li class="footer-list-icon">
                   <a
-                    href="!#"
+                    href="#"
                     aria-label=""
                     target="_blank"
                     rel="noreferrer noopener"
@@ -78,7 +78,7 @@ const Footer = () => {
                 </li>
                 <li class="footer-list-icon">
                   <a
-                    href="!#"
+                    href="#"
                     aria-label=""
                     target="_blank"
                     rel="noreferrer noopener"

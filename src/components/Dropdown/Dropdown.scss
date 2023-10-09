@@ -45,10 +45,11 @@
     background-color: $white-color;
     color: aliceblue;
     // transition: left 500ms;
-    /* overflow: auto; */
-    overflow: auto;
+     overflow: auto;
+  
     //  overflow-y: hidden;
     pointer-events: auto;
+    transform: translateX(0);
     
     
   }

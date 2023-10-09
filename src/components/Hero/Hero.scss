@@ -2,7 +2,6 @@
 @import './../../BaseScss/variables.scss';
 
 .overlay {
-  // height: 600px;
   margin: 0 auto;
   background-repeat: no-repeat;
   background-position: center;
@@ -44,7 +43,7 @@
 }
 
 .hero {
-  height: 600px;
+  // height: 600px;
   background-color: rgba(47, 48, 58, 0.4);
   font-weight: 900;
   font-size: 44px;
@@ -67,10 +66,12 @@
 
   @media screen and (max-width: 467px) {
     font-size: 22px;
+    width: 282px;
+
   }
 
   @media screen and (min-width: 468px) and (max-width: 1199px) {
-    max-width: 360px;
+    width: 352px;
     font-size: 26px;
     line-height: 42px;
     letter-spacing: 1.56px;

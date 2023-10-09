@@ -72,14 +72,14 @@ const Header = () => {
                   </ul>
                   <ul className="menu__contacts">
                     <li className="contacts__item">
-                      <a
+                      {/* <a
                         className="contacts__link contacts__icon"
                         href="mailto:info@example.com"
-                      >
-                        <DarkMode />
-                        {/* <Envelope className="contacts__svg-envelope" />
+                      > */}
+                      <DarkMode />
+                      {/* <Envelope className="contacts__svg-envelope" />
                       info@example.com */}
-                      </a>
+                      {/* </a> */}
                     </li>
                   </ul>
                 </nav>

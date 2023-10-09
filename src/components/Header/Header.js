@@ -87,17 +87,33 @@ const Header = () => {
                         className="contacts__link contacts__icon"
                         href="tel:+380961111111"
                       >
-                        <button onClick={() => handleChangeLanguage('en')}>
-                          EN
-                        </button>
-                        <button onClick={() => handleChangeLanguage('uk')}>
-                          UK
-                        </button>
-                        <button onClick={() => handleChangeLanguage('ru')}>
-                          RU
-                        </button>
+                        <div class="text">
+                          <button
+                            className="menu-btn"
+                            onClick={() => handleChangeLanguage('en')}
+                          >
+                            EN
+                          </button>
+                        </div>
 
-                   
+                        <div class="text">
+                          <button
+                            className="menu-btn"
+                            onClick={() => handleChangeLanguage('uk')}
+                          >
+                            UK
+                          </button>
+                        </div>
+                        <div class="text">
+                          {' '}
+                          <button
+                            className="menu-btn"
+                            onClick={() => handleChangeLanguage('ru')}
+                          >
+                            RU
+                          </button>
+                        </div>
+
                         {/* <select>
                         <option
                           onClick={Switch.handleLanguageChange}

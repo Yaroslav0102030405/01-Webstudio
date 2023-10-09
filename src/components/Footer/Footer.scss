@@ -106,10 +106,37 @@
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
-.footer-list-icon a:hover {
-  color: $white-color;
-  background-color: #2196f3;
+.footer-list-icon:hover:nth-child(1) {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  border-radius: 50%;
 }
+
+.footer-list-icon:hover:nth-child(2) {
+background-color: $twitter;
+border-radius: 50%;
+}
+
+.footer-list-icon:hover:nth-child(3) {
+background-color: $facebook;
+border-radius: 50%;
+}
+
+.footer-list-icon:hover:nth-child(4) {
+background-color: $linkedin;
+border-radius: 50%;
+}
+
+// .footer-list-icon a:hover {
+//   color: $white-color;
+//   background-color: #2196f3;
+// }
 
 .footer-list-icon {
   margin-right: 10px;

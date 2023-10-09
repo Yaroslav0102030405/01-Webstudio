@@ -81,59 +81,38 @@ const Header = () => {
                       info@example.com */}
                       </a>
                     </li>
-
-                    <li className="contacts__item">
-                      <a
-                        className="contacts__link contacts__icon"
-                        href="tel:+380961111111"
-                      >
-                        <div class="text">
-                          <button
-                            className="menu-btn"
-                            onClick={() => handleChangeLanguage('en')}
-                          >
-                            EN
-                          </button>
-                        </div>
-
-                        <div class="text">
-                          <button
-                            className="menu-btn"
-                            onClick={() => handleChangeLanguage('uk')}
-                          >
-                            UK
-                          </button>
-                        </div>
-                        <div class="text">
-                          {' '}
-                          <button
-                            className="menu-btn"
-                            onClick={() => handleChangeLanguage('ru')}
-                          >
-                            RU
-                          </button>
-                        </div>
-
-                        {/* <select>
-                        <option
-                          onClick={Switch.handleLanguageChange}
-                          value={'uk'}
-                        >
-                          UK
-                        </option>
-                        <option value={'en'}>EN</option>
-                        <option value={'ru'}>RU</option>
-                      </select> */}
-                        {/* <button onClick={handleLanguageChange}>{t('ffdf')} {language === 'uk' ? t('english') : t('russian')} </button>
-                      <button onClick={() => window.location.reload()}></button> */}
-                        {/* <Switch /> */}
-                        {/* <Smartphone className="contacts__svg" />
-                      +38 096 111 11 11 */}
-                      </a>
-                    </li>
                   </ul>
                 </nav>
               </div>
+              <ul className="multilanguage">
+                <li className="text">
+                  {' '}
+                  <button
+                    className="menu__btn"
+                    onClick={() => handleChangeLanguage('en')}
+                  >
+                    EN
+                  </button>
+                </li>
+                <li className="text">
+                  {' '}
+                  <button
+                    className="menu__btn"
+                    onClick={() => handleChangeLanguage('uk')}
+                  >
+                    UK
+                  </button>
+                </li>
+                <li className="text">
+                  {' '}
+                  <button
+                    className="menu__btn"
+                    onClick={() => handleChangeLanguage('ru')}
+                  >
+                    RU
+                  </button>
+                </li>
+              </ul>
             </div>
           </div>
         </header>

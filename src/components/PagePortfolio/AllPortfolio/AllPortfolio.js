@@ -1,7 +1,8 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './AllPortfolio.scss';
 
 import { useTranslation } from 'react-i18next';
+
 
 import Desctop1 from './Portfolio-img/Desctop/Desctop1.jpg';
 import Desctop2 from './Portfolio-img/Desctop/Desctop2.jpg';
@@ -33,32 +34,66 @@ import Mobile7 from './Portfolio-img/Mobile/Mobile7.jpg';
 import Mobile8 from './Portfolio-img/Mobile/Mobile8.jpg';
 import Mobile9 from './Portfolio-img/Mobile/Mobile9.jpg';
 
-const AllPortfolio = () => {
+
+const AllPortfolio = ({ button, setTodo }) => {
   const [t, i18n] = useTranslation('global');
+//   const [className] = useState('all');
+  
+//   // const filter(className) {
+//   const filter = (className) => {
+//      switch (className) {
+//     case 'all':
+//       return items;
+//     case 'website':
+//       return website;
+//     case 'application':
+//       return application;
+//     case 'desing':
+//       return desing;
+//     case 'marketing':
+//       return marketing;
+//     default:
+//       return items;
+//   }
+// }
+// }
     return (
       <>
         <section className="allportfolio">
           <div className="container">
             <ul className="allportfolio__list">
               <li className="allportfolio__item">
-                <button type="button">{t('portfolio.btn-1')}</button>
+                <button  type="button">
+                  {t('portfolio.btn-1')}
+                </button>
               </li>
               <li className="allportfolio__item">
-                <button type="button">{t('portfolio.btn-2')}</button>
+                <button  type="button">
+                  {t('portfolio.btn-2')}
+                </button>
               </li>
               <li className="allportfolio__item">
-                <button type="button">{t('portfolio.btn-3')}</button>
+                <button  type="button">
+                  {t('portfolio.btn-3')}
+                </button>
               </li>
               <li className="allportfolio__item">
-                <button type="button">{t('portfolio.btn-4')}</button>
+                <button  type="button">
+                  {t('portfolio.btn-4')}
+                </button>
               </li>
               <li className="allportfolio__item">
-                <button type="button">{t('portfolio.btn-5')}</button>
+                <button  type="button">
+                  {t('portfolio.btn-5')}
+                </button>
               </li>
             </ul>
 
             <ul className="allportfolio__item2">
-              <li className="allportfolio__link">
+              {/* filtered.map(({id}) => (
+              
+              )) */}
+              <li id="all" className="allportfolio__link">
                 <a href="#">
                   <picture>
                     <source
@@ -88,7 +123,7 @@ const AllPortfolio = () => {
                   <p>{t('portfolio.desc-1')}</p>
                 </a>
               </li>
-              <li className="allportfolio__link">
+              <li id="desing" className="allportfolio__link">
                 <a href="#">
                   <picture>
                     <source
@@ -119,7 +154,7 @@ const AllPortfolio = () => {
                   <p>{t('portfolio.desc-2')}</p>
                 </a>
               </li>
-              <li className="allportfolio__link">
+              <li id="aplication" className="allportfolio__link">
                 <a href="#">
                   <picture>
                     <source
@@ -150,7 +185,7 @@ const AllPortfolio = () => {
                   <p>{t('portfolio.desc-3')}</p>
                 </a>
               </li>
-              <li className="allportfolio__link">
+              <li id="marketing" className="allportfolio__link">
                 <a href="#">
                   <picture>
                     <source
@@ -172,7 +207,7 @@ const AllPortfolio = () => {
                       loading="lazy"
                       className="lazyload"
                       data-src={Desctop4}
-                      alt="Marceting"
+                      alt="Marketing"
                       // width="368"
                     ></img>
                   </picture>
@@ -181,7 +216,7 @@ const AllPortfolio = () => {
                   <p>{t('portfolio.desc-4')}</p>
                 </a>
               </li>
-              <li className="allportfolio__link">
+              <li id="aplication" className="allportfolio__link">
                 <a href="#">
                   <picture>
                     <source
@@ -211,7 +246,7 @@ const AllPortfolio = () => {
                   <p>{t('portfolio.desc-5')}</p>
                 </a>
               </li>
-              <li className="allportfolio__link">
+              <li id="website" className="allportfolio__link">
                 <a href="#">
                   <picture>
                     <source
@@ -242,7 +277,7 @@ const AllPortfolio = () => {
                   <p>{t('portfolio.desc-6')}</p>
                 </a>
               </li>
-              <li className="allportfolio__link">
+              <li id="website" className="allportfolio__link">
                 <a href="!#">
                   <picture>
                     <source
@@ -273,7 +308,7 @@ const AllPortfolio = () => {
                   <p>{t('portfolio.desc-7')}</p>
                 </a>
               </li>
-              <li className="allportfolio__link">
+              <li id="desing" className="allportfolio__link">
                 <a href="#">
                   <picture>
                     <source
@@ -304,7 +339,7 @@ const AllPortfolio = () => {
                   <p>{t('portfolio.desc-8')}</p>
                 </a>
               </li>
-              <li className="allportfolio__link">
+              <li id="desing" className="allportfolio__link">
                 <a href="#">
                   <picture>
                     <source

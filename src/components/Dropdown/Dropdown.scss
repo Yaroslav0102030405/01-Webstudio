@@ -1,7 +1,6 @@
 @import './../../BaseScss/base.scss';
 @import './../../BaseScss/variables.scss';
 
-
 .header {
   @media screen and (max-width: 767px) {
     position: relative;
@@ -25,9 +24,9 @@
 
 .Dropdown {
   // position: relative;
-    // width: 400px;
-    // padding: 20px;
-    // border: 1px solid black;
+  // width: 400px;
+  // padding: 20px;
+  // border: 1px solid black;
   @media screen and (max-width: 767px) {
     display: flex;
     margin-left: auto;
@@ -39,7 +38,6 @@
     // чтоб сделать меню на всю ширину и длину вьюпотра
     // position: absolute;
 
-   
     position: fixed;
     top: 0;
     // top: 100%;
@@ -52,13 +50,13 @@
     background-color: $white-color;
     color: aliceblue;
     //  overflow: auto;
-     overflow-y: scroll;
-  
+    overflow-y: scroll;
+
     //  overflow-y: hidden;
     pointer-events: auto;
     // transform: translateX(0);
     // transform: scale(1);
-        // visibility: visible;
+    // visibility: visible;
     transition: transform 0.3s;
 
     //    position: fixed;
@@ -85,49 +83,45 @@
 }
 
 .Dropdown-contacts {
-   @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     margin-bottom: 40px;
-   }
+  }
 }
 
 .Dropdown__toggle {
-      // скрыть разметку бургер меню
+  // скрыть разметку бургер меню
   display: none;
-     @media screen and (max-width: 767px) {
-  border: none;
-  background-color: rgba(0, 0, 0, 0);
   @media screen and (max-width: 767px) {
-    // показать разметку бургер меню
-    display: block;
     border: none;
     background-color: rgba(0, 0, 0, 0);
-    z-index: 70;
+    @media screen and (max-width: 767px) {
+      // показать разметку бургер меню
+      display: block;
+      border: none;
+      background-color: rgba(0, 0, 0, 0);
+      z-index: 70;
+    }
   }
-}
 }
 
 .dark-theme .Dropdown__toggle svg {
   background-color: $white-color;
 }
 
-
-
 .Dropdown__top {
   margin-top: 120px;
   margin-bottom: 60px;
 }
-
 
 .Dropdown__top li {
   margin-bottom: 40px;
   font-size: 18px;
   font-weight: 500;
   letter-spacing: 0.36px;
- 
 }
 
 .Dropdown__top li a {
- color: $text-color;
+  color: $text-color;
 }
 
 .dark-theme .Dropdown__top li a {
@@ -140,16 +134,12 @@
   color: aqua;
 }
 
-
 .contacts__icon {
-    @media screen and (max-width: 767px) {
-        margin-bottom: 16px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 16px;
 
-  font-size: 18px;
-  font-weight: 500;
-  letter-spacing: 0.36px;
-    }
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.36px;
+  }
 }
-
-
-

@@ -19,8 +19,9 @@
 
 .header__nav {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
+    
   }
 
   @media screen and (min-width: 1200px) {
@@ -424,4 +425,15 @@
 .multilanguage {
  display: flex;
   margin-left: auto;
+}
+
+.mobile-2 {
+  @media screen and (max-width: 767px) {
+  display: flex;
+  }
+
+   @media screen and (min-width: 768px) {
+    display: inline-flex;
+    justify-content: space-around;
+   }
 }

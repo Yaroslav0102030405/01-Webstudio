@@ -89,13 +89,14 @@ const Header = () => {
                     </a>
                   </li>
                 </ul>
+                {/* <DarkMode /> */}
                 <ul className="menu__contacts">
                   <li className="contacts__item">
                     {/* <a
                         className="contacts__link contacts__icon"
                         href="mailto:info@example.com"
                       > */}
-                    <DarkMode />
+                    {/* <DarkMode /> */}
                     {/* <Envelope className="contacts__svg-envelope" />
                       info@example.com */}
                     {/* </a> */}
@@ -104,7 +105,8 @@ const Header = () => {
               </nav>
             </div>
 
-            {/* <select
+            <div className="mobile-2">
+              {/* <select
               value={language}
               onChange={e => {
                 setLanguage(e.target.value);
@@ -114,7 +116,8 @@ const Header = () => {
               <option>UK</option>
               <option>RU</option>
             </select> */}
-            <ul className="multilanguage">
+              <DarkMode />
+              <ul className="multilanguage">
                 <li className="text">
                   {' '}
                   <button
@@ -143,6 +146,7 @@ const Header = () => {
                   </button>
                 </li>
               </ul>
+            </div>
           </div>
         </div>
       </header>

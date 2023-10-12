@@ -39,7 +39,9 @@ const Animation = {
 };
 
 const Team = () => {
+  
   const [t, i18n] = useTranslation('global');
+  
   return (
     <>
       <motion.section

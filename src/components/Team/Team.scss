@@ -133,6 +133,10 @@
   color: $black-color;
 }
 
+.dark-theme .team-subtitle {
+    color: $text-color;
+}
+
 .team-text {
   padding-bottom: 16px;
   font-weight: 400;
@@ -205,3 +209,8 @@ background-color: $linkedin;
     height: 260px;
   }
 }
+
+.dark-theme .team-item {
+    background-color: $background-image;
+}
+

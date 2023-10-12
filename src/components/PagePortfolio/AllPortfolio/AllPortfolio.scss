@@ -63,6 +63,10 @@
     0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
+.dark-theme .allportfolio__link:hover {
+  background-color: $white-color;
+}
+
 .allportfolio__link:nth-child(3n) {
   @media screen and (min-width: 1200px) {
     margin-right: 0;
@@ -76,10 +80,9 @@
 }
 
 .allportfolio__link:nth-child(n + 9) {
-   @media screen and (min-width: 768px) and (max-width: 1199px) {
-margin-bottom: 0;
-   }
-  
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 0;
+  }
 }
 
 .allportfolio__link h2 {
@@ -145,4 +148,13 @@ img {
     width: 352px;
     height: 294px;
   }
+}
+
+.dark-theme .allportfolio__link {
+  background-color: $background-image;
+  border: none;
+}
+
+.dark-theme .allportfolio__link h2 {
+  color: $text-color;
 }

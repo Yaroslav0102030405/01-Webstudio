@@ -21,6 +21,9 @@
 //   $body-color: white;
 // }
 
+
+
+
 body {
   margin: 0;
   padding: 0;
@@ -39,12 +42,33 @@ body {
   }
 }
 
+
+
 // * Запретить скролл под модальном окном
-body.modal-open {
-  @media screen and (max-width: 767px) {
-    overflow: hidden;
-  }
-}
+// body.modal-open {
+//   @media screen and (max-width: 767px) {
+//     overflow: hidden;
+     
+//   }
+// }
+
+
+
+// body.modal-open {
+//   position: fixed;
+//     height: 100vh;
+//   overflow-y: hidden;
+//   padding-right: 15px; /* Avoid width reflow */
+// }
+
+
+
+
+// body {
+//   height: 100vh;
+//   overflow-y: hidden;
+//   padding-right: 15px; /* Avoid width reflow */
+// }
 
 /* скрыть заголовки и части текста */
 .visually-hidden {

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Modal.scss';
+import * as ReactDOM from 'react-dom';
 
 export default class Modal extends Component {
   componentDidMount() {
@@ -22,11 +23,13 @@ export default class Modal extends Component {
         }
     }
 
-  render() {
-    return (
+  render () {
+    return ReactDOM.createPortal((
       <div className="backdrop" onClick={this.handleBackdropClick}>
         <div className="form">{this.props.children}</div>
       </div>
-    );
+    ), document.getElementById('root'));
+      
+    
   }
 }

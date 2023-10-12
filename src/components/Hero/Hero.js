@@ -68,7 +68,7 @@ const Hero = () => {
                   type="button"
                   onClick={toogleModal}
                 >
-                  x
+                  X
                 </button>
                 <h1 className="form__title">
                   {t('form.title')}

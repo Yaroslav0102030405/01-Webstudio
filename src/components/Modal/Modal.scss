@@ -24,12 +24,9 @@
 .backdrop.is-hidden {
   /* прозрачность и спрятать модуалку */
   opacity: 0;
-   visibility: hidden;
     /* пропускать через модалку события */
   pointer-events: none;
- 
 }
-
 
 .backdrop.is-hidden .form {
   transform: translate(-50%, -50%) scale(0);
@@ -69,6 +66,8 @@
     height: auto;
   }
 }
+
+
 
 .form__icon {
   display: inline-block;

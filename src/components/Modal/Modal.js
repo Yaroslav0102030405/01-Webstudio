@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import './Modal.scss';
 import * as ReactDOM from 'react-dom';
 

@@ -24,7 +24,7 @@ const Features = () => {
       <motion.section
         initial="hidden"
         whileInView="visible"
-        viewport={{ amount: 0.2, once: true }}
+        viewport={{ amount: 0.3, once: true }}
         class="features"
       >
         <div className="container">
@@ -32,12 +32,12 @@ const Features = () => {
 
           <ul className="features-list">
             <motion.li
-              custom={3}
+              custom={1}
               variants={Animation}
               className="features-item element-animation"
             >
               <motion.h3
-                custom={4}
+                custom={2}
                 variants={Animation}
                 className="features-title"
               >
@@ -45,7 +45,7 @@ const Features = () => {
                 {/* Strategy */}
               </motion.h3>
               <motion.p
-                custom={5}
+                custom={3}
                 variants={Animation}
                 className="features-text"
               >
@@ -55,12 +55,12 @@ const Features = () => {
               </motion.p>
             </motion.li>
             <motion.li
-              custom={6}
+              custom={4}
               variants={Animation}
               className="features-item element-animation"
             >
               <motion.h3
-                custom={7}
+                custom={5}
                 variants={Animation}
                 className="features-title"
               >
@@ -68,7 +68,7 @@ const Features = () => {
                 {/* Punctuality */}
               </motion.h3>
               <motion.p
-                custom={8}
+                custom={6}
                 variants={Animation}
                 className="features-text"
               >
@@ -78,12 +78,12 @@ const Features = () => {
               </motion.p>
             </motion.li>
             <motion.li
-              custom={9}
+              custom={7}
               variants={Animation}
               className="features-item element-animation"
             >
               <motion.h3
-                custom={10}
+                custom={8}
                 variants={Animation}
                 className="features-title"
               >
@@ -91,7 +91,7 @@ const Features = () => {
                 {/* Diligence */}
               </motion.h3>
               <motion.p
-                custom={11}
+                custom={9}
                 variants={Animation}
                 className="features-text"
               >
@@ -101,12 +101,12 @@ const Features = () => {
               </motion.p>
             </motion.li>
             <motion.li
-              custom={12}
+              custom={10}
               variants={Animation}
               className="features-item element-animation"
             >
               <motion.h3
-                custom={13}
+                custom={11}
                 variants={Animation}
                 className="features-title"
               >
@@ -114,7 +114,7 @@ const Features = () => {
                 {/* Technologies */}
               </motion.h3>
               <motion.p
-                custom={14}
+                custom={12}
                 variants={Animation}
                 className="features-text"
               >

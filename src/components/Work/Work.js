@@ -27,12 +27,12 @@ const Work = () => {
       <motion.section
         initial="hidden"
         whileInView="visible"
-        viewport={{ amount: 0.2, once: true }}
+        viewport={{ amount: 0, once: true }}
         className="work"
       >
         <div className="container">
           <motion.h2
-            custom={15}
+            custom={1}
             variants={Animation}
             className="work-title center element-animation"
           >
@@ -41,7 +41,7 @@ const Work = () => {
           </motion.h2>
           <ul className="work-list work-flex-container">
             <motion.li
-              custom={16}
+              custom={2}
               variants={Animation}
               className="work-item element-animation"
             >
@@ -59,7 +59,7 @@ const Work = () => {
               </picture>
             </motion.li>
             <motion.li
-              custom={17}
+              custom={3}
               variants={Animation}
               className="work-item element-animation"
             >
@@ -83,7 +83,7 @@ const Work = () => {
               </picture>
             </motion.li>
             <motion.li
-              custom={18}
+              custom={4}
               variants={Animation}
               className="work-item element-animation"
             >

@@ -28,13 +28,13 @@ import { ReactComponent as Linkedin } from './../../images/svg1/linkedin 1.svg';
 
 const Animation = {
   hidden: {
-    // x: -100,
+    x: -100,
     opacity: 0,
   },
   visible: custom => ({
-    // x: 0,
+    x: 0,
     opacity: 1,
-    transition: { delay: custom * 0.1 },
+    transition: { delay: custom * 0.3 },
   }),
 };
 
@@ -47,12 +47,12 @@ const Team = () => {
       <motion.section
         initial="hidden"
         whileInView="visible"
-        viewport={{ amount: 0.1, once: true }}
+        viewport={{ amount: 0, once: true }}
         className="team"
       >
         <div className="container">
           <motion.h2
-            custom={19}
+            custom={1}
             variants={Animation}
             className="team-title center element-animation"
           >
@@ -61,7 +61,7 @@ const Team = () => {
           </motion.h2>
           <ul className="team-list">
             <motion.li
-              custom={20}
+              custom={2}
               variants={Animation}
               className="team-item element-animation"
             >
@@ -136,7 +136,7 @@ const Team = () => {
             </motion.li>
 
             <motion.li
-              custom={20}
+              custom={3}
               variants={Animation}
               className="team-item element-animation"
             >
@@ -212,7 +212,7 @@ const Team = () => {
             </motion.li>
 
             <motion.li
-              custom={21}
+              custom={4}
               variants={Animation}
               className="team-item element-animation"
             >
@@ -286,7 +286,7 @@ const Team = () => {
             </motion.li>
 
             <motion.li
-              custom={22}
+              custom={5}
               variants={Animation}
               className="team-item element-animation"
             >

@@ -19,7 +19,7 @@ const ClientsAnimation = {
   visible: custom => ({
     // x: 0,
     opacity: 1,
-    transition: { delay: custom * 0.1 },
+    transition: { delay: custom * 0.2 },
   }),
 };
 
@@ -30,12 +30,12 @@ const Clients = () => {
       <motion.section
         initial="hidden"
         whileInView="visible"
-        viewport={{ amount: 0.1, once: true }}
+        viewport={{ amount: 0.2, once: true }}
         className="clients"
       >
         <div className="container">
           <motion.h2
-            custom={23}
+            custom={1}
             variants={ClientsAnimation}
             class="clients-title element-animation"
           >
@@ -44,7 +44,7 @@ const Clients = () => {
           </motion.h2>
           <ul class="clients-list element-animation">
             <motion.li
-              custom={24}
+              custom={2}
               variants={ClientsAnimation}
               class="clients-item"
             >
@@ -53,7 +53,7 @@ const Clients = () => {
               </a>
             </motion.li>
             <motion.li
-              custom={25}
+              custom={3}
               variants={ClientsAnimation}
               class="clients-item"
             >
@@ -62,7 +62,7 @@ const Clients = () => {
               </a>
             </motion.li>
             <motion.li
-              custom={26}
+              custom={4}
               variants={ClientsAnimation}
               class="clients-item"
             >
@@ -71,7 +71,7 @@ const Clients = () => {
               </a>
             </motion.li>
             <motion.li
-              custom={27}
+              custom={5}
               variants={ClientsAnimation}
               class="clients-item"
             >
@@ -80,7 +80,7 @@ const Clients = () => {
               </a>
             </motion.li>
             <motion.li
-              custom={28}
+              custom={6}
               variants={ClientsAnimation}
               class="clients-item"
             >
@@ -89,7 +89,7 @@ const Clients = () => {
               </a>
             </motion.li>
             <motion.li
-              custom={29}
+              custom={7}
               variants={ClientsAnimation}
               class="clients-item"
             >

@@ -13,8 +13,8 @@ import { useTranslation } from 'react-i18next';
 // import { BsXLg } from 'react-icons/bs';
 
 
-import { ReactComponent as MobileClose } from './../../images/mobile-menu/close_40px.svg';
-import { ReactComponent as MobileMenu } from './../../images/mobile-menu/menu_40px.svg';
+// import { ReactComponent as MobileClose } from './../../images/mobile-menu/close_40px.svg';
+// import { ReactComponent as MobileMenu } from './../../images/mobile-menu/menu_40px.svg';
 
 import { ReactComponent as Envelope } from './../../images/svg1/envelope (hover).svg';
 import { ReactComponent as Smartphone } from './../../images/svg1/smartphone.svg';
@@ -38,8 +38,6 @@ const Dropdown = () => {
     // <Transition in={isOpen} timeout={300}>
     // {state => (
     <div className="Dropdown">
-      
-    
       {/* <div className={ Active ? 'Dropdown__active' : 'Dropdown__menu'}> */}
       <button type="button" className="Dropdown__toggle" onClick={toggle}>
         {visible ? (

@@ -1,5 +1,5 @@
 import React from 'react';
-import './Animal.scss';
+import './Animal.css';
 
 function onEntry(entry) {
   entry.forEach(change => {

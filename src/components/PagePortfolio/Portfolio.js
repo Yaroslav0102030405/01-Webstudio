@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 // import './../../components/Header/Header.scss';
 import Dropdown from "../Dropdown/Dropdown";
-import Footer from "../Footer/Footer";
+import Footer from "../../HOME-PAGE/Footer/Footer";
 
 import { ReactComponent as Envelope } from './../../images/svg1/envelope (hover).svg';
 import { ReactComponent as Smartphone } from './../../images/svg1/smartphone.svg';

@@ -13,7 +13,7 @@ import { Routes, Route } from 'react-router-dom';
 // import Footer from './components/Footer/Footer';
 
 const Home = lazy(() =>
-  import('./components/Home/Home.js' /* webpackChunkName: "home-page" */),
+  import('./HOME-PAGE/Home/Home.js' /* webpackChunkName: "home-page" */),
 );
 const Portfolio = lazy(() =>
   import(
@@ -22,7 +22,7 @@ const Portfolio = lazy(() =>
 );
 const NotFoundPage = lazy(() =>
   import(
-    './components/Modal/NotFoundPage/NotFoundPage.js' /* webpackChunkName: "NotFound-page" */
+    './NOT-FOUND-PAGE/NotFoundPage/NotFoundPage.js' /* webpackChunkName: "NotFound-page" */
   ),
 );
 

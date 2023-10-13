@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { CSSTransition } from 'react-transition-group';
 import { motion } from 'framer-motion';
 import './Hero.scss';
-import Modal from '../Modal/Modal';
+import Modal from '../../components/Modal/Modal';
 import './../../components/Modal/Modal.scss';
 
 import { useTranslation } from 'react-i18next';

@@ -7,10 +7,10 @@ import { Link } from 'react-router-dom';
 
 
 import './Header.scss';
-import Dropdown from '../Dropdown/Dropdown';
+import Dropdown from '../../components/Dropdown/Dropdown';
 // import Home from '../Home/Home';
 // import Portfolio from '../PagePortfolio/Portfolio';
-import DarkMode from './../DarkMode/DarkMode';
+import DarkMode from './../../components/DarkMode/DarkMode';
 // import { ReactComponent as Envelope } from './../../images/svg1/envelope (hover).svg';
 // import { ReactComponent as Smartphone } from './../../images/svg1/smartphone.svg';
 // import { useTranslation } from 'react-i18next';

@@ -50,34 +50,11 @@
     background-color: $white-color;
     color: aliceblue;
      overflow: hidden;
-    // overflow-y: scroll;
-
-
-    //  overflow-y: hidden;
     pointer-events: auto;
-    // transform: translateX(0);
-    // transform: scale(1);
-    // visibility: visible;
-    transition: transform 0.3s;
-
-    //    position: fixed;
-    // top: 0;
-    // bottom: 0;
-    // right: 0;
-    // left: 0;
-    // overflow: hidden;
-    // overflow-y: auto;
-    // -webkit-overflow-scrolling: touch;
-    // display: flex;
-    // flex-flow: column nowrap;
-    // justify-content: center; /* см. ниже */
-    // align-items: center;
-    // z-index: 99;
-    // /* Чтобы окно не прилипало к границе
-    // браузера установим отступы */
-    // padding:30px 0;
   }
 }
+
+
 
 .dark-theme .Dropdown__menu {
   background-color: $black-color;
@@ -145,29 +122,37 @@
   }
 }
 
+// .active {
+// transform: translateX(-100%);
+// }
+
+// .alert-enter {
+//   opacity: 0;
+//   // transform: scale(1);
+//     transform: translateX(0);
+//     // transform: translateX(-100%);
+    
+// }
 .alert-enter {
   opacity: 0;
-  // transform: scale(1);
+  transform: translateX(-100%);
 }
 
 .alert-enter-active {
   opacity: 1;
-  transform: translate(0) scale(1);
-  transition:
-    opacity 300ms,
-    transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  // transform: translateX(-100%);
+  transition: opacity 300ms, transform 300ms;
 }
 
 .alert-exit {
   opacity: 1;
+  // transform: translateX(0);
 }
 
 .alert-exit-active {
   opacity: 0;
-  transform: scale(0.9);
-  transition:
-    opacity 300ms,
-    transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
 }
 
 .dark-theme .iconMenu {

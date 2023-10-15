@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import './Portfolio.scss';
 // import './../../components/Header/Header.scss';
 import Dropdown from "../Dropdown/Dropdown";
 import Footer from "../../HOME-PAGE/Footer/Footer";
@@ -14,7 +15,7 @@ const Portfolio = () => {
   const [t, i18n] = useTranslation('global');
     return (
       <>
-        <header className="header">
+        <header className="header header__line">
           <div className="container">
             <div className="header__wrap">
               {/* {isOpen ? (

@@ -42,29 +42,19 @@ const AllPortfolio = ({ button, setTodo }) => {
         <div className="container">
           <ul className="allportfolio__list">
             <li className="allportfolio__item">
-              <button  type="button">
-                {t('portfolio.btn-1')}
-              </button>
+              <button type="button">{t('portfolio.btn-1')}</button>
             </li>
             <li className="allportfolio__item">
-              <button  type="button">
-                {t('portfolio.btn-2')}
-              </button>
+              <button type="button">{t('portfolio.btn-2')}</button>
             </li>
             <li className="allportfolio__item">
-              <button  type="button">
-                {t('portfolio.btn-3')}
-              </button>
+              <button type="button">{t('portfolio.btn-3')}</button>
             </li>
             <li className="allportfolio__item">
-              <button  type="button">
-                {t('portfolio.btn-4')}
-              </button>
+              <button type="button">{t('portfolio.btn-4')}</button>
             </li>
             <li className="allportfolio__item">
-              <button  type="button">
-                {t('portfolio.btn-5')}
-              </button>
+              <button type="button">{t('portfolio.btn-5')}</button>
             </li>
           </ul>
 
@@ -103,7 +93,8 @@ const AllPortfolio = ({ button, setTodo }) => {
               </a>
             </li>
             <li className="allportfolio__link">
-              <a href="#">
+              <div className="box__active">
+                {/* <a href="#"> */}
                 <picture>
                   <source
                     srcSet={Mobile2}
@@ -128,41 +119,41 @@ const AllPortfolio = ({ button, setTodo }) => {
                     // width="368"
                   ></img>
                 </picture>
-
-                <h2>{t('portfolio.name-2')}</h2>
-                <p>{t('portfolio.desc-2')}</p>
-              </a>
+                <div className="box__overlay">{/* </a> */}</div>
+              </div>
+              <h2>{t('portfolio.name-2')}</h2>
+              <p>{t('portfolio.desc-2')}</p>
             </li>
             <li className="allportfolio__link">
-              <a href="#">
-                <picture>
-                  <source
-                    srcSet={Mobile3}
-                    type="image/jpeg"
-                    media="(max-width: 767px)"
-                  />
-                  <source
-                    srcSet={Tablet3}
-                    type="image/jpeg"
-                    media="(min-width: 768px)"
-                  />
-                  <source
-                    srcSet={Desctop3}
-                    type="image/jpeg"
-                    media="(min-width:1200px)"
-                  />
-                  <img
-                    loading="lazy"
-                    className="lazyload"
-                    data-src={Desctop3}
-                    alt="Application"
-                    // width="368"
-                  ></img>
-                </picture>
+              {/* <a href="#"> */}
+              <picture>
+                <source
+                  srcSet={Mobile3}
+                  type="image/jpeg"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcSet={Tablet3}
+                  type="image/jpeg"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcSet={Desctop3}
+                  type="image/jpeg"
+                  media="(min-width:1200px)"
+                />
+                <img
+                  loading="lazy"
+                  className="lazyload"
+                  data-src={Desctop3}
+                  alt="Application"
+                  // width="368"
+                ></img>
+              </picture>
 
-                <h2>{t('portfolio.name-3')}</h2>
-                <p>{t('portfolio.desc-3')}</p>
-              </a>
+              <h2>{t('portfolio.name-3')}</h2>
+              <p>{t('portfolio.desc-3')}</p>
+              {/* </a> */}
             </li>
             <li className="allportfolio__link">
               <a href="#">

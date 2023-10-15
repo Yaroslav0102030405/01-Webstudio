@@ -62,7 +62,8 @@ const AllPortfolio = ({ button, setTodo }) => {
             {/* filtered.map(({id}) => (
               )) */}
             <li className="allportfolio__link">
-              <a href="#">
+              <div className="box__active">
+                {/* <a href="#"> */}
                 <picture>
                   <source
                     srcSet={Mobile1}
@@ -87,10 +88,12 @@ const AllPortfolio = ({ button, setTodo }) => {
                     // width="368"
                   ></img>
                 </picture>
+                <div className="box__overlay">{/* </a> */}</div>
+              </div>
 
-                <h2>{t('portfolio.name-1')}</h2>
-                <p>{t('portfolio.desc-1')}</p>
-              </a>
+              <h2>{t('portfolio.name-1')}</h2>
+              <p>{t('portfolio.desc-1')}</p>
+              {/* </a> */}
             </li>
             <li className="allportfolio__link">
               <div className="box__active">
@@ -125,38 +128,41 @@ const AllPortfolio = ({ button, setTodo }) => {
               <p>{t('portfolio.desc-2')}</p>
             </li>
             <li className="allportfolio__link">
-              {/* <a href="#"> */}
-              <picture>
-                <source
-                  srcSet={Mobile3}
-                  type="image/jpeg"
-                  media="(max-width: 767px)"
-                />
-                <source
-                  srcSet={Tablet3}
-                  type="image/jpeg"
-                  media="(min-width: 768px)"
-                />
-                <source
-                  srcSet={Desctop3}
-                  type="image/jpeg"
-                  media="(min-width:1200px)"
-                />
-                <img
-                  loading="lazy"
-                  className="lazyload"
-                  data-src={Desctop3}
-                  alt="Application"
-                  // width="368"
-                ></img>
-              </picture>
-
+              <div className="box__active">
+                {/* <a href="#"> */}
+                <picture>
+                  <source
+                    srcSet={Mobile3}
+                    type="image/jpeg"
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcSet={Tablet3}
+                    type="image/jpeg"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcSet={Desctop3}
+                    type="image/jpeg"
+                    media="(min-width:1200px)"
+                  />
+                  <img
+                    loading="lazy"
+                    className="lazyload"
+                    data-src={Desctop3}
+                    alt="Application"
+                    // width="368"
+                  ></img>
+                </picture>
+                <div className="box__overlay">{/* </a> */}</div>
+              </div>
               <h2>{t('portfolio.name-3')}</h2>
               <p>{t('portfolio.desc-3')}</p>
               {/* </a> */}
             </li>
             <li className="allportfolio__link">
-              <a href="#">
+              <div className="box__active">
+                {/* <a href="#"> */}
                 <picture>
                   <source
                     srcSet={Mobile4}
@@ -181,13 +187,16 @@ const AllPortfolio = ({ button, setTodo }) => {
                     // width="368"
                   ></img>
                 </picture>
+                <div className="box__overlay">{/* </a> */}</div>
+              </div>
 
-                <h2>{t('portfolio.name-4')}</h2>
-                <p>{t('portfolio.desc-4')}</p>
-              </a>
+              <h2>{t('portfolio.name-4')}</h2>
+              <p>{t('portfolio.desc-4')}</p>
+              {/* </a> */}
             </li>
             <li className="allportfolio__link">
-              <a href="#">
+              <div className="box__active">
+                {/* <a href="#"> */}
                 <picture>
                   <source
                     srcSet={Mobile5}
@@ -212,12 +221,15 @@ const AllPortfolio = ({ button, setTodo }) => {
                     // width="368"
                   ></img>
                 </picture>
-                <h2>{t('portfolio.name-5')}</h2>
-                <p>{t('portfolio.desc-5')}</p>
-              </a>
+                <div className="box__overlay">{/* </a> */}</div>
+              </div>
+              <h2>{t('portfolio.name-5')}</h2>
+              <p>{t('portfolio.desc-5')}</p>
+              {/* </a> */}
             </li>
             <li className="allportfolio__link">
-              <a href="#">
+              <div className="box__active">
+                {/* <a href="#"> */}
                 <picture>
                   <source
                     srcSet={Mobile6}
@@ -242,13 +254,15 @@ const AllPortfolio = ({ button, setTodo }) => {
                     // width="368"
                   ></img>
                 </picture>
-
-                <h2>{t('portfolio.name-6')}</h2>
-                <p>{t('portfolio.desc-6')}</p>
-              </a>
+                <div className="box__overlay">{/* </a> */}</div>
+              </div>
+              <h2>{t('portfolio.name-6')}</h2>
+              <p>{t('portfolio.desc-6')}</p>
+              {/* </a> */}
             </li>
             <li className="allportfolio__link">
-              <a href="#">
+              <div className="box__active">
+                {/* <a href="#"> */}
                 <picture>
                   <source
                     srcSet={Mobile7}
@@ -273,13 +287,16 @@ const AllPortfolio = ({ button, setTodo }) => {
                     // width="368"
                   ></img>
                 </picture>
+                <div className="box__overlay">{/* </a> */}</div>
+              </div>
 
-                <h2>{t('portfolio.name-7')}</h2>
-                <p>{t('portfolio.desc-7')}</p>
-              </a>
+              <h2>{t('portfolio.name-7')}</h2>
+              <p>{t('portfolio.desc-7')}</p>
+              {/* </a> */}
             </li>
             <li className="allportfolio__link">
-              <a href="#">
+              <div className="box__active">
+                {/* <a href="#"> */}
                 <picture>
                   <source
                     srcSet={Mobile8}
@@ -304,13 +321,16 @@ const AllPortfolio = ({ button, setTodo }) => {
                     // width="368"
                   ></img>
                 </picture>
+                <div className="box__overlay">{/* </a> */}</div>
+              </div>
 
-                <h2>{t('portfolio.name-8')}</h2>
-                <p>{t('portfolio.desc-8')}</p>
-              </a>
+              <h2>{t('portfolio.name-8')}</h2>
+              <p>{t('portfolio.desc-8')}</p>
+              {/* </a> */}
             </li>
             <li className="allportfolio__link">
-              <a href="#">
+              <div className="box__active">
+                {/* <a href="#"> */}
                 <picture>
                   <source
                     srcSet={Mobile9}
@@ -335,10 +355,11 @@ const AllPortfolio = ({ button, setTodo }) => {
                     // width="368"
                   ></img>
                 </picture>
-
-                <h2>{t('portfolio.name-9')}</h2>
-                <p>{t('portfolio.desc-9')}</p>
-              </a>
+                <div className="box__overlay">{/* </a> */}</div>
+              </div>
+              <h2>{t('portfolio.name-9')}</h2>
+              <p>{t('portfolio.desc-9')}</p>
+              {/* </a> */}
             </li>
           </ul>
         </div>

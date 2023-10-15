@@ -3,7 +3,8 @@ import './AllPortfolio.scss';
 
 import { useTranslation } from 'react-i18next';
 
-import Desctop1 from './Portfolio-img/Desctop/Desctop1.jpg';
+import Desctop1 from './Portfolio-img/Desctop/Desctop1.jpg'
+// import Desctop1 from './Portfolio-img/Desctop/Desctop1.jpg';
 import Desctop2 from './Portfolio-img/Desctop/Desctop2.jpg';
 import Desctop3 from './Portfolio-img/Desctop/Desctop3.jpg';
 import Desctop4 from './Portfolio-img/Desctop/Desctop4.jpg';
@@ -13,7 +14,7 @@ import Desctop7 from './Portfolio-img/Desctop/Desctop7.jpg';
 import Desctop8 from './Portfolio-img/Desctop/Desctop8.jpg';
 import Desctop9 from './Portfolio-img/Desctop/Desctop9.jpg';
 
-import Tablet1 from './Portfolio-img/Tablet/Tablet1.jpg';
+import Tablet1 from './Portfolio-img/Tablet/Tablet1.webp';
 import Tablet2 from './Portfolio-img/Tablet/Tablet2.jpg';
 import Tablet3 from './Portfolio-img/Tablet/Tablet3.jpg';
 import Tablet4 from './Portfolio-img/Tablet/Tablet4.jpg';
@@ -23,7 +24,7 @@ import Tablet7 from './Portfolio-img/Tablet/Tablet7.jpg';
 import Tablet8 from './Portfolio-img/Tablet/Tablet8.jpg';
 import Tablet9 from './Portfolio-img/Tablet/Tablet9.jpg';
 
-import Mobile1 from './Portfolio-img/Mobile/Mobile1.jpg';
+import Mobile1 from './Portfolio-img/Mobile/Mobile1.webp';
 import Mobile2 from './Portfolio-img/Mobile/Mobile2.jpg';
 import Mobile3 from './Portfolio-img/Mobile/Mobile3.jpg';
 import Mobile4 from './Portfolio-img/Mobile/Mobile4.jpg';
@@ -74,11 +75,13 @@ const AllPortfolio = ({ button, setTodo }) => {
                     srcSet={Tablet1}
                     type="image/jpeg"
                     media="(min-width: 768px)"
+                    
                   />
                   <source
                     srcSet={Desctop1}
                     type="image/jpeg"
                     media="(min-width:1200px)"
+                   
                   />
                   <img
                     loading="lazy"

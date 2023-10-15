@@ -3,7 +3,7 @@ import './AllPortfolio.scss';
 
 import { useTranslation } from 'react-i18next';
 
-import Desctop1 from './Portfolio-img/Desctop/Desctop1.jpg'
+import Desctop1 from './Portfolio-img/Desctop/Desctop1.jpg';
 import Desctop2 from './Portfolio-img/Desctop/Desctop2.jpg';
 import Desctop3 from './Portfolio-img/Desctop/Desctop3.jpg';
 import Desctop4 from './Portfolio-img/Desctop/Desctop4.jpg';

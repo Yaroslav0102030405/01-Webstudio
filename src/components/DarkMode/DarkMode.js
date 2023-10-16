@@ -5,27 +5,28 @@ import './DarkMode.css';
 // import { doc } from "prettier";
 
 const DarkMode = () => {
-  const [theme, setTheme] = useState('light-theme');
-  const toggleTheme = () => {
-    theme === 'dark-theme' ? setTheme('light-theme') : setTheme('dark-theme');
+  // const [theme, setTheme] = useState('light-theme');
+
+  // const toggleTheme = () => {
+  //   theme === 'light-theme' ? setTheme('dark-theme') : setTheme('light-theme');
+  // };
+
+  // useEffect(() => {
+  //   document.body.className = theme;
+  // }, [theme]);
+
+  const setDarkMode = () => {
+    document.body.className = "dark-theme";
   };
 
-  useEffect(() => {
-    document.body.className = theme;
-  }, [theme]);
+  const setLightMode = () => {
+    document.body.className = "light-theme" ;
+  };
 
-  // const setDarkMode = () => {
-  //   document.body.className = "dark-theme";
-  // };
-
-  // const setLightMode = () => {
-  //   document.body.className = "light-theme" ;
-  // };
-
-  // const toggleTheme = e => {
-  //   if (e.target.checked) setDarkMode();
-  //   else setLightMode();
-  // };
+  const toggleTheme = e => {
+    if (e.target.checked) setDarkMode();
+    else setLightMode();
+  };
 
   return (
     <div className="dark_mode">

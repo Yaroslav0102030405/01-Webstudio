@@ -9,18 +9,19 @@ const DarkMode = () => {
 
   // const toggleTheme = () => {
   //   theme === 'light-theme' ? setTheme('dark-theme') : setTheme('light-theme');
-  // };
+  // }
 
   // useEffect(() => {
   //   document.body.className = theme;
   // }, [theme]);
 
+
   const setDarkMode = () => {
-    document.body.className = "dark-theme";
+    document.body.className = 'dark-theme';
   };
 
   const setLightMode = () => {
-    document.body.className = "light-theme" ;
+    document.body.className = 'light-theme';
   };
 
   const toggleTheme = e => {
@@ -31,6 +32,7 @@ const DarkMode = () => {
   return (
     <div className="dark_mode">
       <input
+        // disabled="false"
         className="dark_mode_input"
         type="checkbox"
         id="darkmode-toggle"

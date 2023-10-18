@@ -12,11 +12,13 @@ $desktop: 1200px;
 .light-theme {
   background-color: $white-color;
   color: $black-color;
+  transition: all 0.3s ease-in-out;
 }
 
 .dark-theme {
   background-color: $black-color;
   color: $white-color;
+  transition: all 0.3s ease-in-out;
 }
 
 

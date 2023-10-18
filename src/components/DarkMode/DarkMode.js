@@ -5,17 +5,6 @@ import './DarkMode.css';
 // import { doc } from "prettier";
 
 const DarkMode = () => {
-  // const [theme, setTheme] = useState(localStorage.getItem('app-theme', 'light-theme'));
-
-  // const toggleTheme = () => {
-  //   theme === 'light-theme' ? setTheme('dark-theme') : setTheme('light-theme');
-  // }
-
-  // useLayoutEffect(() => {
-  //   document.body.className = theme;
-  //   localStorage.getItem('app-theme', theme)
-  // }, [theme]);
-
   const setDarkMode = () => {
     document.body.className = 'dark-theme';
     localStorage.setItem('selectedTheme', 'dark-theme');
@@ -27,8 +16,9 @@ const DarkMode = () => {
   };
 
   const selectedTheme = localStorage.getItem('selectedTheme');
+
   if (selectedTheme === 'dark-theme') {
-    setDarkMode()
+    setDarkMode();
   }
 
   const toggleTheme = e => {

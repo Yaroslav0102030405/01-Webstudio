@@ -33,7 +33,7 @@ import Mobile7 from './Portfolio-img/Mobile/Mobile7.jpg';
 import Mobile8 from './Portfolio-img/Mobile/Mobile8.jpg';
 import Mobile9 from './Portfolio-img/Mobile/Mobile9.jpg';
 
-const AllPortfolio = ({ button, setTodo }) => {
+const AllPortfolio = () => {
   const [t, i18n] = useTranslation('global');
 
   return (

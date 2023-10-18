@@ -1,28 +1,35 @@
-import {useEffect, useState} from 'react';
+import { useLayoutEffect, useState } from 'react';
 import { ReactComponent as Sun } from './Sun.svg';
 import { ReactComponent as Moon } from './Moon.svg';
 import './DarkMode.css';
 // import { doc } from "prettier";
 
 const DarkMode = () => {
-  // const [theme, setTheme] = useState('light-theme');
+  // const [theme, setTheme] = useState(localStorage.getItem('app-theme', 'light-theme'));
 
   // const toggleTheme = () => {
   //   theme === 'light-theme' ? setTheme('dark-theme') : setTheme('light-theme');
   // }
 
-  // useEffect(() => {
+  // useLayoutEffect(() => {
   //   document.body.className = theme;
+  //   localStorage.getItem('app-theme', theme)
   // }, [theme]);
-
 
   const setDarkMode = () => {
     document.body.className = 'dark-theme';
+    localStorage.setItem('selectedTheme', 'dark-theme');
   };
 
   const setLightMode = () => {
     document.body.className = 'light-theme';
+    localStorage.setItem('selectedTheme', 'light-theme');
   };
+
+  const selectedTheme = localStorage.getItem('selectedTheme');
+  if (selectedTheme === 'dark-theme') {
+    setDarkMode()
+  }
 
   const toggleTheme = e => {
     if (e.target.checked) setDarkMode();
@@ -37,6 +44,7 @@ const DarkMode = () => {
         type="checkbox"
         id="darkmode-toggle"
         onChange={toggleTheme}
+        defaultChecked={selectedTheme === 'dark-theme'}
       />
       <label className="dark_mode_label" for="darkmode-toggle">
         <Sun />

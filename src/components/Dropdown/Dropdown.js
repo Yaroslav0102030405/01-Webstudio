@@ -41,10 +41,10 @@ const Dropdown = () => {
       {/* <div className={ Active ? 'Dropdown__active' : 'Dropdown__menu'}> */}
       <button type="button" className="Dropdown__toggle" onClick={toggle}>
         {visible ? (
-            <AiOutlineClose size="25" className='iconClouse' />
-          // <MobileClose className="icon-close" />
+          <AiOutlineClose size="25" className="iconClouse" />
         ) : (
-            <AiOutlineMenu size="25" className='iconMenu' />
+          // <MobileClose className="icon-close" />
+          <AiOutlineMenu size="25" className="iconMenu" />
           // <MobileMenu className="icon-menu" />
         )}
       </button>
@@ -58,7 +58,7 @@ const Dropdown = () => {
         <div className="Dropdown__menu">
           <nav className="header-nav">
             <ul className="Dropdown__top">
-              <li className="menu__item current">
+              <li className="Dropdown__menu-item current">
                 <Link to="/">
                   {t('header.home')}
                   {/* Studio */}

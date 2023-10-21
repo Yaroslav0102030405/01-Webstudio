@@ -54,30 +54,18 @@ body {
 // * Запретить скролл под модальном окном
 body.modal-open {
   @media screen and (max-width: 767px) {
-  //     position: fixed;
+    overflow: hidden;
+    }
+      // position: fixed;
   //   height: 100vh;
   // overflow-y: hidden;
   // padding-right: 15px; /* Avoid width reflow */
- 
-}
 }
 
 
 
-// body {
-//   position: fixed;
-//   overflow-y: hidden;
-//   // padding-right: 15px; /* Avoid width reflow */
-// }
 
 
-
-
-// body {
-//   height: 100vh;
-//   overflow-y: hidden;
-//   padding-right: 15px; /* Avoid width reflow */
-// }
 
 /* скрыть заголовки и части текста */
 .visually-hidden {

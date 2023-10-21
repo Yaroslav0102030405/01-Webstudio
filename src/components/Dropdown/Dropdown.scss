@@ -54,7 +54,8 @@
     text-align: center;
     background-color: $white-color;
     color: aliceblue;
-     overflow: auto;
+    //  overflow: auto;
+      // overflow-y: scroll;
     pointer-events: auto;
 
     -webkit-overflow-scrolling: touch;

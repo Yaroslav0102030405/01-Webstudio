@@ -51,17 +51,11 @@ body {
 
 
 
-// * Запретить скролл под модальном окном
-body.modal-open {
-  @media screen and (max-width: 767px) {
-    overflow: hidden;
-    }
-      // position: fixed;
-  //   height: 100vh;
-  // overflow-y: hidden;
-  // padding-right: 15px; /* Avoid width reflow */
-}
-
+// // * Запретить скролл под модальном окном
+// body.Dropdown__menu {
+//     overflow: hidden;
+// }
+  
 
 
 

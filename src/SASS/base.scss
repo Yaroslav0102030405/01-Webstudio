@@ -21,7 +21,14 @@
 //   $body-color: white;
 // }
 
-
+// html {
+//   position: sticky;
+//   margin: 0 auto;
+//   /*overflow:hidden; - не нужно использовать*/
+//   height: 100vh;
+//   width: 100%;
+//   top: 0;
+// }
 
 
 body {
@@ -45,18 +52,20 @@ body {
 
 
 // * Запретить скролл под модальном окном
-// body.modal-open {
-//   @media screen and (max-width: 767px) {
-//     overflow: hidden;
-     
-//   }
-// }
+body.modal-open {
+  @media screen and (max-width: 767px) {
+  //     position: fixed;
+  //   height: 100vh;
+  // overflow-y: hidden;
+  // padding-right: 15px; /* Avoid width reflow */
+ 
+}
+}
 
 
 
 // body {
 //   position: fixed;
-//     height: 100vh;
 //   overflow-y: hidden;
 //   // padding-right: 15px; /* Avoid width reflow */
 // }

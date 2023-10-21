@@ -39,7 +39,11 @@ const Dropdown = () => {
     // {state => (
     <div className="Dropdown">
       {/* <div className={ Active ? 'Dropdown__active' : 'Dropdown__menu'}> */}
-      <button type="button" className="Dropdown__toggle" onClick={toggle}>
+      <button
+        type="button"
+        className="Dropdown__toggle"
+        onClick={toggle}
+      >
         {visible ? (
           <AiOutlineClose size="25" className="iconClouse" />
         ) : (

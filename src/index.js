@@ -13,7 +13,10 @@ import global__en from './components/Translation/en/global.json'
 import global__uk from './components/Translation/uk/global.json'
 import global__ru from './components/Translation/ru/global.json'
 
-import items__en from './components/PagePortfolio/AllPortfolio/Filter/Filter'
+// import filter__en from './components/PagePortfolio/AllPortfolio/Filter/Filter_en';
+// import filter__ru from './components/PagePortfolio/AllPortfolio/Filter/Filter__ru'
+
+// import items__en from './components/PagePortfolio/AllPortfolio/Filter/Filter'
 
 import i18next from 'i18next';
 import { I18nextProvider } from 'react-i18next';

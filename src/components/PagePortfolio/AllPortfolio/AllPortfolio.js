@@ -36,13 +36,14 @@ import Mobile9 from './Portfolio-img/Mobile/Mobile9.jpg';
 const AllPortfolio = () => {
   const [t, i18n] = useTranslation('global');
 
+
   return (
     <>
       <section className="allportfolio">
         <div className="container">
           <ul className="allportfolio__list">
             <li className="allportfolio__item">
-              <button type="button">{t('portfolio.btn-1')}</button>
+              <button type="button active">{t('portfolio.btn-1')}</button>
             </li>
             <li className="allportfolio__item">
               <button type="button">{t('portfolio.btn-2')}</button>
@@ -61,7 +62,7 @@ const AllPortfolio = () => {
           <ul className="allportfolio__item2">
             {/* filtered.map(({id}) => (
               )) */}
-            <li className="allportfolio__link">
+            <li className="allportfolio__link all">
               <div className="box__active">
                 {/* <a href="#"> */}
                 <picture>

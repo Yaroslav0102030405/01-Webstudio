@@ -1,8 +1,6 @@
 import React from "react";
 
 // import { useTranslation } from 'react-i18next';
-
-
 const Menu = ({ menuItem }) => {
   // const [t, i18n] = useTranslation('global');
 

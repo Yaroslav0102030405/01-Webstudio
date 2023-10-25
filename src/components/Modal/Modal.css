@@ -3,11 +3,13 @@
 .light-theme {
   background-color: #ffffff;
   color: #000000;
+  transition: all 0.3s ease-in-out;
 }
 
 .dark-theme {
   background-color: #000000;
   color: #ffffff;
+  transition: all 0.3s ease-in-out;
 }
 
 body {
@@ -15,12 +17,6 @@ body {
   padding: 0;
   font-family: Roboto, sans-serif;
 }
-@media screen and (max-width: 767px) {
-  body.modal-open {
-    overflow: hidden;
-  }
-}
-
 /* скрыть заголовки и части текста */
 .visually-hidden {
   position: absolute;
@@ -139,15 +135,18 @@ img {
 .light-theme {
   background-color: #ffffff;
   color: #000000;
+  transition: all 0.3s ease-in-out;
 }
 
 .dark-theme {
   background-color: #000000;
   color: #ffffff;
+  transition: all 0.3s ease-in-out;
 }
 
 .backdrop {
   position: fixed;
+  padding: 20px;
   top: 0;
   left: 0;
   width: 100%;
@@ -160,8 +159,18 @@ img {
   z-index: 999;
 }
 
+.backdrop.is-hidden {
+  /* прозрачность и спрятать модуалку */
+  opacity: 0;
+  /* пропускать через модалку события */
+  pointer-events: none;
+}
+
+.backdrop.is-hidden .form {
+  transform: translate(-50%, -50%) scale(0);
+}
+
 .form {
-  display: block;
   /* поставить по центру */
   position: absolute;
   top: 50%;
@@ -172,25 +181,19 @@ img {
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  max-width: 340px;
+  max-width: 320px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-@media screen and (min-width: 478px) and (max-width: 767px) {
-  .form {
-    max-width: 450px;
-    margin-top: 93px;
-  }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .form {
     max-width: 450px;
+    margin-top: 40px;
   }
 }
 @media screen and (min-width: 1200px) {
   .form {
     max-width: 528px;
-    height: auto;
   }
 }
 
@@ -200,7 +203,7 @@ img {
   top: 8px;
   right: 8px;
   padding: 4px;
-  font-size: 60%;
+  font-size: 17px;
   color: #000000;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;

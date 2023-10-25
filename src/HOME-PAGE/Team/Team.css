@@ -3,11 +3,13 @@
 .light-theme {
   background-color: #ffffff;
   color: #000000;
+  transition: all 0.3s ease-in-out;
 }
 
 .dark-theme {
   background-color: #000000;
   color: #ffffff;
+  transition: all 0.3s ease-in-out;
 }
 
 body {
@@ -15,12 +17,6 @@ body {
   padding: 0;
   font-family: Roboto, sans-serif;
 }
-@media screen and (max-width: 767px) {
-  body.modal-open {
-    overflow: hidden;
-  }
-}
-
 /* скрыть заголовки и части текста */
 .visually-hidden {
   position: absolute;
@@ -139,11 +135,13 @@ img {
 .light-theme {
   background-color: #ffffff;
   color: #000000;
+  transition: all 0.3s ease-in-out;
 }
 
 .dark-theme {
   background-color: #000000;
   color: #ffffff;
+  transition: all 0.3s ease-in-out;
 }
 
 .team-list {
@@ -281,13 +279,17 @@ img {
   color: #000000;
 }
 
+.dark-theme .team-subtitle {
+  color: #757575;
+}
+
 .team-text {
   padding-bottom: 16px;
   font-weight: 400;
   color: #757575;
 }
 
-.team-list-icon a {
+.team-list-icon {
   display: flex;
   padding: 12px;
   border: 0;
@@ -298,9 +300,28 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
+.team-list-icon a {
+  fill: #afb1b8;
+}
+
+.team-list-icon:hover:nth-child(1) {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+}
+
+.team-list-icon:hover:nth-child(2) {
+  background-color: #1D9BF0;
+}
+
+.team-list-icon:hover:nth-child(3) {
+  background-color: #3d5998;
+}
+
+.team-list-icon:hover:nth-child(4) {
+  background-color: #0A66C2;
+}
+
 .team-list-icon a:hover {
   fill: #ffffff;
-  background-color: #2196f3;
 }
 
 .team-list-icon {
@@ -312,10 +333,6 @@ img {
   height: 20px;
 }
 
-.team-icon:hover {
-  fill: #f5f4fa;
-}
-
 .team-list-icon:last-child {
   margin-right: 0;
 }
@@ -325,4 +342,8 @@ img {
     width: 270px;
     height: 260px;
   }
+}
+
+.dark-theme .team-item {
+  background-color: rgba(47, 48, 58, 0.4);
 }/*# sourceMappingURL=Team.css.map */

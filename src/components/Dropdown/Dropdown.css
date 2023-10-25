@@ -3,11 +3,13 @@
 .light-theme {
   background-color: #ffffff;
   color: #000000;
+  transition: all 0.3s ease-in-out;
 }
 
 .dark-theme {
   background-color: #000000;
   color: #ffffff;
+  transition: all 0.3s ease-in-out;
 }
 
 body {
@@ -15,12 +17,6 @@ body {
   padding: 0;
   font-family: Roboto, sans-serif;
 }
-@media screen and (max-width: 767px) {
-  body.modal-open {
-    overflow: hidden;
-  }
-}
-
 /* скрыть заголовки и части текста */
 .visually-hidden {
   position: absolute;
@@ -139,11 +135,13 @@ img {
 .light-theme {
   background-color: #ffffff;
   color: #000000;
+  transition: all 0.3s ease-in-out;
 }
 
 .dark-theme {
   background-color: #000000;
   color: #ffffff;
+  transition: all 0.3s ease-in-out;
 }
 
 @media screen and (max-width: 767px) {
@@ -175,17 +173,27 @@ img {
 @media screen and (max-width: 767px) {
   .Dropdown__menu {
     position: fixed;
+    bottom: 0;
+    left: 0;
     top: 0;
     right: 0;
-    width: 100%;
-    height: 100%;
+    height: 100vh;
     padding: 20px;
     text-align: center;
     background-color: #ffffff;
     color: aliceblue;
-    /* overflow: auto; */
-    overflow: auto;
     pointer-events: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+.dark-theme .Dropdown__menu {
+  background-color: #000000;
+}
+
+@media screen and (max-width: 767px) {
+  .Dropdown-contacts {
+    margin-bottom: 40px;
   }
 }
 
@@ -207,6 +215,10 @@ img {
   }
 }
 
+.dark-theme .Dropdown__toggle svg {
+  background-color: #ffffff;
+}
+
 .Dropdown__top {
   margin-top: 120px;
   margin-bottom: 60px;
@@ -217,6 +229,14 @@ img {
   font-size: 18px;
   font-weight: 500;
   letter-spacing: 0.36px;
+}
+
+.Dropdown__top li a {
+  color: #757575;
+}
+
+.dark-theme .Dropdown__top li a {
+  color: #ffffff;
 }
 
 .menu__item:hover {
@@ -231,4 +251,32 @@ img {
     font-weight: 500;
     letter-spacing: 0.36px;
   }
+}
+
+.alert-enter {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.alert-enter-active {
+  opacity: 1;
+  transition: opacity 300ms, transform 300ms;
+}
+
+.alert-exit {
+  opacity: 1;
+}
+
+.alert-exit-active {
+  opacity: 0;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.dark-theme .iconMenu {
+  background-color: #ffffff;
+}
+
+.dark-theme .iconClouse {
+  background-color: #000000;
 }/*# sourceMappingURL=Dropdown.css.map */

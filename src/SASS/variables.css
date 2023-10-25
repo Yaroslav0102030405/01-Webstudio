@@ -1,9 +1,11 @@
 .light-theme {
   background-color: #ffffff;
   color: #000000;
+  transition: all 0.3s ease-in-out;
 }
 
 .dark-theme {
   background-color: #000000;
   color: #ffffff;
+  transition: all 0.3s ease-in-out;
 }/*# sourceMappingURL=variables.css.map */

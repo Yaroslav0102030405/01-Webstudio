@@ -1,1 +1,1 @@
-{"version":3,"sources":["Animal.css","Animal.scss"],"names":[],"mappings":"AAAA,gBAAgB;ACAhB;EAII,yCAAA;EACA,UAAA;EACA,2BAAA;ADDJ;;ACIE;EACE,UAAA;EACA,oBAAA;EACA,yBAAA;ADDJ","file":"Animal.css"}
+{"version":3,"sources":["Animal.css","Animal.scss"],"names":[],"mappings":"AAAA,gBAAgB;ACAhB;EAII,yCAAA;EACA,UAAA;EACA,2BAAA;ADDJ;;ACIE;EACE,UAAA;EAEA,yBAAA;ADFJ","file":"Animal.css"}

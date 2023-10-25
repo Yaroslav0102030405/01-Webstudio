@@ -3,11 +3,13 @@
 .light-theme {
   background-color: #ffffff;
   color: #000000;
+  transition: all 0.3s ease-in-out;
 }
 
 .dark-theme {
   background-color: #000000;
   color: #ffffff;
+  transition: all 0.3s ease-in-out;
 }
 
 body {
@@ -15,12 +17,6 @@ body {
   padding: 0;
   font-family: Roboto, sans-serif;
 }
-@media screen and (max-width: 767px) {
-  body.modal-open {
-    overflow: hidden;
-  }
-}
-
 /* скрыть заголовки и части текста */
 .visually-hidden {
   position: absolute;
@@ -139,11 +135,13 @@ img {
 .light-theme {
   background-color: #ffffff;
   color: #000000;
+  transition: all 0.3s ease-in-out;
 }
 
 .dark-theme {
   background-color: #000000;
   color: #ffffff;
+  transition: all 0.3s ease-in-out;
 }
 
 .header {
@@ -151,7 +149,6 @@ img {
   top: 0;
   left: 0;
   width: 100%;
-  border-bottom: 1px solid #ececec;
   z-index: 999;
 }
 @media screen and (max-width: 767px) {
@@ -161,12 +158,6 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .header__nav {
-    display: flex;
-    align-items: center;
-  }
-}
 @media screen and (min-width: 1200px) {
   .header__nav {
     display: flex;
@@ -411,9 +402,7 @@ img {
 }
 @media screen and (max-width: 767px) {
   .current::after {
-    width: 100%;
-    border-radius: 2px;
-    margin-bottom: -10px;
+    content: none;
   }
 }
 
@@ -432,7 +421,7 @@ img {
   .menu__contacts {
     display: flex;
     align-items: center;
-    margin-left: 260px;
+    margin-left: 224px;
   }
 }
 
@@ -509,5 +498,53 @@ img {
   .contacts__link {
     font-size: 14px;
     letter-spacing: 0.36px;
+  }
+}
+
+.menu__btn {
+  border: none;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.dark-theme .menu__btn {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.text {
+  display: inline-block;
+  padding: -2px 10px;
+  font-size: 15px;
+  border-right: 1px solid #000000;
+}
+
+.dark-theme .menu__btn {
+  border-right: 1px solid #ffffff;
+}
+
+.text:last-child {
+  border-right: none;
+}
+
+.dark-theme .text:last-child {
+  border-right: none;
+}
+
+.multilanguage {
+  display: flex;
+  margin-left: auto;
+  z-index: 1;
+}
+
+@media screen and (max-width: 767px) {
+  .mobile-2 {
+    display: flex;
+  }
+}
+@media screen and (min-width: 768px) {
+  .mobile-2 {
+    display: inline-flex;
+    justify-content: space-around;
   }
 }/*# sourceMappingURL=Header.css.map */

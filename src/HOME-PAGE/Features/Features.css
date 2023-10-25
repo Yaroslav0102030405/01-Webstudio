@@ -3,11 +3,13 @@
 .light-theme {
   background-color: #ffffff;
   color: #000000;
+  transition: all 0.3s ease-in-out;
 }
 
 .dark-theme {
   background-color: #000000;
   color: #ffffff;
+  transition: all 0.3s ease-in-out;
 }
 
 body {
@@ -15,12 +17,6 @@ body {
   padding: 0;
   font-family: Roboto, sans-serif;
 }
-@media screen and (max-width: 767px) {
-  body.modal-open {
-    overflow: hidden;
-  }
-}
-
 /* скрыть заголовки и части текста */
 .visually-hidden {
   position: absolute;
@@ -139,11 +135,13 @@ img {
 .light-theme {
   background-color: #ffffff;
   color: #000000;
+  transition: all 0.3s ease-in-out;
 }
 
 .dark-theme {
   background-color: #000000;
   color: #ffffff;
+  transition: all 0.3s ease-in-out;
 }
 
 .features-list {

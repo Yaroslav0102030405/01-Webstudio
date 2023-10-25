@@ -9,24 +9,23 @@ const Menu = ({ menuItem }) => {
   
     return (
       <>
-            <ul className="allportfolio__item2">
-              {menuItem.map(({ id, image, title, description }) => (
-                <li className="allportfolio__link" key={id}>
-                  <div className="box__active">
-                    <img
-                      loading="lazy"
-                      className="lazyload"
-                      src={image}
-                      alt={title}
-                    ></img>
-                    <div className="box__overlay">{/* </a> */}</div>
-                  </div>
-                  <h2>{t('portfolio.name-1')}</h2>
-                  <p>{t('portfolio.desc-1')}</p>
-                </li>
-              ))}
-            </ul>
-
+        <ul className="allportfolio__item2">
+          {menuItem.map(({ id, image, title, description }) => (
+            <li className="allportfolio__link" key={id}>
+              <div className="box__active">
+                <img
+                  loading="lazy"
+                  className="lazyload"
+                  src={image}
+                  alt={title}
+                ></img>
+                <div className="box__overlay">{/* </a> */}</div>
+              </div>
+              <h2>{title}</h2>
+              <p>{description}</p>
+            </li>
+          ))}
+        </ul>
       </>
     );
 }

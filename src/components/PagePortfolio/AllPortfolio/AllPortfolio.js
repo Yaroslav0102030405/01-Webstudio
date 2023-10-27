@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './AllPortfolio.scss';
 
-import { useTranslation } from 'react-i18next';
+// import { useTranslation } from 'react-i18next';
 
 import items from './Filter/Filter';
 import Menu from './Menu/Menu.js';
@@ -41,7 +41,7 @@ const allCategories = ['All', ...new Set(items.map(item => item.description))];
 console.log(allCategories);
 
 const AllPortfolio = () => {
-  const [t, i18n] = useTranslation('global');
+  // const [t, i18n] = useTranslation('global');
   const [menuItem, setMenuItems] = useState(items);
   const [buttons, setButtons] = useState(allCategories);
 

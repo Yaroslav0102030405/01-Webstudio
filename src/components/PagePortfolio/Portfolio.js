@@ -49,7 +49,7 @@ const Portfolio = () => {
                       </Link>
                     </li>
                     <li className="menu__item">
-                      <Link class="menu__link current" to="/portfolio">
+                      <Link className="menu__link current" to="/portfolio">
                         {t('header.portfolio')}
                         {/* Portfolio */}
                       </Link>

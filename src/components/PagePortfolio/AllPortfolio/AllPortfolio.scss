@@ -180,3 +180,8 @@ img {
 .allportfolio__link:hover .box__overlay {
   transform: translateY(0);
 }
+
+.active {
+  color: $accent-color;
+  background-color: $accent-color;
+}

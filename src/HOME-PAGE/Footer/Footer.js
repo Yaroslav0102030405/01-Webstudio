@@ -22,7 +22,7 @@ const Footer = () => {
               </a>
               <address className="address element-animation">
                 <a
-                  class="address-map"
+                  className="address-map"
                   href="https://goo.gl/maps/nESUi33Z9tEDnT8MA"
                   target="_blank"
                   rel="noopener noreferer"
@@ -56,7 +56,7 @@ const Footer = () => {
                     <Instagram className="footer-icon" />
                   </a>
                 </li>
-                <li class="footer-list-icon">
+                <li className="footer-list-icon">
                   <a
                     href="#"
                     aria-label=""
@@ -66,7 +66,7 @@ const Footer = () => {
                     <Twitter className="footer-icon" />
                   </a>
                 </li>
-                <li class="footer-list-icon">
+                <li className="footer-list-icon">
                   <a
                     href="#"
                     aria-label=""
@@ -76,7 +76,7 @@ const Footer = () => {
                     <Facebook className="footer-icon" />
                   </a>
                 </li>
-                <li class="footer-list-icon">
+                <li className="footer-list-icon">
                   <a
                     href="#"
                     aria-label=""

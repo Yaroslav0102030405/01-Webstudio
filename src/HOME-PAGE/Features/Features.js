@@ -25,7 +25,7 @@ const Features = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ amount: 0.3, once: true }}
-        class="features"
+        className="features"
       >
         <div className="container">
           <h2 className="visually-hidden">Преимущества</h2>

@@ -75,7 +75,7 @@ const Dropdown = () => {
                 </Link>
               </li>
               <li className="menu__item">
-                <a href="!#">
+                <a href="#">
                   {t('header.contacts')}
                   {/* Contacts */}
                 </a>

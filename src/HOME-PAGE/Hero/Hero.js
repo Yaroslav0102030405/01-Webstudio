@@ -76,7 +76,7 @@ const Hero = () => {
                     type="button"
                     onClick={toogleModal}
                   >
-                    X
+                  x
                   </button>
                   <h1 className="form__title">
                     {t('form.title')}
@@ -130,7 +130,7 @@ const Hero = () => {
                       {t('form.checkbox')}
                       {/* I accept the terms and conditions of the */}
                     </span>
-                    <a className="form__link" href="!#">
+                    <a className="form__link" href="#">
                       <span>{t('form.span')}</span>
                     </a>
                   </label>

@@ -47,44 +47,44 @@ const Footer = () => {
               </b>
               <ul className="team-flex element-animation">
                 <li className="footer-list-icon">
-                  {/* <a
-                    href="#"
+                  <a
+                    href="https://www.instagram.com/"
                     aria-label=""
                     target="_blank"
                     rel="noreferrer noopener"
-                  > */}
+                  >
                     <Instagram className="footer-icon" />
-                  {/* </a> */}
+                  </a>
                 </li>
                 <li className="footer-list-icon">
-                  {/* <a
-                    href="#"
+                  <a
+                    href="https://twitter.com/?lang=uk"
                     aria-label=""
                     target="_blank"
                     rel="noreferrer noopener"
-                  > */}
+                  >
                     <Twitter className="footer-icon" />
-                  {/* </a> */}
+                  </a>
                 </li>
                 <li className="footer-list-icon">
-                  {/* <a
-                    href="#"
+                  <a
+                    href="https://www.facebook.com/"
                     aria-label=""
                     target="_blank"
                     rel="noreferrer noopener"
-                  > */}
+                  >
                     <Facebook className="footer-icon" />
-                  {/* </a> */}
+                  </a>
                 </li>
                 <li className="footer-list-icon">
-                  {/* <a
-                    href="#"
+                  <a
+                    href="https://www.linkedin.com/"
                     aria-label=""
                     target="_blank"
                     rel="noreferrer noopener"
-                  > */}
+                  >
                     <Linkedin className="footer-icon" />
-                  {/* </a> */}
+                  </a>
                 </li>
               </ul>
             </div>

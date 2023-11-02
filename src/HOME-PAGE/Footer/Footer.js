@@ -47,44 +47,44 @@ const Footer = () => {
               </b>
               <ul className="team-flex element-animation">
                 <li className="footer-list-icon">
-                  <a
+                  {/* <a
                     href="#"
                     aria-label=""
                     target="_blank"
                     rel="noreferrer noopener"
-                  >
+                  > */}
                     <Instagram className="footer-icon" />
-                  </a>
+                  {/* </a> */}
                 </li>
                 <li className="footer-list-icon">
-                  <a
+                  {/* <a
                     href="#"
                     aria-label=""
                     target="_blank"
                     rel="noreferrer noopener"
-                  >
+                  > */}
                     <Twitter className="footer-icon" />
-                  </a>
+                  {/* </a> */}
                 </li>
                 <li className="footer-list-icon">
-                  <a
+                  {/* <a
                     href="#"
                     aria-label=""
                     target="_blank"
                     rel="noreferrer noopener"
-                  >
+                  > */}
                     <Facebook className="footer-icon" />
-                  </a>
+                  {/* </a> */}
                 </li>
                 <li className="footer-list-icon">
-                  <a
+                  {/* <a
                     href="#"
                     aria-label=""
                     target="_blank"
                     rel="noreferrer noopener"
-                  >
+                  > */}
                     <Linkedin className="footer-icon" />
-                  </a>
+                  {/* </a> */}
                 </li>
               </ul>
             </div>

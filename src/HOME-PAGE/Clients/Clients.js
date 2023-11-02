@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import './Clients.scss';
 
@@ -48,54 +49,54 @@ const Clients = () => {
               variants={ClientsAnimation}
               class="clients-item"
             >
-              <a className="clients-logo" href="/">
+              <Link className="clients-logo" to="/">
                 <Client1 />
-              </a>
+              </Link>
             </motion.li>
             <motion.li
               custom={3}
               variants={ClientsAnimation}
               class="clients-item"
             >
-              <a className="clients-logo" href="/">
+              <Link className="clients-logo" to="/">
                 <Client2 />
-              </a>
+              </Link>
             </motion.li>
             <motion.li
               custom={4}
               variants={ClientsAnimation}
               class="clients-item"
             >
-              <a className="clients-logo" href="/">
+              <Link className="clients-logo" to="/">
                 <Client3 />
-              </a>
+              </Link>
             </motion.li>
             <motion.li
               custom={5}
               variants={ClientsAnimation}
               class="clients-item"
             >
-              <a className="clients-logo" href="/">
+              <Link className="clients-logo" to="/">
                 <Client4 />
-              </a>
+              </Link>
             </motion.li>
             <motion.li
               custom={6}
               variants={ClientsAnimation}
               class="clients-item"
             >
-              <a className="clients-logo" href="/">
+              <Link className="clients-logo" to="/">
                 <Client5 />
-              </a>
+              </Link>
             </motion.li>
             <motion.li
               custom={7}
               variants={ClientsAnimation}
               class="clients-item"
             >
-              <a className="clients-logo" href="/">
+              <Link className="clients-logo" to="/">
                 <Client6 />
-              </a>
+              </Link>
             </motion.li>
           </ul>
         </div>

@@ -1,45 +1,26 @@
-import React from 'react';
-// import { CSSTransition } from 'react-transition-group';
-// import { motion } from 'framer-motion';
-import './Hero.scss';
-// import Modal from '../../components/Modal/Modal';
-import './../../components/Modal/Modal.scss';
+import React, {useState} from "react";
+import './Button.scss'
+import { useTranslation } from 'react-i18next';
+import { CSSTransition } from 'react-transition-group';
+import { motion } from 'framer-motion';
 
-// import { useTranslation } from 'react-i18next';
-import IndividualIntervalsExample from '../../components/BootstrapCarousels/BootsrapCarousels';
+import Modal from "../Modal/Modal";
+import './../Modal/Modal.scss'
 
-const Animation = {
-  hidden: {
-    x: -100,
-    opacity: 0,
-  },
-  visible: custom => ({
-    x: 0,
-    opacity: 1,
-    transition: { delay: custom * 0.2 },
-  }),
-};
-
-const Hero = () => {
-  // const [t, i18n] = useTranslation('global');
-  // const [showModal, setState] = useState(false);
-  // //  state = {
-  // //   showModal: false,
-  // // };
-
-  // const toogleModal = () => {
-  //   setState(!showModal);
+const Button = () => {
+  const [t, i18n] = useTranslation('global');
+  const [showModal, setState] = useState(false);
+  //  state = {
+  //   showModal: false,
   // };
 
-  // render() {
-
-  // const [t, i18n] = useTranslation('global');
-
-  // const { showModal } = this.state;
-
+  const toogleModal = () => {
+    setState(!showModal);
+    };
+    
   return (
     <>
-      <IndividualIntervalsExample />
+      {/* <IndividualIntervalsExample /> */}
       {/* <div className="overlay"> */}
       {/* <motion.section
         initial="hidden"
@@ -48,11 +29,11 @@ const Hero = () => {
         className="hero center"
       > */}
       <div className="container hero-container">
-        {/* <motion.h1 custom={1} variants={Animation} className="hero__title">
+        <motion.h1 custom={1} variants={Animation} className="hero__title">
             {t('hero.title')}
-          </motion.h1> */}
+          </motion.h1>
 
-        {/* <motion.button
+        <motion.button
             custom={2}
             variants={Animation}
             className="btn"
@@ -60,10 +41,10 @@ const Hero = () => {
             onClick={toogleModal}
           >
             {t('hero.btn')}
-          </motion.button> */}
+          </motion.button>
 
-        {/* {showModal && ( */}
-        {/* <CSSTransition
+        {showModal && ( 
+         <CSSTransition
           in={showModal}
           classNames="alert"
           timeout={500}
@@ -133,8 +114,8 @@ const Hero = () => {
               </button>
             </form>
           </Modal>
-        </CSSTransition> */}
-        {/* )} */}
+        </CSSTransition>
+        )}
       </div>
       {/* </motion.section> */}
       {/* </div> */}
@@ -143,4 +124,5 @@ const Hero = () => {
 };
 // };
 
-export default Hero;
+ 
+export default Button;

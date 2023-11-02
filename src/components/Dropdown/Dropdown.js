@@ -40,6 +40,7 @@ const Dropdown = () => {
     <div className="Dropdown">
       {/* <div className={ Active ? 'Dropdown__active' : 'Dropdown__menu'}> */}
       <button
+        id="buttonClouse"
         type="button"
         className="Dropdown__toggle"
         onClick={toggle}

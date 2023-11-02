@@ -7,17 +7,29 @@ import Button from '../Button/Button';
 
 import Carousel from 'react-bootstrap/Carousel';
 // import ExampleCarouselImage from 'components/ExampleCarouselImage';
-import Desctop from '../../images/hero/desctopFirst-1x.png';
-import Desctop2 from '../../images/hero/desctop-2--1x.jpg';
-import Desctop3 from '../../images/hero/desctop-3--1x.jpg';
+// import Desctop from '../../images/hero/desctopFirst-1x.png';
+// import Desctop2 from '../../images/hero/desctop-2--1x.jpg';
+// import Desctop3 from '../../images/hero/desctop-3--1x.jpg';
 
 import Mobile from '../../images/hero/bh-img-480-2x.jpg';
-import Mobile2 from '../../images/hero/Mobile-2-480-2x.jpg';
-import Mobile3 from '../../images/hero/Mobile-3-480-2x.jpg';
+// import Mobile2 from '../../images/hero/Mobile-2-480-2x.jpg';
+// import Mobile3 from '../../images/hero/Mobile-3-480-2x.jpg';
 
 import Tablet from '../../images/hero/bg-img-768-2x.jpg';
-import Tablet2 from '../../images/hero/tablet-2-768-2x.jpg';
-import Tablet3 from '../../images/hero/tablet-3-768-2x.jpg';
+// import Tablet2 from '../../images/hero/tablet-2-768-2x.jpg';
+// import Tablet3 from '../../images/hero/tablet-3-768-2x.jpg';
+
+import DesctopWebP1 from '../../images/hero/WebP/desctopFirst-1x.WebP';
+import DesctopWebP2 from '../../images/hero/WebP/desctop-2--1x.WebP';
+import DesctopWebP3 from '../../images/hero/WebP/desctop-3--1x.WebP';
+
+import TabletWebP2 from '../../images/hero/WebP/tablet-2-768-2x.WebP';
+import TabletWebP3 from '../../images/hero/WebP/tablet-3-768-2x.WebP';
+
+import MobileWebP2 from '../../images/hero/WebP/Mobile-2-480-2x.WebP';
+import MobileWebP3 from '../../images/hero/WebP/Mobile-2-480-2x.WebP';
+
+
 
 function IndividualIntervalsExample() {
   return (
@@ -31,12 +43,13 @@ function IndividualIntervalsExample() {
           />
           <source
             className="Desctop"
-            srcSet={Desctop}
+            srcSet={DesctopWebP1}
             media="(min-width: 1200px)"
           />
           <img
+            width="1600"
             className="d-block w-100 Desctop"
-            src={Desctop}
+            src={DesctopWebP1}
             alt="First slide"
           />
         </picture>
@@ -51,18 +64,19 @@ function IndividualIntervalsExample() {
       </Carousel.Item>
       <Carousel.Item interval={1000}>
         <picture>
-          <source srcSet={Mobile2} media="(max-width: 767px)" type="image/jpg" />
           <source
-            srcSet={Tablet2}
+            srcSet={MobileWebP2} media="(max-width: 767px)"
+            type="image/jpg"
+          />
+          <source
+            srcSet={TabletWebP2}
             media="(min-width: 768px) and (max-width: 1199px)"
           />
-          <source
-            srcSet={Desctop2}
-            media="(min-width: 1200px)"
-          />
+          <source srcSet={DesctopWebP2} media="(min-width: 1200px)" />
           <img
+            width="1600"
             className="d-block w-100 Backround__image"
-            src={Desctop2}
+            src={DesctopWebP2}
             alt="Second slide"
           />
         </picture>
@@ -73,13 +87,22 @@ function IndividualIntervalsExample() {
       </Carousel.Item>
       <Carousel.Item interval={1000}>
         <picture>
-          <source srcSet={Mobile3} media="(max-width: 767px)" type="image/jpg" />
           <source
-            srcSet={Tablet3}
+            srcSet={MobileWebP3}
+            media="(max-width: 767px)"
+            type="image/jpg"
+          />
+          <source
+            srcSet={TabletWebP3}
             media="(min-width: 768px) and (max-width: 1199px)"
           />
-          <source srcSet={Desctop3} media="(min-width: 1200px)" />
-          <img className="d-block w-100" src={Desctop3} alt="Third slide" />
+          <source srcSet={DesctopWebP3} media="(min-width: 1200px)" />
+          <img
+            width="1600"
+            className="d-block w-100"
+            src={DesctopWebP3}
+            alt="Third slide"
+          />
         </picture>
         <Carousel.Caption>
           {/* <h5>Third slide label</h5>

@@ -48,7 +48,7 @@ const Clients = () => {
               variants={ClientsAnimation}
               class="clients-item"
             >
-              <a className="clients-logo" href="#">
+              <a className="clients-logo" href="/">
                 <Client1 />
               </a>
             </motion.li>
@@ -57,7 +57,7 @@ const Clients = () => {
               variants={ClientsAnimation}
               class="clients-item"
             >
-              <a className="clients-logo" href="#">
+              <a className="clients-logo" href="/">
                 <Client2 />
               </a>
             </motion.li>
@@ -66,7 +66,7 @@ const Clients = () => {
               variants={ClientsAnimation}
               class="clients-item"
             >
-              <a className="clients-logo" href="#">
+              <a className="clients-logo" href="/">
                 <Client3 />
               </a>
             </motion.li>
@@ -75,7 +75,7 @@ const Clients = () => {
               variants={ClientsAnimation}
               class="clients-item"
             >
-              <a className="clients-logo" href="#">
+              <a className="clients-logo" href="/">
                 <Client4 />
               </a>
             </motion.li>
@@ -84,7 +84,7 @@ const Clients = () => {
               variants={ClientsAnimation}
               class="clients-item"
             >
-              <a className="clients-logo" href="#">
+              <a className="clients-logo" href="/">
                 <Client5 />
               </a>
             </motion.li>
@@ -93,7 +93,7 @@ const Clients = () => {
               variants={ClientsAnimation}
               class="clients-item"
             >
-              <a className="clients-logo" href="#">
+              <a className="clients-logo" href="/">
                 <Client6 />
               </a>
             </motion.li>

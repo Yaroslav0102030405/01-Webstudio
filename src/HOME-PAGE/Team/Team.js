@@ -77,6 +77,7 @@ const Team = () => {
                 />
                 <source srcset={ProductDesctop} media="(min-width: 1200px)" />
                 <img
+                  width="270"
                   loading="lazy"
                   className="lazyload"
                   data-src={ProductImg}
@@ -94,7 +95,7 @@ const Team = () => {
               <ul className="team-flex">
                 <li className="team-list-icon">
                   <a
-                    href="#"
+                    href="https://www.instagram.com/"
                     aria-label="Instagram"
                     target="_blank"
                     rel="noreferrer noopener"
@@ -104,7 +105,7 @@ const Team = () => {
                 </li>
                 <li className="team-list-icon">
                   <a
-                    href="#"
+                    href="https://twitter.com/?lang=uk"
                     aria-label="Twitter"
                     target="_blank"
                     rel="noreferrer noopener"
@@ -114,7 +115,7 @@ const Team = () => {
                 </li>
                 <li className="team-list-icon">
                   <a
-                    href="#"
+                    href="https://www.facebook.com/"
                     aria-label="Facebook"
                     target="_blank"
                     rel="noreferrer noopener"
@@ -124,7 +125,7 @@ const Team = () => {
                 </li>
                 <li className="team-list-icon">
                   <a
-                    href="#"
+                    href="https://www.linkedin.com/"
                     aria-label="Linkedin"
                     target="_blank"
                     rel="noreferrer noopener"
@@ -152,6 +153,7 @@ const Team = () => {
                 />
                 <source srcSet={FrontendDesctop} media="(min-width: 1200px)" />
                 <img
+                  width="270"
                   loading="lazy"
                   class="lazyload"
                   data-src={FrontendDesctop}
@@ -170,7 +172,7 @@ const Team = () => {
               <ul className="team-flex">
                 <li class="team-list-icon">
                   <a
-                    href="#"
+                    href="https://www.instagram.com/"
                     aria-label="Instagram"
                     target="_blank"
                     rel="noreferrer noopener"
@@ -180,7 +182,7 @@ const Team = () => {
                 </li>
                 <li className="team-list-icon">
                   <a
-                    href="#"
+                    href="https://twitter.com/?lang=uk"
                     aria-label="Twitter"
                     target="_blank"
                     rel="noreferrer noopener"
@@ -190,7 +192,7 @@ const Team = () => {
                 </li>
                 <li className="team-list-icon">
                   <a
-                    href="#"
+                    href="https://www.facebook.com/"
                     aria-label="Facebook"
                     target="_blank"
                     rel="noreferrer noopener"
@@ -200,7 +202,7 @@ const Team = () => {
                 </li>
                 <li className="team-list-icon">
                   <a
-                    href="#"
+                    href="https://www.linkedin.com/"
                     aria-label="Linkedin"
                     target="_blank"
                     rel="noreferrer noopener"
@@ -226,6 +228,7 @@ const Team = () => {
                 <source srcSet={MarketingDesctop} media="(min-width: 1200px)" />
 
                 <img
+                  width="270"
                   loading="lazy"
                   className="lazyload"
                   data-src={MarketingDesctop}
@@ -244,7 +247,7 @@ const Team = () => {
               <ul className="team-flex">
                 <li className="team-list-icon">
                   <a
-                    href="#"
+                    href="https://www.instagram.com/"
                     aria-label="Instagram"
                     target="_blank"
                     rel="noreferrer noopener"
@@ -254,7 +257,7 @@ const Team = () => {
                 </li>
                 <li className="team-list-icon">
                   <a
-                    href="#"
+                    href="https://twitter.com/?lang=uk"
                     aria-label="Twitter"
                     target="_blank"
                     rel="noreferrer noopener"
@@ -264,7 +267,7 @@ const Team = () => {
                 </li>
                 <li className="team-list-icon">
                   <a
-                    href="#"
+                    href="https://www.facebook.com/"
                     aria-label="Facebook"
                     target="_blank"
                     rel="noreferrer noopener"
@@ -274,7 +277,7 @@ const Team = () => {
                 </li>
                 <li className="team-list-icon">
                   <a
-                    href="#"
+                    href="https://www.linkedin.com/"
                     aria-label="Linkedin"
                     target="_blank"
                     rel="noreferrer noopener"
@@ -308,6 +311,7 @@ const Team = () => {
                 />
 
                 <img
+                  width="270"
                   loading="lazy"
                   className="lazyload"
                   data-src={DesignerDesctop}
@@ -326,7 +330,7 @@ const Team = () => {
               <ul className="team-flex">
                 <li className="team-list-icon">
                   <a
-                    href="#"
+                    href="https://www.instagram.com/"
                     aria-label="Instagram"
                     target="_blank"
                     rel="noreferrer noopener"
@@ -336,7 +340,7 @@ const Team = () => {
                 </li>
                 <li className="team-list-icon">
                   <a
-                    href="#"
+                    href="https://twitter.com/?lang=uk"
                     aria-label="Twitter"
                     target="_blank"
                     rel="noreferrer noopener"
@@ -346,7 +350,7 @@ const Team = () => {
                 </li>
                 <li className="team-list-icon">
                   <a
-                    href="#"
+                    href="https://www.facebook.com/"
                     aria-label="Facebook"
                     target="_blank"
                     rel="noreferrer noopener"
@@ -356,7 +360,7 @@ const Team = () => {
                 </li>
                 <li className="team-list-icon">
                   <a
-                    href="#"
+                    href="https://www.linkedin.com/"
                     aria-label="Linkedin"
                     target="_blank"
                     rel="noreferrer noopener"

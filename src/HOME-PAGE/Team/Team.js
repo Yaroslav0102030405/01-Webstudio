@@ -77,7 +77,8 @@ const Team = () => {
                 />
                 <source srcset={ProductDesctop} media="(min-width: 1200px)" />
                 <img
-                  width="270"
+                  width="100%"
+                  height="auto"
                   loading="lazy"
                   className="lazyload"
                   data-src={ProductImg}
@@ -153,7 +154,8 @@ const Team = () => {
                 />
                 <source srcSet={FrontendDesctop} media="(min-width: 1200px)" />
                 <img
-                  width="270"
+                  width="100%"
+                  height="auto"
                   loading="lazy"
                   class="lazyload"
                   data-src={FrontendDesctop}
@@ -228,7 +230,8 @@ const Team = () => {
                 <source srcSet={MarketingDesctop} media="(min-width: 1200px)" />
 
                 <img
-                  width="270"
+                  width="100%"
+                  height="auto"
                   loading="lazy"
                   className="lazyload"
                   data-src={MarketingDesctop}
@@ -311,7 +314,8 @@ const Team = () => {
                 />
 
                 <img
-                  width="270"
+                  width="100%"
+                  height="auto"
                   loading="lazy"
                   className="lazyload"
                   data-src={DesignerDesctop}

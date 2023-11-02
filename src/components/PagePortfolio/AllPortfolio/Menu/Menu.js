@@ -12,6 +12,8 @@ const Menu = ({ menuItem }) => {
             <li className="allportfolio__link" key={id}>
               <div className="box__active">
                 <img
+                  width="100%"
+                  height="auto"
                   loading="lazy"
                   className="lazyload"
                   src={image}

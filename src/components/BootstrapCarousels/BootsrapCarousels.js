@@ -47,7 +47,8 @@ function IndividualIntervalsExample() {
             media="(min-width: 1200px)"
           />
           <img
-            width="1600"
+            width="100%"
+            height="auto"
             className="d-block w-100 Desctop"
             src={DesctopWebP1}
             alt="First slide"
@@ -65,7 +66,8 @@ function IndividualIntervalsExample() {
       <Carousel.Item interval={1000}>
         <picture>
           <source
-            srcSet={MobileWebP2} media="(max-width: 767px)"
+            srcSet={MobileWebP2}
+            media="(max-width: 767px)"
             type="image/jpg"
           />
           <source
@@ -74,7 +76,8 @@ function IndividualIntervalsExample() {
           />
           <source srcSet={DesctopWebP2} media="(min-width: 1200px)" />
           <img
-            width="1600"
+            width="100%"
+            height="auto"
             className="d-block w-100 Backround__image"
             src={DesctopWebP2}
             alt="Second slide"
@@ -98,7 +101,8 @@ function IndividualIntervalsExample() {
           />
           <source srcSet={DesctopWebP3} media="(min-width: 1200px)" />
           <img
-            width="1600"
+            width="100%"
+            height="auto"
             className="d-block w-100"
             src={DesctopWebP3}
             alt="Third slide"

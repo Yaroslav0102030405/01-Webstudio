@@ -8,17 +8,17 @@ import './../../components/Modal/Modal.scss';
 // import { useTranslation } from 'react-i18next';
 import IndividualIntervalsExample from '../../components/BootstrapCarousels/BootsrapCarousels';
 
-const Animation = {
-  hidden: {
-    x: -100,
-    opacity: 0,
-  },
-  visible: custom => ({
-    x: 0,
-    opacity: 1,
-    transition: { delay: custom * 0.2 },
-  }),
-};
+// const Animation = {
+//   hidden: {
+//     x: -100,
+//     opacity: 0,
+//   },
+//   visible: custom => ({
+//     x: 0,
+//     opacity: 1,
+//     transition: { delay: custom * 0.2 },
+//   }),
+// };
 
 const Hero = () => {
   // const [t, i18n] = useTranslation('global');

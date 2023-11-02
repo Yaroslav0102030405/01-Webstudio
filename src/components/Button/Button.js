@@ -7,6 +7,18 @@ import { motion } from 'framer-motion';
 import Modal from "../Modal/Modal";
 import './../Modal/Modal.scss'
 
+const Animation = {
+  hidden: {
+    x: -100,
+    opacity: 0,
+  },
+  visible: custom => ({
+    x: 0,
+    opacity: 1,
+    transition: { delay: custom * 0.2 },
+  }),
+};
+
 const Button = () => {
   const [t, i18n] = useTranslation('global');
   const [showModal, setState] = useState(false);
@@ -57,7 +69,7 @@ const Button = () => {
                 type="button"
                 onClick={toogleModal}
               >
-                x
+                X
               </button>
               <h1 className="form__title">{t('form.title')}</h1>
               <input

@@ -44,11 +44,6 @@
      left: 0; 
      top: 0; 
      right: 0;
-    // top: 0;
-    // // top: 100%;
-    // right: 0;
-    // left: 0;
-    // width: 100%;
     height: 100vh;
     padding: 20px;
     text-align: center;
@@ -57,8 +52,10 @@
     //  overflow: auto;
       // overflow-y: scroll;
     pointer-events: auto;
-
     -webkit-overflow-scrolling: touch;
+
+  //    transform: translateX(-100%);
+  // transition: opacity 300ms, transform 300ms;
   }
 }
 
@@ -130,38 +127,29 @@
   }
 }
 
-// .active {
-// transform: translateX(-100%);
-// }
-
-// .alert-enter {
-//   opacity: 0;
-//   // transform: scale(1);
-//     transform: translateX(0);
-//     // transform: translateX(-100%);
-    
-// }
 .alert-enter {
   opacity: 0;
   transform: translateX(-100%);
+  // transition: opacity 300ms, transform 300ms;
 }
 
 .alert-enter-active {
   opacity: 1;
-  // transform: translateX(-100%);
+  transform: translateX(0);
   transition: opacity 300ms, transform 300ms;
 }
 
 .alert-exit {
   opacity: 1;
-  // transform: translateX(0);
+  transform: translateX(0);
+   transition: opacity 300ms, transform 300ms;
 }
 
-.alert-exit-active {
-  opacity: 0;
-  transform: translateX(0);
-  transition: opacity 300ms, transform 300ms;
-}
+// .alert-exit-active {
+//   // opacity: 0;
+//   // transform: translateX(0);
+//   // transition: opacity 300ms, transform 300ms;
+// }
 
 .dark-theme .iconMenu {
   background-color: $white-color;

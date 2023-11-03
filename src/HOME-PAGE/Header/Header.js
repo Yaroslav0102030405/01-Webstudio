@@ -1,29 +1,15 @@
-// import React, { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-// import { useState, useEffect } from 'react';
-// import Transition from './..//Translation/Data.json';
-
-
-
-
 import './Header.scss';
 import Dropdown from '../../components/Dropdown/Dropdown';
-// import Home from '../Home/Home';
-// import Portfolio from '../PagePortfolio/Portfolio';
 import DarkMode from './../../components/DarkMode/DarkMode';
-// import { ReactComponent as Envelope } from './../../images/svg1/envelope (hover).svg';
-// import { ReactComponent as Smartphone } from './../../images/svg1/smartphone.svg';
-// import { useTranslation } from 'react-i18next';
-// import useLocalStorage from '../localstorage/use-localstorage';
-import i18next from 'i18next';
+
+// import i18next from 'i18next';
 
 import { useTranslation } from 'react-i18next';
-// import useLocalStorage from '../localstorage/use-localstorage';
 // import i18n from '../i18n/i18n';
 
 const Header = () => {
-  // const [language, setLanguage] = useState('EN');
-  // const [content, setContent] = useState({});
   const [t, i18n] = useTranslation('global');
  
 
@@ -31,19 +17,8 @@ const Header = () => {
     i18n.changeLanguage(lang);
   };
 
-  // useEffect(() => {
-  //   if (language === 'EN') {
-  //     setContent(Transition.en);
-  //   } else if (language === 'UK') {
-  //     setContent(Transition.uk);
-  //   } else if (language === 'RU') {
-  //     setContent(Transition.ru);
-  //   }
-  // });
-
   return (
     <>
-     
       <header className="header">
         <div className="container">
           <div className="header__wrap">

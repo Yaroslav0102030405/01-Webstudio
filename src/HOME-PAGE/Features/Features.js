@@ -32,21 +32,21 @@ const Features = () => {
 
           <ul className="features-list">
             <motion.li
-              custom={1}
-              variants={Animation}
+              // custom={1}
+              // variants={Animation}
               className="features-item element-animation"
             >
               <motion.h3
-                custom={2}
-                variants={Animation}
+                // custom={2}
+                // variants={Animation}
                 className="features-title"
               >
                 {t('features.title-1')}
                 {/* Strategy */}
               </motion.h3>
               <motion.p
-                custom={3}
-                variants={Animation}
+                // custom={3}
+                // variants={Animation}
                 className="features-text"
               >
                 {t('features.desc-1')}

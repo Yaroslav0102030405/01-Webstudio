@@ -27,7 +27,7 @@ import TabletWebP2 from '../../images/hero/WebP/tablet-2-768-2x.WebP';
 import TabletWebP3 from '../../images/hero/WebP/tablet-3-768-2x.WebP';
 
 import MobileWebP2 from '../../images/hero/WebP/Mobile-2-480-2x.WebP';
-import MobileWebP3 from '../../images/hero/WebP/Mobile-2-480-2x.WebP';
+import MobileWebP3 from '../../images/hero/WebP/Mobile-3-480-2x.WebP';
 
 
 
@@ -41,11 +41,7 @@ function IndividualIntervalsExample() {
             srcSet={Tablet}
             media="(min-width: 768px) and (max-width: 1199px)"
           />
-          <source
-            className="Desctop"
-            srcSet={DesctopWebP1}
-            media="(min-width: 1200px)"
-          />
+          <source srcSet={DesctopWebP1} media="(min-width: 1200px)" />
           <img
             width="100%"
             height="auto"
@@ -86,6 +82,7 @@ function IndividualIntervalsExample() {
         <Carousel.Caption>
           {/* <h5>Second slide label</h5>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
+          <Button />
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={1000}>
@@ -113,6 +110,7 @@ function IndividualIntervalsExample() {
           <p>
             Praesent commodo cursus magna, vel scelerisque nisl consectetur.
           </p> */}
+          <Button />
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

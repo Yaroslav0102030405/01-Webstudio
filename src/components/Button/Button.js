@@ -4,6 +4,8 @@ import { useTranslation } from 'react-i18next';
 import { CSSTransition } from 'react-transition-group';
 import { motion } from 'framer-motion';
 
+import emailjs from '@emailjs/browser';
+
 // import axios from 'axios';
 
 import Modal from '../Modal/Modal';
@@ -48,6 +50,18 @@ const Button = () => {
     setState(!showModal);
   };
 
+  const sendEmail = (e) => {
+    e.preventDefault();
+    // alert("submitted")
+    alert("Заявка отправлена")
+    emailjs.sendForm(
+      'service_oxjqwh1',
+      'template_wim3c0r',
+      e.target,
+      'rE0sHVO-Wb8bPSNz-',
+    );
+  }
+
   return (
     <>
       {/* <IndividualIntervalsExample /> */}
@@ -81,7 +95,7 @@ const Button = () => {
             unmountOnExit
           >
             <Modal onClose={toogleModal}>
-              <form className="form form-data" method='POST'>
+              <form className="form form-data" onSubmit={sendEmail}>
                 <button
                   className="btn__clouse hover form__icon"
                   type="button"
@@ -110,9 +124,9 @@ const Button = () => {
                 ></input>
                 <input
                   className="form__input"
-                  type="email"
-                  name="mail"
-                  id="mail"
+                  type="email_from"
+                  name="email_from"
+                  id="email_from"
                   autocomplete="email"
                   placeholder={t('form.email')}
                   required
@@ -139,7 +153,7 @@ const Button = () => {
                     <span>{t('form.span')}</span>
                   </a>
                 </label>
-                <button className="btn" type="submit">
+                <button className="button" type="submit">
                   {t('form.btn')}
                 </button>
               </form>

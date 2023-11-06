@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import './Dropdown.scss';
 import { CSSTransition } from 'react-transition-group';
 
+// const axios = require('axios/dist/browser/axios.cjs');
+
 import { AiOutlineMenu } from 'react-icons/ai';
 import { AiOutlineClose } from 'react-icons/ai';
 
@@ -18,6 +20,7 @@ import { useTranslation } from 'react-i18next';
 
 import { ReactComponent as Envelope } from './../../images/svg1/envelope (hover).svg';
 import { ReactComponent as Smartphone } from './../../images/svg1/smartphone.svg';
+// import { doc } from 'prettier';
 
 const Dropdown = () => {
    const [t, i18n] = useTranslation('global');
@@ -110,6 +113,9 @@ const Dropdown = () => {
       {/* )} */}
       {/* </div> */}
     </div>
+
+    // let form = document.q
+    
   );}
   //   </Transition>
   // );

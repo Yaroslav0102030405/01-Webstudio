@@ -109,6 +109,22 @@ height: 10px;
   }
 }
 
+.hero__title {
+  @media screen and (max-width: 767px) {
+     margin-left: -20px;
+  }
+
+   @media screen and (min-width: 468px) and (max-width: 1199px) {
+     width: 280px;
+     margin-left: 195px;
+   }
+
+   @media screen and (min-width: 1200px) {
+    margin-left: 265px;
+   }
+
+}
+
 .btn {
   display: block;
   margin: 0 auto;
@@ -140,6 +156,17 @@ height: 10px;
     border: none;
     background-color: $white-color;
   }
+}
+
+.btn {
+  @media screen and (min-width: 1200px) {
+    margin-left: 430px;
+   }
+
+    @media screen and (min-width: 468px) and (max-width: 1199px) {
+     margin-left: 250px;
+   }
+
 }
 
 .alert-enter {

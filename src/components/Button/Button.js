@@ -4,6 +4,8 @@ import { useTranslation } from 'react-i18next';
 import { CSSTransition } from 'react-transition-group';
 import { motion } from 'framer-motion';
 
+// import axios from 'axios';
+
 import Modal from '../Modal/Modal';
 import './../Modal/Modal.scss';
 
@@ -25,6 +27,22 @@ const Button = () => {
   //  state = {
   //   showModal: false,
   // };
+
+      // let FormS = document.querySelector('.form-data');
+      // // console.log(axios)
+
+      // FormS.addEventListener('submit', function (e) {
+      //   e.preventDefault();
+
+      //   let elem = e.target;
+
+      //   let formData = {
+      //     name: elem.querySelector('[name="name"]').value,
+      //     tel: elem.querySelector('[name="tel"]').value,
+      //   };
+      // });
+
+  
 
   const toogleModal = () => {
     setState(!showModal);
@@ -63,7 +81,7 @@ const Button = () => {
             unmountOnExit
           >
             <Modal onClose={toogleModal}>
-              <form className="form">
+              <form className="form form-data" method='POST'>
                 <button
                   className="btn__clouse hover form__icon"
                   type="button"

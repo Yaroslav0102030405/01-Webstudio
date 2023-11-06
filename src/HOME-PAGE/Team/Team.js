@@ -39,9 +39,8 @@ const Animation = {
 };
 
 const Team = () => {
-  
   const [t, i18n] = useTranslation('global');
-  
+
   return (
     <>
       <motion.section
@@ -67,9 +66,10 @@ const Team = () => {
             >
               <picture>
                 <source
-                  srcSet={ProductMobile}
-                  media="(max-width: 767px)"
-                  type="image/jpg"
+
+                srcSet={ProductMobile}
+                media="(max-width: 767px)"
+                type="image/jpg"
                 />
                 <source
                   srcSet={ProductTablet}
@@ -77,6 +77,7 @@ const Team = () => {
                 />
                 <source srcset={ProductDesctop} media="(min-width: 1200px)" />
                 <img
+                  // srcSet="./../../images/team/designer-desctop.jpg 1x, ./../../team/designer-tablet.jpg 2x, ./../../team/designer-mobile.jpg 3x"
                   width="100%"
                   height="auto"
                   loading="lazy"

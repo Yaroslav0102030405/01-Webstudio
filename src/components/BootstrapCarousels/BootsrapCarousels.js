@@ -29,8 +29,6 @@ import TabletWebP3 from '../../images/hero/WebP/tablet-3-768-2x.WebP';
 import MobileWebP2 from '../../images/hero/WebP/Mobile-2-480-2x.WebP';
 import MobileWebP3 from '../../images/hero/WebP/Mobile-3-480-2x.WebP';
 
-
-
 function IndividualIntervalsExample() {
   return (
     <Carousel data-bs-theme="light">

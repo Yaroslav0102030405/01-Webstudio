@@ -30,6 +30,7 @@ const Button = () => {
   //   showModal: false,
   // };
 
+
       // let FormS = document.querySelector('.form-data');
       // // console.log(axios)
 
@@ -95,7 +96,7 @@ const Button = () => {
             unmountOnExit
           >
             <Modal onClose={toogleModal}>
-              <form className="form form-data" onSubmit={sendEmail}>
+              <form className="form form-data" onSubmit={sendEmail} >
                 <button
                   className="btn__clouse hover form__icon"
                   type="button"
@@ -153,7 +154,9 @@ const Button = () => {
                     <span>{t('form.span')}</span>
                   </a>
                 </label>
-                <button className="button" type="submit">
+                <button
+                  className="button"
+                  type="submit">
                   {t('form.btn')}
                 </button>
               </form>

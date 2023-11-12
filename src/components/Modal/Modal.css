@@ -167,7 +167,7 @@ img {
 }
 
 .backdrop.is-hidden .form {
-  transform: translate(-50%, -50%) scale(0);
+  transform: translate(-50%, -50%) scale(0.9);
 }
 
 .form {
@@ -202,11 +202,10 @@ img {
   position: absolute;
   top: 8px;
   right: 8px;
-  padding: 4px;
+  padding-right: 10px;
+  padding-top: 5px;
   font-size: 17px;
   color: #000000;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
   cursor: pointer;
 }
 
@@ -257,7 +256,6 @@ textarea:focus {
   cursor: pointer;
   width: 448px;
   height: 120px;
-  font-size: 40%;
 }
 @media screen and (max-width: 1199px) {
   .form textarea {
@@ -340,4 +338,31 @@ label {
 
 .form__link {
   text-decoration: underline;
+}
+
+.button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 10px 32px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  font-family: inherit;
+  color: #ffffff;
+  background: #2196f3;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+.button:hover, .button:focus {
+  background-color: #188ce8;
+}
+.button__clouse {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: #ffffff;
 }/*# sourceMappingURL=Modal.css.map */

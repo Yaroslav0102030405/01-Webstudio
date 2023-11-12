@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState} from 'react';
 import './Button.scss';
 import { useTranslation } from 'react-i18next';
 import { CSSTransition } from 'react-transition-group';
@@ -10,6 +10,24 @@ import emailjs from '@emailjs/browser';
 
 import Modal from '../Modal/Modal';
 import './../Modal/Modal.scss';
+
+// function onEntry(entry) {
+//   entry.forEach(change => {
+//     if (change.isIntersecting) {
+//       change.target.classList.add('element-show');
+//     }
+//   });
+// }
+
+// let options = {
+//   threshold: [0.5],
+// };
+// let observer = new IntersectionObserver(onEntry, options);
+// let elements = document.querySelectorAll('.element-animation');
+
+// for (let elm of elements) {
+//   observer.observe(elm);
+// }
 
 const Animation = {
   hidden: {
@@ -74,7 +92,11 @@ const Button = () => {
         className="hero center"
       > */}
       <div className="container hero-container">
-        <motion.h1 custom={1} variants={Animation} className="hero__title">
+        <motion.h1
+          custom={1}
+          variants={Animation}
+          className="hero__title"
+        >
           {t('hero.title')}
         </motion.h1>
 
@@ -96,7 +118,7 @@ const Button = () => {
             unmountOnExit
           >
             <Modal onClose={toogleModal}>
-              <form className="form form-data" onSubmit={sendEmail} >
+              <form className="form form-data" onSubmit={sendEmail}>
                 <button
                   className="btn__clouse hover form__icon"
                   type="button"
@@ -154,9 +176,7 @@ const Button = () => {
                     <span>{t('form.span')}</span>
                   </a>
                 </label>
-                <button
-                  className="button"
-                  type="submit">
+                <button className="button" type="submit">
                   {t('form.btn')}
                 </button>
               </form>

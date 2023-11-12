@@ -255,6 +255,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .menu__burger {
+    display: flex;
     position: absolute;
     top: 100%;
     left: 0;

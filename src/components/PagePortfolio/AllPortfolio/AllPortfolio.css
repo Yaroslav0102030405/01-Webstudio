@@ -184,7 +184,7 @@ img {
 }
 
 .allportfolio__link {
-  margin-right: 30px;
+  margin-right: 27px;
   margin-bottom: 30px;
   border: 1px solid #eee;
   background: #fff;
@@ -303,4 +303,9 @@ img {
 
 .allportfolio__link:hover .box__overlay {
   transform: translateY(0);
+}
+
+.active {
+  color: #2196f3;
+  background-color: #2196f3;
 }/*# sourceMappingURL=AllPortfolio.css.map */

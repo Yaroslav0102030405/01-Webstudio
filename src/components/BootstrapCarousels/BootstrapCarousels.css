@@ -1,0 +1,12 @@
+.carousel-caption {
+  margin-bottom: 180px;
+}
+@media screen and (max-width: 767px) {
+  .carousel-caption {
+    margin-bottom: 40px;
+  }
+}
+
+.Backround__image [source] {
+  background-color: rgba(47, 48, 58, 0.4);
+}/*# sourceMappingURL=BootstrapCarousels.css.map */

@@ -21,7 +21,6 @@
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     // display: flex;
     // align-items: center;
-    
   }
 
   @media screen and (min-width: 1200px) {
@@ -424,18 +423,21 @@
 }
 
 .multilanguage {
- display: flex;
+  display: flex;
   margin-left: auto;
   z-index: 1;
 }
 
 .mobile-2 {
   @media screen and (max-width: 767px) {
-  display: flex;
+    display: flex;
+    align-items: center;
+    // justify-content: flex-start;
+    // flex-direction: row-reverse;
   }
 
-   @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     display: inline-flex;
     justify-content: space-around;
-   }
+  }
 }

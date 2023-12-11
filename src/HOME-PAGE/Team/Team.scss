@@ -134,7 +134,7 @@
 }
 
 .dark-theme .team-subtitle {
-    color: $text-color;
+  color: $text-color;
 }
 
 .team-text {
@@ -164,18 +164,26 @@
 
 .team-list-icon:hover:nth-child(1) {
   background: $instagram;
+  transition: 500ms ease;
+  transform: rotate(360deg);
 }
 
 .team-list-icon:hover:nth-child(2) {
-background-color: $twitter;
+  background-color: $twitter;
+  transition: 500ms ease;
+  transform: rotate(360deg);
 }
 
 .team-list-icon:hover:nth-child(3) {
-background-color: $facebook;
+  background-color: $facebook;
+  transition: 500ms ease;
+  transform: rotate(360deg);
 }
 
 .team-list-icon:hover:nth-child(4) {
-background-color: $linkedin;
+  background-color: $linkedin;
+  transition: 500ms ease;
+  transform: rotate(360deg);
 }
 
 .team-list-icon a:hover {
@@ -211,6 +219,5 @@ background-color: $linkedin;
 }
 
 .dark-theme .team-item {
-    background-color: $background-image;
+  background-color: $background-image;
 }
-

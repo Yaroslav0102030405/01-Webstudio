@@ -4,26 +4,26 @@ import './Features.scss';
 
 import { useTranslation } from 'react-i18next';
 
-// const Animation = {
-//   hidden: {
-//     x: -100,
-//     opacity: 0,
-//   },
-//   visible: custom => ({
-//     x: 0,
-//     opacity: 1,
-//     transition: { delay: custom * 0.2 },
-//   }),
-// };
+const Animation = {
+  hidden: {
+    x: -100,
+    opacity: 0,
+  },
+  visible: custom => ({
+    x: 0,
+    opacity: 1,
+    transition: { delay: custom * 0.2 },
+  }),
+};
 
 const Features = () => {
   const [t, i18n] = useTranslation('global');
   
   return (
     <>
-      <section
-        // initial="hidden"
-        // whileInView="visible"
+      <motion.section
+        initial="hidden"
+        whileInView="visible"
         // viewport={{ amount: 0.3, once: true }}
         className="features"
       >
@@ -31,30 +31,30 @@ const Features = () => {
           <h2 className="visually-hidden">Преимущества</h2>
 
           <ul className="features-list">
-            <li
-              // custom={1}
-              // variants={Animation}
+            <motion.li
+              custom={1}
+              variants={Animation}
               className="features-item element-animation"
             >
-              <h3
-                // custom={2}
-                // variants={Animation}
+              <motion.h3
+                custom={2}
+                variants={Animation}
                 className="features-title"
               >
                 {t('features.title-1')}
                 {/* Strategy */}
-              </h3>
-              <p
-                // custom={3}
-                // variants={Animation}
+              </motion.h3>
+              <motion.p
+                custom={3}
+                variants={Animation}
                 className="features-text"
               >
                 {t('features.desc-1')}
                 {/* Our goal is to identify the business problem to walk away with
                 the perfect and creative solution. */}
-              </p>
-            </li>
-            <li
+              </motion.p>
+            </motion.li>
+            <motion.li
               custom={4}
               variants={Animation}
               className="features-item element-animation"
@@ -76,8 +76,8 @@ const Features = () => {
                 {/* Bring the key message to the brand's audience for the best price
                 within the shortest possible time. */}
               </motion.p>
-            </li>
-            <li
+            </motion.li>
+            <motion.li
               custom={7}
               variants={Animation}
               className="features-item element-animation"
@@ -90,7 +90,7 @@ const Features = () => {
                 {t('features.title-3')}
                 {/* Diligence */}
               </motion.h3>
-              <p
+              <motion.p
                 custom={9}
                 variants={Animation}
                 className="features-text"
@@ -98,22 +98,22 @@ const Features = () => {
                 {t('features.desc-3')}
                 {/* Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk. */}
-              </p>
-            </li>
-            <li
+              </motion.p>
+            </motion.li>
+            <motion.li
               custom={10}
               variants={Animation}
               className="features-item element-animation"
             >
-              <h3
+              <motion.h3
                 custom={11}
                 variants={Animation}
                 className="features-title"
               >
                 {t('features.title-4')}
                 {/* Technologies */}
-              </h3>
-              <p
+              </motion.h3>
+              <motion.p
                 custom={12}
                 variants={Animation}
                 className="features-text"
@@ -121,11 +121,11 @@ const Features = () => {
                 {t('features.desc-4')}
                 {/* Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving. */}
-              </p>
-            </li>
+              </motion.p>
+            </motion.li>
           </ul>
         </div>
-      </section>
+      </motion.section>
     </>
   );
 };

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 // import { CSSTransition } from 'react-transition-group';
-// import { motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import './Hero.scss';
 import Modal from '../../components/Modal/Modal';
 import './../../components/Modal/Modal.scss';
@@ -8,17 +8,17 @@ import './../../components/Modal/Modal.scss';
 import { useTranslation } from 'react-i18next';
 // import IndividualIntervalsExample from '../../components/BootstrapCarousels/BootsrapCarousels';
 
-// const Animation = {
-//   hidden: {
-//     x: -100,
-//     opacity: 0,
-//   },
-//   visible: custom => ({
-//     x: 0,
-//     opacity: 1,
-//     transition: { delay: custom * 0.2 },
-//   }),
-// };
+const Animation = {
+  hidden: {
+    x: -100,
+    opacity: 0,
+  },
+  visible: custom => ({
+    x: 0,
+    opacity: 1,
+    transition: { delay: custom * 0.3 },
+  }),
+};
 
 const Hero = () => {
   const [t, i18n] = useTranslation('global');
@@ -41,11 +41,17 @@ const Hero = () => {
     <>
       {/* <IndividualIntervalsExample /> */}
       <div className="overlay">
-        <section className="hero center">
+        <motion.section
+          initial="hidden"
+          whileInView="visible"
+          className="hero center"
+        >
           <div className="container hero-container">
-            <h1 className="hero__title">{t('hero.title')}</h1>
+            <motion.h1 variants={Animation} custom={1} className="hero__title">
+              {t('hero.title')}
+            </motion.h1>
 
-            <button
+            <motion.button
               custom={2}
               variants={Animation}
               className="btn"
@@ -53,7 +59,7 @@ const Hero = () => {
               onClick={toogleModal}
             >
               {t('hero.btn')}
-            </button>
+            </motion.button>
 
             {showModal && (
               // <CSSTransition
@@ -129,7 +135,7 @@ const Hero = () => {
               // </CSSTransition>
             )}
           </div>
-        </section>
+        </motion.section>
       </div>
     </>
   );

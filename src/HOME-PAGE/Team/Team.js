@@ -1,5 +1,5 @@
 import React from 'react';
-// import { motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import './Team.scss';
 
 import { useTranslation } from 'react-i18next';
@@ -26,42 +26,42 @@ import { ReactComponent as Twitter } from './../../images/svg1/twitter 1.svg';
 import { ReactComponent as Facebook } from './../../images/svg1/facebook 1.svg';
 import { ReactComponent as Linkedin } from './../../images/svg1/linkedin 1.svg';
 
-// const Animation = {
-//   hidden: {
-//     x: -100,
-//     opacity: 0,
-//   },
-//   visible: custom => ({
-//     x: 0,
-//     opacity: 1,
-//     transition: { delay: custom * 0.3 },
-//   }),
-// };
+const Animation = {
+  hidden: {
+    x: -100,
+    opacity: 0,
+  },
+  visible: custom => ({
+    x: 0,
+    opacity: 1,
+    transition: { delay: custom * 0.3 },
+  }),
+};
 
 const Team = () => {
   const [t, i18n] = useTranslation('global');
 
   return (
     <>
-      <section
-        // initial="hidden"
-        // whileInView="visible"
+      <motion.section
+        initial="hidden"
+        whileInView="visible"
         // viewport={{ amount: 0, once: true }}
         className="team"
       >
         <div className="container">
-          <h2
-            // custom={1}
-            // variants={Animation}
+          <motion.h2
+            custom={1}
+            variants={Animation}
             className="team-title center element-animation"
           >
             {t('team.title')}
             {/* Our Team */}
-          </h2>
+          </motion.h2>
           <ul className="team-list">
-            <li
-              // custom={2}
-              // variants={Animation}
+            <motion.li
+              custom={2}
+              variants={Animation}
               className="team-item element-animation"
             >
               <picture>
@@ -136,11 +136,11 @@ const Team = () => {
                   </a>
                 </li>
               </ul>
-            </li>
+            </motion.li>
 
-            <li
-              // custom={3}
-              // variants={Animation}
+            <motion.li
+              custom={3}
+              variants={Animation}
               className="team-item element-animation"
             >
               <picture>
@@ -214,11 +214,11 @@ const Team = () => {
                   </a>
                 </li>
               </ul>
-            </li>
+            </motion.li>
 
-            <li
-              // custom={4}
-              // variants={Animation}
+            <motion.li
+              custom={4}
+              variants={Animation}
               className="team-item element-animation"
             >
               <picture>
@@ -290,11 +290,11 @@ const Team = () => {
                   </a>
                 </li>
               </ul>
-            </li>
+            </motion.li>
 
-            <li
-              // custom={5}
-              // variants={Animation}
+            <motion.li
+              custom={5}
+              variants={Animation}
               className="team-item element-animation"
             >
               <picture>
@@ -374,10 +374,10 @@ const Team = () => {
                   </a>
                 </li>
               </ul>
-            </li>
+            </motion.li>
           </ul>
         </div>
-      </section>
+      </motion.section>
     </>
   );
 };

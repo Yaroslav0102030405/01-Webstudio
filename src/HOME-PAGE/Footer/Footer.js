@@ -1,6 +1,8 @@
 import React from 'react';
 import './Footer.scss';
 
+import { motion } from 'framer-motion';
+
 import { useTranslation } from 'react-i18next';
 
 import { ReactComponent as Instagram } from './../../images/svg1/instagram 2.svg';
@@ -8,14 +10,30 @@ import { ReactComponent as Twitter } from './../../images/svg1/twitter 1.svg';
 import { ReactComponent as Facebook } from './../../images/svg1/facebook 1.svg';
 import { ReactComponent as Linkedin } from './../../images/svg1/linkedin 1.svg';
 
+const Animation = {
+  hidden: {
+    x: -100,
+    opacity: 0,
+  },
+  visible: custom => ({
+    x: 0,
+    opacity: 1,
+    transition: { delay: custom * 0.3 },
+  }),
+};
+
 const Footer = () => {
    const [t, i18n] = useTranslation('global');
   return (
     <>
-      <footer className="footer">
+      <motion.footer initial="hidden" whileInView="visible" className="footer">
         <div className="container">
           <div className="footer-wrap">
-            <div className="footer-contact">
+            <motion.div
+              custom={1}
+              variants={Animation}
+              className="footer-contact"
+            >
               <a className="logo element-animation" href="!#">
                 <span className="logo-web">Web</span>
                 <span className="logo-studio-footer">Studio</span>
@@ -39,8 +57,12 @@ const Footer = () => {
                   {/* +38 099 111 11 11 */}
                 </a>
               </address>
-            </div>
-            <div className="footer-icons">
+            </motion.div>
+            <motion.div
+              custom={2}
+              variants={Animation}
+              className="footer-icons"
+            >
               <b className="footer-text element-animation">
                 {t('footer.social')}
                 {/* Social media */}
@@ -87,10 +109,10 @@ const Footer = () => {
                   </a>
                 </li>
               </ul>
-            </div>
+            </motion.div>
           </div>
         </div>
-      </footer>
+      </motion.footer>
     </>
   );
 };

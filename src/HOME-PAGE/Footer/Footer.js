@@ -75,7 +75,10 @@ const Footer = () => {
                     target="_blank"
                     rel="noreferrer noopener"
                   >
-                    <Instagram className="footer-icon" />
+                    <Instagram
+                      aria-label="Ссилка на Instagram"
+                      className="footer-icon"
+                    />
                   </a>
                 </li>
                 <li className="footer-list-icon">
@@ -85,7 +88,10 @@ const Footer = () => {
                     target="_blank"
                     rel="noreferrer noopener"
                   >
-                    <Twitter className="footer-icon" />
+                    <Twitter
+                      aria-label="Ссилка на Twitter"
+                      className="footer-icon"
+                    />
                   </a>
                 </li>
                 <li className="footer-list-icon">
@@ -95,7 +101,10 @@ const Footer = () => {
                     target="_blank"
                     rel="noreferrer noopener"
                   >
-                    <Facebook className="footer-icon" />
+                    <Facebook
+                      aria-label="Ссилка на facebook"
+                      className="footer-icon"
+                    />
                   </a>
                 </li>
                 <li className="footer-list-icon">
@@ -105,7 +114,10 @@ const Footer = () => {
                     target="_blank"
                     rel="noreferrer noopener"
                   >
-                    <Linkedin className="footer-icon" />
+                    <Linkedin
+                      aria-label="Ссилка на Linkedin"
+                      className="footer-icon"
+                    />
                   </a>
                 </li>
               </ul>

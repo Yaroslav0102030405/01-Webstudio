@@ -66,10 +66,9 @@ const Team = () => {
             >
               <picture>
                 <source
-
-                srcSet={ProductMobile}
-                media="(max-width: 767px)"
-                type="image/jpg"
+                  srcSet={ProductMobile}
+                  media="(max-width: 767px)"
+                  type="image/jpg"
                 />
                 <source
                   srcSet={ProductTablet}
@@ -102,7 +101,10 @@ const Team = () => {
                     target="_blank"
                     rel="noreferrer noopener"
                   >
-                    <Instagram className="team-icon" />
+                    <Instagram
+                      aria-label="Ссилка на Instagram"
+                      className="team-icon"
+                    />
                   </a>
                 </li>
                 <li className="team-list-icon">
@@ -112,7 +114,10 @@ const Team = () => {
                     target="_blank"
                     rel="noreferrer noopener"
                   >
-                    <Twitter className="team-icon" />
+                    <Twitter
+                      aria-label="Ссилка на Twitter"
+                      className="team-icon"
+                    />
                   </a>
                 </li>
                 <li className="team-list-icon">
@@ -122,7 +127,10 @@ const Team = () => {
                     target="_blank"
                     rel="noreferrer noopener"
                   >
-                    <Facebook className="team-icon" />
+                    <Facebook
+                      aria-label="Ссилка на Facebook"
+                      className="team-icon"
+                    />
                   </a>
                 </li>
                 <li className="team-list-icon">
@@ -132,7 +140,10 @@ const Team = () => {
                     target="_blank"
                     rel="noreferrer noopener"
                   >
-                    <Linkedin className="team-icon" />
+                    <Linkedin
+                      aria-label="Ссилка на Linkedin"
+                      className="team-icon"
+                    />
                   </a>
                 </li>
               </ul>
@@ -180,7 +191,10 @@ const Team = () => {
                     target="_blank"
                     rel="noreferrer noopener"
                   >
-                    <Instagram className="team-icon" />
+                    <Instagram
+                      aria-label="Ссилка на instagram"
+                      className="team-icon"
+                    />
                   </a>
                 </li>
                 <li className="team-list-icon">
@@ -190,7 +204,10 @@ const Team = () => {
                     target="_blank"
                     rel="noreferrer noopener"
                   >
-                    <Twitter className="team-icon" />
+                    <Twitter
+                      aria-label="Ссилка на Twitter"
+                      className="team-icon"
+                    />
                   </a>
                 </li>
                 <li className="team-list-icon">
@@ -200,7 +217,10 @@ const Team = () => {
                     target="_blank"
                     rel="noreferrer noopener"
                   >
-                    <Facebook className="team-icon" />
+                    <Facebook
+                      aria-label="Ссилка на Facebook"
+                      className="team-icon"
+                    />
                   </a>
                 </li>
                 <li className="team-list-icon">
@@ -210,7 +230,10 @@ const Team = () => {
                     target="_blank"
                     rel="noreferrer noopener"
                   >
-                    <Linkedin className="team-icon" />
+                    <Linkedin
+                      aria-label="Ссилка на Linkedin"
+                      className="team-icon"
+                    />
                   </a>
                 </li>
               </ul>
@@ -256,7 +279,10 @@ const Team = () => {
                     target="_blank"
                     rel="noreferrer noopener"
                   >
-                    <Instagram className="team-icon" />
+                    <Instagram
+                      aria-label="Ссилка на Instagram"
+                      className="team-icon"
+                    />
                   </a>
                 </li>
                 <li className="team-list-icon">
@@ -266,7 +292,10 @@ const Team = () => {
                     target="_blank"
                     rel="noreferrer noopener"
                   >
-                    <Twitter className="team-icon" />
+                    <Twitter
+                      aria-label="Ссилка на Twitter"
+                      className="team-icon"
+                    />
                   </a>
                 </li>
                 <li className="team-list-icon">
@@ -276,7 +305,10 @@ const Team = () => {
                     target="_blank"
                     rel="noreferrer noopener"
                   >
-                    <Facebook className="team-icon" />
+                    <Facebook
+                      aria-label="Ссилка на Facebook"
+                      className="team-icon"
+                    />
                   </a>
                 </li>
                 <li className="team-list-icon">
@@ -286,7 +318,10 @@ const Team = () => {
                     target="_blank"
                     rel="noreferrer noopener"
                   >
-                    <Linkedin className="team-icon" />
+                    <Linkedin
+                      aria-label="Ссилка на Linkedin"
+                      className="team-icon"
+                    />
                   </a>
                 </li>
               </ul>
@@ -340,7 +375,10 @@ const Team = () => {
                     target="_blank"
                     rel="noreferrer noopener"
                   >
-                    <Instagram className="team-icon" />
+                    <Instagram
+                      aria-label="Ссилка на Instagram"
+                      className="team-icon"
+                    />
                   </a>
                 </li>
                 <li className="team-list-icon">
@@ -350,7 +388,10 @@ const Team = () => {
                     target="_blank"
                     rel="noreferrer noopener"
                   >
-                    <Twitter className="team-icon" />
+                    <Twitter
+                      aria-label="Ссилка на Twitter"
+                      className="team-icon"
+                    />
                   </a>
                 </li>
                 <li className="team-list-icon">
@@ -360,7 +401,10 @@ const Team = () => {
                     target="_blank"
                     rel="noreferrer noopener"
                   >
-                    <Facebook className="team-icon" />
+                    <Facebook
+                      aria-label="Ссилка на Facebook"
+                      className="team-icon"
+                    />
                   </a>
                 </li>
                 <li className="team-list-icon">
@@ -370,7 +414,10 @@ const Team = () => {
                     target="_blank"
                     rel="noreferrer noopener"
                   >
-                    <Linkedin className="team-icon" />
+                    <Linkedin
+                      aria-label="Ссилка на Linkedin"
+                      className="team-icon"
+                    />
                   </a>
                 </li>
               </ul>

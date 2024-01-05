@@ -111,19 +111,12 @@
 
 .hero__title {
   @media screen and (max-width: 767px) {
-    //  margin-left: -20px;
      margin-left: auto;
   }
 
    @media screen and (min-width: 468px) and (max-width: 1199px) {
      width: 280px;
-    //  margin-left: 195px;
    }
-
-  //  @media screen and (min-width: 1200px) {
-  //   margin-left: 265px;
-  //  }
-
 }
 
 .btn {
@@ -137,16 +130,12 @@
   line-height: 1.87;
   letter-spacing: 0.06em;
   font-family: inherit;
-
   color: $white-color;
-
-  background-color: #2196f3;
+  background-color: $accent-color;
   border-radius: 4px;
   border: none;
   cursor: pointer;
-
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-  
 
   &:hover,
   &:focus {
@@ -161,20 +150,8 @@
   }
 }
 
-// .btn {
-//   // @media screen and (min-width: 1200px) {
-//   //   margin-left: 430px;
-//   //  }
-
-//   //   @media screen and (min-width: 468px) and (max-width: 1199px) {
-//   //    margin-left: 250px;
-//   //  }
-
-// }
-
 .alert-enter {
   opacity: 0;
-  // transform: scale(1);
 }
 
 .alert-enter-active {

@@ -1,18 +1,18 @@
 import React from "react";
 
-import { motion } from 'framer-motion';
+// import { motion } from 'framer-motion';
 
-const Animation = {
-  hidden: {
-    x: -100,
-    opacity: 0,
-  },
-  visible: custom => ({
-    x: 0,
-    opacity: 1,
-    transition: { delay: custom * 0.3 },
-  }),
-};
+// const Animation = {
+//   hidden: {
+//     x: -100,
+//     opacity: 0,
+//   },
+//   visible: custom => ({
+//     x: 0,
+//     opacity: 1,
+//     transition: { delay: custom * 0.3 },
+//   }),
+// };
 
 
 // import { useTranslation } from 'react-i18next';
@@ -22,15 +22,15 @@ const Menu = ({ menuItem }) => {
   
     return (
       <>
-        <motion.ul
-          initial="hidden"
-          whileInView="visible"
+        <ul
+          // initial="hidden"
+          // whileInView="visible"
           className="allportfolio__item2"
         >
           {menuItem.map(({ id, image, title, description }) => (
-            <motion.li
+            <li
               // custom={2}
-              variants={Animation}
+              // variants={Animation}
               className="allportfolio__link"
               key={id}
             >
@@ -47,9 +47,9 @@ const Menu = ({ menuItem }) => {
               </div>
               <h2>{title}</h2>
               <p>{description}</p>
-            </motion.li>
+            </li>
           ))}
-        </motion.ul>
+        </ul>
       </>
     );
 }

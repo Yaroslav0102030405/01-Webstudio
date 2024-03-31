@@ -232,10 +232,12 @@ img {
   background: #2196f3;
   border-radius: 4px;
   border: none;
-  cursor: pointer;
+  /* cursor: pointer; */
+  /* cursor: url('../images/cursor/cursor2.png'), auto; */
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
-.btn:hover, .btn:focus {
+.btn:hover,
+.btn:focus {
   background-color: #188ce8;
 }
 .btn__clouse {
@@ -263,7 +265,9 @@ img {
 .alert-enter-active {
   opacity: 1;
   transform: translate(0) scale(1);
-  transition: opacity 300ms, transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition:
+    opacity 300ms,
+    transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .alert-exit {
@@ -273,5 +277,7 @@ img {
 .alert-exit-active {
   opacity: 0;
   transform: scale(0.9);
-  transition: opacity 300ms, transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
-}/*# sourceMappingURL=Hero.css.map */
+  transition:
+    opacity 300ms,
+    transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+} /*# sourceMappingURL=Hero.css.map */

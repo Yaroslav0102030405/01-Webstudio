@@ -51,18 +51,17 @@
   height: 90px;
 }
 
-  .clients-item {
+.clients-item {
   @media screen and (max-width: 767px) {
     width: calc((100% - 30px) / 2);
     &:nth-child(2n) {
       margin-right: 0;
     }
     &:nth-last-child(-n + 2) {
-     margin-bottom: 0;
-   }
+      margin-bottom: 0;
+    }
   }
 }
-  
 
 .clients-item {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -76,19 +75,18 @@
   }
 }
 
-
 .clients-item {
   @media screen and (min-width: 1200px) {
     width: calc((100% - 120px) / 6);
     &:last-child {
       margin-right: 0;
-  }
-  &:nth-child(n + 1) {
-    margin-bottom: 0;
-  }
+    }
+    &:nth-child(n + 1) {
+      margin-bottom: 0;
+    }
   }
 }
-   
+
 .clients-logo {
   display: flex;
   height: 100%;
@@ -99,9 +97,11 @@
   border-radius: 4px;
 
   fill: #afb1b8;
-  cursor: pointer;
+  // cursor: pointer;
+  cursor: url('../../images/cursor/cursor2.png'), auto;
 
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms,
+  transition:
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms,
     color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms,
     border 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }

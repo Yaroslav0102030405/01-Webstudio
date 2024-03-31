@@ -12,7 +12,6 @@
 //     -webkit-overflow-scrolling: touch;}
 // html { overflow-y: scroll !important; }
 
-
 //   $body-background: white;
 //   $body-color: black;
 
@@ -30,12 +29,11 @@
 //   top: 0;
 // }
 
-
 body {
   margin: 0;
   padding: 0;
 
-   cursor:url("../images/cursor-3.png"), auto;
+  cursor: url('../images/cursor/cursor1.png'), auto;
 
   // background-color: $black-color;
   // color: $title-color;
@@ -53,14 +51,20 @@ body {
 
 // add scrollbar
 .window {
-overflow: auto;
-border: 1px solid #fff;
-border-radius: 5px 0 0 5px;
+  overflow: auto;
+  border: 1px solid #fff;
+  border-radius: 5px 0 0 5px;
 }
 
 ::-webkit-scrollbar {
   border: 1px solid #fff;
-  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(89,84,12,0.6615896358543417) 0%, rgba(92,8,79,1) 0%, rgba(153,84,209,0) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(89, 84, 12, 0.6615896358543417) 0%,
+    rgba(92, 8, 79, 1) 0%,
+    rgba(153, 84, 209, 0) 100%
+  );
 }
 
 ::-webkit-scrollbar-thumb {
@@ -69,17 +73,10 @@ border-radius: 5px 0 0 5px;
   border: 1px solid #fff;
 }
 
-
-
 // // * Запретить скролл под модальном окном
 // body.keydown {
 //     overflow: hidden;
 // }
-  
-
-
-
-
 
 /* скрыть заголовки и части текста */
 .visually-hidden {
@@ -188,6 +185,8 @@ a {
   display: block;
   text-decoration: none;
   font-style: normal;
+
+  cursor: url('../images/cursor/cursor2.png'), auto;
 }
 
 ul {

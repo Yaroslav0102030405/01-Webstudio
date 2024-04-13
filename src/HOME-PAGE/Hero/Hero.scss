@@ -31,7 +31,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    width: 1600px;
+    max-width: 1600px;
     background-image: url('../../images/hero/bg-img-1200.jpg');
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),

@@ -1,7 +1,6 @@
 @import './../../SASS/base.scss';
 @import './../../SASS/variables.scss';
 
-
 .backdrop {
   position: fixed;
   padding: 20px;
@@ -15,16 +14,15 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   // чтоб не прокручивалась модалька
-  overflow-y: scroll;
-  
+  // overflow-y: scroll;
+
   z-index: 999;
-   
 }
 
 .backdrop.is-hidden {
   /* прозрачность и спрятать модуалку */
   opacity: 0;
-    /* пропускать через модалку события */
+  /* пропускать через модалку события */
   pointer-events: none;
 }
 
@@ -40,7 +38,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-      // height: 100%;
+  // height: 100%;
   padding: 40px;
   background: $white-color;
   box-shadow:
@@ -63,12 +61,10 @@
 
   @media screen and (min-width: 1200px) {
     max-width: 528px;
-      // margin-top: 208px;
+    // margin-top: 208px;
     // height: auto;
   }
 }
-
-
 
 .form__icon {
   display: inline-block;
@@ -84,7 +80,7 @@
   // height: 30px;
   //     width: 18px;
   // height: 18px;
-  
+
   font-size: 17px;
 
   color: $black-color;
@@ -97,8 +93,7 @@
 .form__icon:hover,
 .form__icon:focus {
   // fill: $accent-color;
-  color: $accent-color ;
-  
+  color: $accent-color;
 }
 
 .form__title {
@@ -239,11 +234,9 @@ label {
   text-decoration: underline;
 }
 
-
 // .form .btn__clouse {
 //   font-size: 20px;
 // }
-
 
 .button {
   display: block;

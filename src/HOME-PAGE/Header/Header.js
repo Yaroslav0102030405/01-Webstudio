@@ -4,16 +4,12 @@ import './Header.scss';
 import Dropdown from '../../components/Dropdown/Dropdown';
 import DarkMode from './../../components/DarkMode/DarkMode';
 
-// import i18next from 'i18next';
-
 import { useTranslation } from 'react-i18next';
-// import i18n from '../i18n/i18n';
 
 const Header = () => {
   const [t, i18n] = useTranslation('global');
- 
 
-  const handleChangeLanguage = (lang) => {
+  const handleChangeLanguage = lang => {
     i18n.changeLanguage(lang);
   };
 
@@ -22,13 +18,6 @@ const Header = () => {
       <header className="header">
         <div className="container">
           <div className="header__wrap">
-            {/* {isOpen ? (
-              <button onClick={handleMenu}>Clouse</button>
-            ) : (
-              <button  onClick={handleMenu}>
-                Open
-              </button>
-            )} */}
             <div className="mobile__wrap">
               <Link className="logo" to="/">
                 <span className="logo__web">Web</span>
@@ -49,51 +38,26 @@ const Header = () => {
                   <li className="menu__item">
                     <Link className="menu__link current js__link" to="/">
                       {t('header.home')}
-                      {/* {content.home} */}
                     </Link>
                   </li>
                   <li className="menu__item">
                     <Link class="menu__link" to="/portfolio">
                       {t('header.portfolio')}
-                      {/* {content.portfolio} */}
                     </Link>
                   </li>
                   <li className="menu__item">
                     <a className="menu__link" href="/">
                       {t('header.contacts')}
-                      {/* {content.contacts} */}
-
-                      {/* Contacts */}
                     </a>
                   </li>
                 </ul>
-                {/* <DarkMode /> */}
                 <ul className="menu__contacts">
-                  <li className="contacts__item">
-                    {/* <a
-                        className="contacts__link contacts__icon"
-                        href="mailto:info@example.com"
-                      > */}
-                    {/* <DarkMode /> */}
-                    {/* <Envelope className="contacts__svg-envelope" />
-                      info@example.com */}
-                    {/* </a> */}
-                  </li>
+                  <li className="contacts__item"></li>
                 </ul>
               </nav>
             </div>
 
             <div className="mobile-2">
-              {/* <select
-              value={language}
-              onChange={e => {
-                setLanguage(e.target.value);
-              }}
-            >
-              <option>EN</option>
-              <option>UK</option>
-              <option>RU</option>
-            </select> */}
               <DarkMode />
               <ul className="multilanguage">
                 <li className="text">

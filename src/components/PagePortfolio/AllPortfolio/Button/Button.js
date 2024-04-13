@@ -19,7 +19,11 @@ const Button = ({ button, filter, title }) => {
           return (
             <li className="allportfolio__item">
               {/* <NavLink className={({ isActive }) => (isActive ? 'active' : '')}> */}
-              <button type="button" onClick={() => filter(description)}>
+              <button
+                type="button"
+                onClick={() => filter(description)}
+                aria-label="button filter"
+              >
                 {description}
                 {/* {t('portfolio.btn')} */}
               </button>

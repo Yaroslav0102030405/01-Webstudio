@@ -54,7 +54,6 @@ const Footer = () => {
                   href="mailto:info@example.com"
                 >
                   {t('footer.email')}
-                  {/* info@example.com */}
                 </a>
                 <a
                   aria-label="link to tel"

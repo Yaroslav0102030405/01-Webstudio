@@ -47,7 +47,6 @@ const Footer = () => {
                   rel="noopener noreferer noreferrer"
                 >
                   {t('footer.addres')}
-                  {/* Kiev, Lesia Ukrainka Ave, 26 */}
                 </a>
                 <a
                   aria-label="link to email"

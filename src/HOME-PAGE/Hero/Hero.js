@@ -52,6 +52,7 @@ const Hero = () => {
             </motion.h1>
 
             <motion.button
+              aria-label="button open modal"
               custom={2}
               variants={Animation}
               className="btn"
@@ -62,15 +63,10 @@ const Hero = () => {
             </motion.button>
 
             {showModal && (
-              // <CSSTransition
-              //   in={showModal}
-              //   classNames="alert"
-              //   timeout={500}
-              //   unmountOnExit
-              // >
               <Modal onClose={toogleModal}>
                 <form className="form">
                   <button
+                    aria-label="button close"
                     className="btn__clouse hover form__icon"
                     type="button"
                     onClick={toogleModal}
@@ -123,11 +119,15 @@ const Hero = () => {
                     ></input>
                     <span className="custom__checkbox"></span>
                     <span className="form__text">{t('form.checkbox')}</span>
-                    <a className="form__link" href="#">
+                    <a className="form__link" href="#" aria-label="link">
                       <span>{t('form.span')}</span>
                     </a>
                   </label>
-                  <button className="btn" type="submit">
+                  <button
+                    className="btn"
+                    type="submit"
+                    aria-label="button submit"
+                  >
                     {t('form.btn')}
                   </button>
                 </form>

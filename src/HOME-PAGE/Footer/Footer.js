@@ -23,7 +23,7 @@ const Animation = {
 };
 
 const Footer = () => {
-   const [t, i18n] = useTranslation('global');
+  const [t, i18n] = useTranslation('global');
   return (
     <>
       <motion.footer initial="hidden" whileInView="visible" className="footer">
@@ -40,19 +40,28 @@ const Footer = () => {
               </a>
               <address className="address element-animation">
                 <a
+                  aria-label="link to map"
                   className="address-map"
                   href="https://goo.gl/maps/nESUi33Z9tEDnT8MA"
                   target="_blank"
-                  rel="noopener noreferer"
+                  rel="noopener noreferer noreferrer"
                 >
                   {t('footer.addres')}
                   {/* Kiev, Lesia Ukrainka Ave, 26 */}
                 </a>
-                <a className="address-link" href="mailto:info@example.com">
+                <a
+                  aria-label="link to email"
+                  className="address-link"
+                  href="mailto:info@example.com"
+                >
                   {t('footer.email')}
                   {/* info@example.com */}
                 </a>
-                <a className="address-link no-margin" href="tel:++380991111111">
+                <a
+                  aria-label="link to tel"
+                  className="address-link no-margin"
+                  href="tel:++380991111111"
+                >
                   {t('footer.tel')}
                   {/* +38 099 111 11 11 */}
                 </a>
@@ -71,7 +80,7 @@ const Footer = () => {
                 <li className="footer-list-icon">
                   <a
                     href="https://www.instagram.com/"
-                    aria-label=""
+                    aria-label="link to instagram"
                     target="_blank"
                     rel="noreferrer noopener"
                   >
@@ -84,7 +93,7 @@ const Footer = () => {
                 <li className="footer-list-icon">
                   <a
                     href="https://twitter.com/?lang=uk"
-                    aria-label=""
+                    aria-label="link to client1"
                     target="_blank"
                     rel="noreferrer noopener"
                   >
@@ -97,7 +106,7 @@ const Footer = () => {
                 <li className="footer-list-icon">
                   <a
                     href="https://www.facebook.com/"
-                    aria-label=""
+                    aria-label="link to facebook"
                     target="_blank"
                     rel="noreferrer noopener"
                   >
@@ -110,7 +119,7 @@ const Footer = () => {
                 <li className="footer-list-icon">
                   <a
                     href="https://www.linkedin.com/"
-                    aria-label=""
+                    aria-label="link to linkedin"
                     target="_blank"
                     rel="noreferrer noopener"
                   >

@@ -19,13 +19,14 @@ const Header = () => {
         <div className="container">
           <div className="header__wrap">
             <div className="mobile__wrap">
-              <Link className="logo" to="/">
+              <Link aria-label="logo" className="logo" to="/">
                 <span className="logo__web">Web</span>
                 <span className="logo__studio">Studio</span>
               </Link>
               <Dropdown />
 
               <button
+                aria-label="button open"
                 type="button"
                 className="mobile__btn is__open"
                 data-menu-button
@@ -33,20 +34,32 @@ const Header = () => {
             </div>
 
             <div className="menu__burger" data-menu>
-              <nav className="header__nav">
+              <nav className="header__nav" aria-label="navigation">
                 <ul className="menu">
                   <li className="menu__item">
-                    <Link className="menu__link current js__link" to="/">
+                    <Link
+                      className="menu__link current js__link"
+                      to="/"
+                      aria-label="link to page home"
+                    >
                       {t('header.home')}
                     </Link>
                   </li>
                   <li className="menu__item">
-                    <Link class="menu__link" to="/portfolio">
+                    <Link
+                      class="menu__link"
+                      to="/portfolio"
+                      aria-label="link to page portfolio"
+                    >
                       {t('header.portfolio')}
                     </Link>
                   </li>
                   <li className="menu__item">
-                    <a className="menu__link" href="/">
+                    <a
+                      className="menu__link"
+                      href="/"
+                      aria-label="link to page contact"
+                    >
                       {t('header.contacts')}
                     </a>
                   </li>
@@ -63,6 +76,7 @@ const Header = () => {
                 <li className="text">
                   {' '}
                   <button
+                    aria-label="lank en"
                     className="menu__btn"
                     onClick={() => handleChangeLanguage('en')}
                   >
@@ -72,6 +86,7 @@ const Header = () => {
                 <li className="text">
                   {' '}
                   <button
+                    aria-label="lang uk"
                     className="menu__btn"
                     onClick={() => handleChangeLanguage('uk')}
                   >
@@ -81,6 +96,7 @@ const Header = () => {
                 <li className="text">
                   {' '}
                   <button
+                    aria-label="lang ru"
                     className="menu__btn"
                     onClick={() => handleChangeLanguage('ru')}
                   >

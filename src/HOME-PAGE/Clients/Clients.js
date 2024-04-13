@@ -49,7 +49,11 @@ const Clients = () => {
               variants={ClientsAnimation}
               class="clients-item"
             >
-              <Link className="clients-logo" to="/">
+              <Link
+                className="clients-logo"
+                to="/"
+                aria-label="link to client1"
+              >
                 <Client1 />
               </Link>
             </motion.li>
@@ -58,7 +62,11 @@ const Clients = () => {
               variants={ClientsAnimation}
               class="clients-item"
             >
-              <Link className="clients-logo" to="/">
+              <Link
+                className="clients-logo"
+                to="/"
+                aria-label="link to client2"
+              >
                 <Client2 />
               </Link>
             </motion.li>
@@ -67,7 +75,11 @@ const Clients = () => {
               variants={ClientsAnimation}
               class="clients-item"
             >
-              <Link className="clients-logo" to="/">
+              <Link
+                className="clients-logo"
+                to="/"
+                aria-label="link to client3"
+              >
                 <Client3 />
               </Link>
             </motion.li>
@@ -76,7 +88,11 @@ const Clients = () => {
               variants={ClientsAnimation}
               class="clients-item"
             >
-              <Link className="clients-logo" to="/">
+              <Link
+                className="clients-logo"
+                to="/"
+                aria-label="link to client4"
+              >
                 <Client4 />
               </Link>
             </motion.li>
@@ -85,7 +101,11 @@ const Clients = () => {
               variants={ClientsAnimation}
               class="clients-item"
             >
-              <Link className="clients-logo" to="/">
+              <Link
+                className="clients-logo"
+                to="/"
+                aria-label="link to client5"
+              >
                 <Client5 />
               </Link>
             </motion.li>
@@ -94,7 +114,11 @@ const Clients = () => {
               variants={ClientsAnimation}
               class="clients-item"
             >
-              <Link className="clients-logo" to="/">
+              <Link
+                className="clients-logo"
+                to="/"
+                aria-label="link to client6"
+              >
                 <Client6 />
               </Link>
             </motion.li>

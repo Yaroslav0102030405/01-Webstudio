@@ -15,8 +15,26 @@
 body {
   margin: 0;
   padding: 0;
+  cursor: url("../images/cursor/cursor1.png"), auto;
   font-family: Roboto, sans-serif;
 }
+.window {
+  overflow: auto;
+  border: 1px solid #fff;
+  border-radius: 5px 0 0 5px;
+}
+
+::-webkit-scrollbar {
+  border: 1px solid #fff;
+  background: linear-gradient(0deg, rgb(34, 193, 195) 0%, rgba(89, 84, 12, 0.6615896359) 0%, rgb(92, 8, 79) 0%, rgba(153, 84, 209, 0) 100%);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: #962fbf;
+  border: 1px solid #fff;
+}
+
 /* скрыть заголовки и части текста */
 .visually-hidden {
   position: absolute;
@@ -115,6 +133,7 @@ a {
   display: block;
   text-decoration: none;
   font-style: normal;
+  cursor: url("../images/cursor/cursor2.png"), auto;
 }
 
 ul {
@@ -235,13 +254,13 @@ img {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: #afb1b8;
-  cursor: pointer;
+  cursor: url("../../images/cursor/cursor2.png"), auto;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms, border 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 .clients-logo:hover,
 .clients-logo:focus {
-  fill: #2196f3;
+  fill: #962fbf;
   color: #2196f3;
-  border: 1px solid #2196f3;
+  border: 1px solid #962fbf;
 }/*# sourceMappingURL=Clients.css.map */

@@ -15,8 +15,26 @@
 body {
   margin: 0;
   padding: 0;
+  cursor: url("../images/cursor/cursor1.png"), auto;
   font-family: Roboto, sans-serif;
 }
+.window {
+  overflow: auto;
+  border: 1px solid #fff;
+  border-radius: 5px 0 0 5px;
+}
+
+::-webkit-scrollbar {
+  border: 1px solid #fff;
+  background: linear-gradient(0deg, rgb(34, 193, 195) 0%, rgba(89, 84, 12, 0.6615896359) 0%, rgb(92, 8, 79) 0%, rgba(153, 84, 209, 0) 100%);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: #962fbf;
+  border: 1px solid #fff;
+}
+
 /* скрыть заголовки и части текста */
 .visually-hidden {
   position: absolute;
@@ -115,6 +133,7 @@ a {
   display: block;
   text-decoration: none;
   font-style: normal;
+  cursor: url("../images/cursor/cursor2.png"), auto;
 }
 
 ul {
@@ -155,7 +174,6 @@ img {
   transition-property: opacity;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  overflow-y: scroll;
   z-index: 999;
 }
 
@@ -211,7 +229,8 @@ img {
 
 .form__icon:hover,
 .form__icon:focus {
-  color: #2196f3;
+  color: #962fbf;
+  cursor: url("../../images/cursor/cursor2.png"), auto;
 }
 
 .form__title {
@@ -238,14 +257,14 @@ img {
   width: 100%;
   font-size: 16px;
   height: 40px;
-  cursor: pointer;
+  cursor: url("../../images/cursor/cursor2.png"), auto;
 }
 
 .form__input:hover,
 .form__input:focus,
 textarea:hover,
 textarea:focus {
-  border: 1px solid #2196f3;
+  border: 1px solid #962fbf;
 }
 
 .form textarea {
@@ -253,7 +272,7 @@ textarea:focus {
   margin-bottom: 20px;
   resize: none;
   width: 100%;
-  cursor: pointer;
+  cursor: url("../../images/cursor/cursor2.png"), auto;
   width: 448px;
   height: 120px;
 }
@@ -283,6 +302,7 @@ textarea:focus {
   border: 1px solid #000000;
   border-radius: 4px;
   vertical-align: middle;
+  cursor: url("../../images/cursor/cursor2.png"), auto;
 }
 
 .custom__checkbox::before {
@@ -310,6 +330,7 @@ textarea:focus {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+  cursor: url("../../images/cursor/cursor2.png"), auto;
 }
 @media screen and (max-width: 1199px) {
   .form__text,
@@ -321,7 +342,7 @@ textarea:focus {
 
 .form__link {
   margin-left: 4px;
-  color: #2196f3;
+  color: #962fbf;
 }
 
 label {
